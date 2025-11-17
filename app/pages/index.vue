@@ -1,14 +1,14 @@
 <template>
   <!-- <NuxtLayout :name="layout"> -->
-  <div class="container w-full mx-auto">
+  <div class="mx-auto w-full container">
     <!-- Squared -->
-    <!-- <div class="grid grid-cols-12 gap-8 mt-28">
+    <!-- <div class="gap-8 grid grid-cols-12 mt-28">
       <div class="col-span-4">
-        <div class="w-full pb-full bg-brand-500 block rounded-3xl">
-          <div class="w-full h-full flex">
-            <h1 class="absolute text-9xl font-bold tracking-tighter leading-[1] m-10">
+        <div class="block bg-brand pb-full rounded-3xl w-full">
+          <div class="flex w-full h-full">
+            <h1 class="absolute m-10 font-bold text-9xl leading-[1] tracking-tighter">
               Bitcoin Is
-              <span class="block text-white dark:text-white">
+              <span class="block text-vanil dark:text-vanil">
                 Money
               </span>
             </h1>
@@ -17,11 +17,11 @@
       </div>
 
       <div class="col-span-5">
-        <div class="w-full pb-full bg-brand-500 block rounded-3xl">
-          <div class="w-full h-full flex">
-            <h1 class="absolute text-9xl font-bold tracking-tighter leading-[1] m-10">
+        <div class="block bg-brand pb-full rounded-3xl w-full">
+          <div class="flex w-full h-full">
+            <h1 class="absolute m-10 font-bold text-9xl leading-[1] tracking-tighter">
               Bitcoin Is
-              <span class="block text-white dark:text-white">
+              <span class="block text-vanil dark:text-vanil">
                 Money
               </span>
             </h1>
@@ -31,40 +31,23 @@
     </div> -->
     <!-- Next Section -->
     <!-- Hero -->
-    <section class="my-28 py-12 --rounded-2xl --bg-brand-500/100">
+    <section class="--bg-brand/100 my-28 py-12 --rounded-2xl">
       <div class="ms-8 lg:ms-16 text-left">
-        <h1 class="text-8xl md:text-9xl lg:text-[11rem] font-bold tracking-tighter max-w-4xl leading-[1]">
+        <h1 class="max-w-4xl font-bold lg:text-[11rem] text-8xl md:text-9xl leading-[1] tracking-tighter">
           Bitcoin Is
-          <span class="block text-white dark:text-brand-500">
+          <span class="block text-vanil dark:text-brand">
             Money
           </span>
         </h1>
 
-        <h2 class="text-3xl tracking-wider uppercase mt-28 mb-4">
+        <h2 class="mt-28 mb-4 text-3xl uppercase tracking-wider">
           Take Control ---> Own Your Node
         </h2>
 
         <NuxtLink to="#Features">
           <button
             type="button"
-            class="
-              text-black dark:text-white hover:text-white dark:hover:text-brand-500
-              --hover:bg-white/90 --dark:hover:bg-black/90
-              focus:ring-4
-              focus:ring-black/80 dark:focus:ring-brand-500/80
-              font-bold
-              rounded-lg
-              text-xl
-              uppercase
-              border-2
-              border-black dark:border-white hover:border-white dark:hover:border-brand-500
-              px-10
-              py-8
-              mt-12
-              me-6
-              focus:outline-none
-              tracking-wide
-            "
+            class="me-6 mt-12 px-10 py-8 border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:border-brand rounded-lg focus:outline-none focus:ring-4 focus:ring-onyx/80 dark:focus:ring-brand/80 font-bold text-onyx hover:text-vanil dark:hover:text-brand dark:text-vanil text-xl uppercase tracking-wide"
           >
             Learn More
           </button>
@@ -73,22 +56,7 @@
         <NuxtLink to="#Download">
           <button
             type="button"
-            class="
-              text-black dark:text-black
-              bg-white dark:bg-brand-500
-              --hover:bg-white/90 --dark:hover:bg-black/90
-              focus:ring-4
-              focus:ring-white/80 dark:focus:ring-black/80
-              font-bold
-              rounded-lg
-              text-xl
-              uppercase
-              px-10
-              py-8
-              mt-12
-              focus:outline-none
-              tracking-wide
-            "
+            class="bg-vanil dark:bg-brand mt-12 px-10 py-8 rounded-lg focus:outline-none focus:ring-4 focus:ring-vanil/80 dark:focus:ring-onyx/80 font-bold text-onyx dark:text-onyx text-xl uppercase tracking-wide"
           >
             Get Knots Now
           </button>
@@ -100,63 +68,63 @@
     <!-- Features -->
     <section
       id="Features"
-      class="mx-4 pt-32 mb-24"
+      class="mx-4 mb-24 pt-32"
     >
-      <!-- <section class="mt-28 py-24 rounded-2xl bg-brand-500/100"> -->
+      <!-- <section class="bg-brand/100 mt-28 py-24 rounded-2xl"> -->
 
       <div class="--ms-16 text-left">
-        <h2 class="text-black dark:text-white text-[10rem] font-bold tracking-tighter max-w-4xl leading-[1]">
+        <h2 class="max-w-4xl font-bold text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
           Built for
-          <span class="text-white dark:text-brand-500">
+          <span class="text-vanil dark:text-brand">
             Sovereignty
           </span>
         </h2>
 
-        <p class="text-3xl leading-normal mt-32 mb-12 max-w-5xl">
+        <p class="mt-32 mb-12 max-w-5xl text-3xl leading-normal">
           <span class="font-bold">Bitcoin Knots</span> is a full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
         </p>
-        <p class="text-3xl leading-normal mt-12 mb-32 font-bold text-white">
+        <p class="mt-12 mb-32 font-bold text-vanil text-3xl leading-normal">
           Join the experts and take your node to the next level.
         </p>
 
         <!-- Content -->
-        <div class="grid grid-cols-2 gap-8 pt-12">
+        <div class="gap-8 grid grid-cols-2 pt-12">
           <div>
-            <div class="p-8 text-white dark:text-black bg-black dark:bg-white rounded-2xl">
-              <span class="text-2xl text-brand-500 block">/ A</span>
-              <h5 class="mt-12 pb-2 inline-block text-4xl font-bold">
+            <div class="bg-onyx dark:bg-vanil p-8 rounded-2xl text-vanil dark:text-onyx">
+              <span class="block text-brand text-2xl">/ A</span>
+              <h5 class="inline-block mt-12 pb-2 font-bold text-4xl">
                 Advanced Features
               </h5>
             </div>
             <ul class="text-xl">
-              <li class="w-full rounded-2xl mt-4 p-8">
-                <!-- <span class="bg-black rounded-2xl inline-block"> -->
+              <li class="mt-4 p-8 rounded-2xl w-full">
+                <!-- <span class="inline-block bg-onyx rounded-2xl"> -->
                 <AppIcon
                   name="Network"
-                  class="-ms-6 h-32 w-32 text-white dark:text-brand-500"
+                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
                 />
                 <!-- </span> -->
-                <h6 class="text-2xl font-bold my-4">
+                <h6 class="my-4 font-bold text-2xl">
                   Pay-to-Endpoint
                 </h6>
                 <p>Go beyond basic payments. This feature helps protect against network-level censorship by allowing payments to be sent directly to a node's IP address, strengthening Bitcoin's peer-to-peer ethos.</p>
               </li>
-              <li class="w-full rounded-2xl mt-4 p-8">
+              <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Incognito"
-                  class="-ms-6 h-32 w-32 text-white dark:text-brand-500"
+                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
                 />
-                <h6 class="text-2xl font-bold my-4">
+                <h6 class="my-4 font-bold text-2xl">
                   Coinswap Implementation
                 </h6>
                 <p>Enhance your privacy on-chain. Coinswap is a trustless protocol for obfuscating the trail of your coins, making chain analysis more difficult. Knots brings this powerful feature directly to your node.</p>
               </li>
-              <li class="w-full rounded-2xl mt-4 p-8">
+              <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Sliders"
-                  class="-ms-6 h-32 w-32 text-white dark:text-brand-500"
+                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
                 />
-                <h6 class="text-2xl font-bold my-4">
+                <h6 class="my-4 font-bold text-2xl">
                   RPC & Config Enhancements
                 </h6>
                 <p>Unlock greater control for advanced users and developers. Knots includes additional Remote Procedure Call (RPC) commands and configuration options, giving you finer-grained control over your node's behavior.</p>
@@ -165,39 +133,39 @@
           </div>
 
           <div>
-            <div class="p-8 text-black bg-white dark:bg-brand-500 rounded-2xl">
-              <span class="text-2xl text-brand-500 block dark:text-white">/ B</span>
-              <h5 class="mt-12 pb-2 inline-block text-4xl font-bold">
+            <div class="bg-vanil dark:bg-brand p-8 rounded-2xl text-onyx">
+              <span class="block text-brand dark:text-vanil text-2xl">/ B</span>
+              <h5 class="inline-block mt-12 pb-2 font-bold text-4xl">
                 Core Experience
               </h5>
             </div>
             <ul class="text-xl">
-              <li class="w-full rounded-2xl mt-4 p-8">
+              <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Checkmark"
-                  class="-ms-6 h-32 w-32 text-white dark:text-brand-500"
+                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
                 />
-                <h6 class="text-2xl font-bold my-4">
+                <h6 class="my-4 font-bold text-2xl">
                   Bitcoin Core Compatibility
                 </h6>
                 <p>The solid foundation you trust. Bitcoin Knots is a full-node implementation that validates all consensus rules, ensuring complete compatibility and security of the Bitcoin network.</p>
               </li>
-              <li class="w-full rounded-2xl mt-4 p-8">
+              <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="GUI"
-                  class="-ms-6 h-32 w-32 text-white dark:text-brand-500"
+                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
                 />
-                <h6 class="text-2xl font-bold my-4">
+                <h6 class="my-4 font-bold text-2xl">
                   Graphical User Interface (GUI) Patches
                 </h6>
                 <p>A more informative and usable node experience. The Knots GUI includes various community-developed patches that add helpful information and tools not found in the standard interface.</p>
               </li>
-              <li class="w-full rounded-2xl mt-4 p-8">
+              <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Clock"
-                  class="-ms-6 h-32 w-32 text-white dark:text-brand-500"
+                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
                 />
-                <h6 class="text-2xl font-bold my-4">
+                <h6 class="my-4 font-bold text-2xl">
                   Conservative Release Cycle
                 </h6>
                 <p>Stability for the long haul. Knots often incorporates features from Bitcoin Core after they have undergone extensive testing, offering a robust and reliable node option for production environments.</p>
@@ -212,45 +180,45 @@
     <!-- Download -->
     <section
       id="Download"
-      class="mx-4 pt-32 mb-24"
+      class="mx-4 mb-24 pt-32"
     >
       <div class="--ms-16 text-left">
-        <h2 class="text-black dark:text-white text-[10rem] font-bold tracking-tighter max-w-4xl leading-[1] --mx-auto">
+        <h2 class="--mx-auto max-w-4xl font-bold text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
           Download
-          <span class="text-white dark:text-brand-500">
+          <span class="text-vanil dark:text-brand">
             Knots
           </span>
         </h2>
 
-        <h2 class="text-3xl tracking-wider uppercase mt-24">
+        <h2 class="mt-24 text-3xl uppercase tracking-wider">
           ---> Choose Your Flavor
         </h2>
 
         <!-- Pre -->
-        <div class="grid grid-cols-3 gap-4 mt-20">
+        <div class="gap-4 grid grid-cols-3 mt-20">
           <NuxtLink
             to="#"
-            class="text-lg font-bold text-black dark:text-white"
+            class="font-bold text-onyx dark:text-vanil text-lg"
           >Release Notes</NuxtLink>
           <NuxtLink
             to="#"
-            class="text-lg text-white"
+            class="text-vanil dark:text-brand text-lg"
           >+ Fingerprint</NuxtLink>
-          <div class="flex w-full place-content-between">
+          <div class="flex place-content-between w-full">
             <NuxtLink
               to="#"
-              class="text-lg text-white"
+              class="text-vanil dark:text-brand text-lg"
             >+ Signature</NuxtLink>
             <NuxtLink
               to="#"
-              class="text-lg text-black dark:text-white -mt-3"
+              class="-mt-3 text-onyx dark:text-vanil text-lg"
             >
               <AppVersion />
             </NuxtLink>
           </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 my-6">
+        <div class="gap-4 grid grid-cols-3 my-6">
           <!-- Linux Downloads -->
           <AppCollapse
             :id="0"
@@ -260,7 +228,7 @@
             @toggle="toggleCollapse"
           >
             <template #collapseContent>
-              <ul class="collapsed text-2xl text-left mt-4 mb-6">
+              <ul class="mt-4 mb-6 text-2xl text-left collapsed">
                 <AppCollapsedItem title="x86-64" />
                 <AppCollapsedItem title="aarch64" />
                 <AppCollapsedItem title="ppc64 BE" />
@@ -269,7 +237,7 @@
                 <AppCollapsedItem title="arm" />
                 <AppCollapsedItem
                   title="Ubuntu PPA"
-                  class="border-none pb-4"
+                  class="pb-4 border-none"
                 />
               </ul>
             </template>
@@ -284,7 +252,7 @@
             @toggle="toggleCollapse"
           >
             <template #collapseContent>
-              <ul class="collapsed text-2xl text-left mt-4 mb-6">
+              <ul class="mt-4 mb-6 text-2xl text-left collapsed">
                 <AppCollapsedItem
                   title="Intel Mac"
                   type="App"
@@ -300,7 +268,7 @@
                 <AppCollapsedItem
                   title="Apple Silicon"
                   type="Terminal"
-                  class="border-none pb-4"
+                  class="pb-4 border-none"
                 />
               </ul>
             </template>
@@ -316,7 +284,7 @@
               @toggle="toggleCollapse"
             >
               <template #collapseContent>
-                <ul class="collapsed text-2xl text-left mt-4 mb-6">
+                <ul class="mt-4 mb-6 text-2xl text-left collapsed">
                   <AppCollapsedItem
                     title="Install"
                     type="EXE"
@@ -339,7 +307,7 @@
               @toggle="toggleCollapse"
             >
               <template #collapseContent>
-                <ul class="collapsed text-2xl text-left mt-4 mb-6">
+                <ul class="mt-4 mb-6 text-2xl text-left collapsed">
                   <AppCollapsedItem
                     title="Github"
                     type="REPO"
@@ -360,34 +328,34 @@
     <!-- Mail -->
     <section
       id="Mail"
-      class="mx-4 pt-32 mb-24"
+      class="mx-4 mb-24 pt-32"
     >
       <div class="">
-        <h2 class="text-black dark:text-white text-[10rem] font-bold tracking-tighter max-w-4xl leading-[1]">
+        <h2 class="max-w-4xl font-bold text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
           Join the
-          <span class="text-white dark:text-brand-500">
+          <span class="text-vanil dark:text-brand">
             Inner Circle
           </span>
         </h2>
 
-        <h3 class="text-4xl tracking-snug leading-normal --uppercase mt-12 max-w-5xl">
+        <h3 class="mt-12 max-w-5xl text-4xl --uppercase leading-normal tracking-snug">
           Get release announcements and critical security advisories directly from the lead maintainer ---> Luke Dashjr.
         </h3>
 
-        <p class="text-3xl font-bold tracking-tight my-12">
+        <p class="my-12 font-bold text-3xl tracking-tight">
           Choose your preferred way to subscribe:
         </p>
       </div>
 
-      <div class="grid grid-cols-2 gap-12 my-6 text-lg">
+      <div class="gap-12 grid grid-cols-2 my-6 text-lg">
         <div class="">
           <div class="">
             <AppIcon
               name="Email"
-              class="text-white dark:text-brand-500 w-24 h-24 -ms-3"
+              class="-ms-3 w-24 h-24 text-vanil dark:text-brand"
             />
           </div>
-          <h4 class="my-4 text-2xl font-bold">
+          <h4 class="my-4 font-bold text-2xl">
             Subscribe with any Email Address
           </h4>
           <p class="">
@@ -402,10 +370,10 @@
           <div class="">
             <AppIcon
               name="G"
-              class="text-white dark:text-brand-500 w-24 h-24 -ms-5"
+              class="-ms-5 w-24 h-24 text-vanil dark:text-brand"
             />
           </div>
-          <h4 class="my-4 text-2xl font-bold">
+          <h4 class="my-4 font-bold text-2xl">
             Subscribe with a Google Account
           </h4>
           <p>

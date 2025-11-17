@@ -1,7 +1,7 @@
 <template>
   <footer class="max-w-screen">
-    <div class="--container mx-auto">
-      <section class="mt-12 border-t border-black/10 dark:border-white/10 flex justify-between p-6 ">
+    <div class="mx-auto --container">
+      <section class="flex justify-between mt-12 p-6 border-onyx/10 dark:border-vanil/10 border-t">
         <NuxtLink to="#Download">
           <AppVersion />
         </NuxtLink>
@@ -14,7 +14,7 @@
           >
             <AppIcon
               name="X"
-              class="text-black dark:text-white w-12 h-12"
+              class="w-12 h-12 text-onyx dark:text-vanil"
             />
           </NuxtLink>
           <NuxtLink
@@ -24,7 +24,7 @@
           >
             <AppIcon
               name="Discord"
-              class="text-black dark:text-white w-12 h-12"
+              class="w-12 h-12 text-onyx dark:text-vanil"
             />
           </NuxtLink>
           <NuxtLink
@@ -34,7 +34,7 @@
           >
             <AppIcon
               name="Telegram"
-              class="text-black dark:text-white w-12 h-12"
+              class="w-12 h-12 text-onyx dark:text-vanil"
             />
           </NuxtLink>
           <NuxtLink
@@ -44,7 +44,7 @@
           >
             <AppIcon
               name="Github"
-              class="text-black dark:text-white w-12 h-12"
+              class="w-12 h-12 text-onyx dark:text-vanil"
             />
           </NuxtLink>
         </div>

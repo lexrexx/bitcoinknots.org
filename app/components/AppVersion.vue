@@ -1,5 +1,5 @@
 <template>
-  <span class="font-mono text-2xs tracking-tight m-1 border-2 border-black dark:border-brand-500 rounded-md flex px-2 py-1 text-black dark:text-brand-500 font-bold justify-center items-center">
+  <span class="flex justify-center items-center m-1 px-2 py-1 border-2 border-onyx dark:border-brand rounded-md font-bold text-2xs text-onyx dark:text-brand tracking-tight">
     v{{ appConfig.vapp }}
   </span>
 </template>

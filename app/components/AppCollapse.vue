@@ -27,15 +27,15 @@ const toggleCollapse = () => {
 <template>
   <div class="flex flex-col mb-2">
     <button
-      class="group border-2 border-black dark:border-white hover:border-white dark:hover:border-brand-500 rounded-2xl cursor-pointer"
+      class="group border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:border-brand rounded-2xl cursor-pointer"
       @click="toggleCollapse"
     >
       <div class="flex items-center my-2 p-4">
         <AppIcon
           :name="icon"
-          class="text-black dark:text-white group-hover:text-white dark:group-hover:text-brand-500 w-24 h-24"
+          class="w-24 h-24 text-onyx dark:group-hover:text-brand dark:text-vanil group-hover:text-vanil"
         />
-        <h3 class="text-3xl font-bold tracking-tight ms-1 group-hover:text-white dark:group-hover:text-brand-500">
+        <h3 class="ms-1 font-bold dark:group-hover:text-brand group-hover:text-vanil text-3xl tracking-tight">
           {{ title }}
         </h3>
       </div>

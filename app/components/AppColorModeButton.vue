@@ -13,15 +13,15 @@ const isDark = computed({
 
 <template>
   <!-- <ClientOnly> -->
-  <div class="flex relative">
+  <div class="relative flex">
     <button
       :class="{ 'rotate-[180deg]': isDark, 'rotate-0': !isDark }"
-      class="transition-transform duration-200 ease-out p-3"
+      class="p-3 transition-transform duration-200 ease-out"
       @click="isDark = !isDark"
     >
       <AppIcon
         name="CustomColorMode"
-        class="w-6 h-6 text-black dark:text-white hover:text-white dark:hover:text-brand-500"
+        class="w-6 h-6 text-onyx hover:text-vanil dark:hover:text-brand dark:text-vanil"
       />
     </button>
   </div>

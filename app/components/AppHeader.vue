@@ -1,46 +1,14 @@
 <template>
   <header
-    class="
-      h-20 md:h-24
-      mx-auto
-      fixed
-      z-40
-      top-0
-      inset-x-0
-      w-full
-      flex
-      justify-start
-      items-center
-      bg-brand-500
-      dark:bg-black
-      backdrop-filter
-      backdrop-blur-[10px]
-      [@supports(backdrop-filter:blur(0px))]:bg-brand-500/70
-      [@supports(backdrop-filter:blur(0px))]:dark:bg-black/80
-    "
+    class="top-0 z-40 fixed inset-x-0 flex justify-start items-center bg-brand dark:bg-onyx [@supports(backdrop-filter:blur(0px))]:bg-brand/70 [@supports(backdrop-filter:blur(0px))]:dark:bg-onyx/80 backdrop-filter backdrop-blur-[10px] mx-auto w-full h-20 md:h-24"
   >
     <NuxtLink
       to="/"
-      class="
-        flex
-        items-center
-        justify-center
-        w-20 md:w-24
-        h-20 md:h-24
-        border-r
-        border-black/10
-        dark:border-white/10
-        bg-white
-        dark:bg-brand-500
-      "
+      class="flex justify-center items-center bg-vanil dark:bg-brand border-onyx/10 dark:border-vanil/10 border-r w-20 md:w-24 h-20 md:h-24"
       @click="menu = false"
     >
       <AppLogomark
-        class="
-          w-12 md:w-14
-          h-12 md:h-14
-          text-black
-        "
+        class="w-12 md:w-14 h-12 md:h-14 text-onyx"
       />
     </NuxtLink>
 
@@ -50,29 +18,14 @@
       @click="menu = false"
     >
       <AppLogotype
-        class="
-          h-6 md:h-7
-          ms-6
-        "
+        class="ms-6 h-6 md:h-7"
       />
     </NuxtLink>
 
-    <div class="flex absolute right-0 flex-row gap-1 items-center">
+    <div class="right-0 absolute flex flex-row items-center gap-1">
       <NuxtLink
         to="#Download"
-        class="
-          text-black dark:text-brand-500
-          border-2 border-black dark:border-brand-500 hover:border-white hover:text-white
-          focus:ring-4 focus:ring-black dark:focus:ring-brand-500
-          font-bold
-          rounded-lg
-          text-xs md:text-sm
-          tracking-wider
-          uppercase
-          p-4 md:p-5
-          me-2 md:me-4
-          focus:outline-none
-        "
+        class="me-2 md:me-4 p-4 md:p-5 border-2 border-onyx hover:border-vanil dark:border-brand rounded-lg focus:outline-none focus:ring-4 focus:ring-onyx dark:focus:ring-brand font-bold text-onyx hover:text-vanil dark:text-brand text-xs md:text-sm uppercase tracking-wider"
       >
         Download
       </NuxtLink>
@@ -80,7 +33,7 @@
       <AppColorModeButton />
 
       <div
-        class="justify-self-start py-3 cursor-pointer ps-2 md:ps-3.5 pe-4 md:pe-6 hover:text-white dark:hover:text-brand-500"
+        class="justify-self-start py-3 ps-2 md:ps-3.5 pe-4 md:pe-6 hover:text-vanil dark:hover:text-brand cursor-pointer"
         @click="menu = !menu"
       >
         <svg

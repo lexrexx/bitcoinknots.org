@@ -1,41 +1,28 @@
 <template>
   <div
     v-show="menu"
-    class="--container mx-auto px-0 fixed left-0 right-0 top-0 h-[100dvh] z-40"
+    class="top-0 right-0 left-0 z-40 fixed mx-auto px-0 h-[100dvh] --container"
   >
     <nav
-      class="
-      h-full
-      ---ms-[1px]
-      bg-brand
-      dark:bg-black
-      --pt-20
-      ps-0
-      pb-2
-      backdrop-filter
-      backdrop-blur-[10px]
-      [@supports(backdrop-filter:blur(0px))]:bg-brand-500/90
-      [@supports(backdrop-filter:blur(0px))]:dark:bg-black/90
-    "
+      class="bg-brand dark:bg-onyx [@supports(backdrop-filter:blur(0px))]:bg-brand/90 [@supports(backdrop-filter:blur(0px))]:dark:bg-onyx/90 backdrop-filter backdrop-blur-[10px] ---ms-[1px] ps-0 --pt-20 pb-2 h-full"
     >
       <!-- <div class="flex"> -->
 
-      <div class="grid overscroll-contain grid-cols-1 gap-2 --mt-12 sm:grid-cols-2 lg:grid-cols-4 px-28 --font-bold text-md w-12/12 mx-auto">
+      <div class="gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto --mt-12 px-28 w-12/12 overscroll-contain --font-bold text-md">
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
             <li
               v-for="(menuItem, index) in menuItems1"
               :key="index"
-              class="py-2 my-0"
+              class="my-0 py-2"
             >
               <NuxtLink
                 :to="menuItem.url"
-                class="flex items-center py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+                class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
                 @click="menu = false"
               >
                 <span class="flex-1">{{ menuItem.title }}</span>
-                <span class="mx-2 opacity-0 group-hover:opacity-100" />
+                <span class="opacity-0 group-hover:opacity-100 mx-2" />
               </NuxtLink>
             </li>
           </ul>
@@ -46,16 +33,15 @@
             <li
               v-for="(menuItem, index) in menuItems2"
               :key="index"
-              class="py-2 my-0"
+              class="my-0 py-2"
             >
               <NuxtLink
                 :to="menuItem.url"
-                class="flex items-center py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+                class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
                 @click="menu = false"
               >
                 <span class="flex-1">{{ menuItem.title }}</span>
-                <span class="mx-2 opacity-0 group-hover:opacity-100" />
+                <span class="opacity-0 group-hover:opacity-100 mx-2" />
               </NuxtLink>
             </li>
           </ul>
@@ -66,16 +52,15 @@
             <li
               v-for="(menuItem, index) in menuItems3"
               :key="index"
-              class="py-2 my-0"
+              class="my-0 py-2"
             >
               <NuxtLink
                 :to="menuItem.url"
-                class="flex items-center py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+                class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
                 @click="menu = false"
               >
                 <span class="flex-1">{{ menuItem.title }}</span>
-                <span class="mx-2 opacity-0 group-hover:opacity-100" />
+                <span class="opacity-0 group-hover:opacity-100 mx-2" />
               </NuxtLink>
             </li>
           </ul>
@@ -86,16 +71,15 @@
             <li
               v-for="(menuItem, index) in menuItems4"
               :key="index"
-              class="py-2 my-0"
+              class="my-0 py-2"
             >
               <NuxtLink
                 :to="menuItem.url"
-                class="flex items-center py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+                class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
                 @click="menu = false"
               >
                 <span class="flex-1">{{ menuItem.title }}</span>
-                <span class="mx-2 opacity-0 group-hover:opacity-100" />
+                <span class="opacity-0 group-hover:opacity-100 mx-2" />
               </NuxtLink>
             </li>
           </ul>

@@ -7,14 +7,14 @@
 <style lang="postcss">
 body {
   @apply
-  text-black dark:text-white
-  bg-brand-500 dark:bg-black
-  selection:text-white dark:selection:text-black
-  selection:bg-black dark:selection:bg-white;
+  text-onyx dark:text-vanil
+  bg-brand dark:bg-onyx
+  selection:text-vanil dark:selection:text-onyx
+  selection:bg-onyx dark:selection:bg-vanil;
 }
 
 a{
   @apply
-  text-white dark:text-brand-500
+  text-vanil dark:text-brand
 }
 </style>

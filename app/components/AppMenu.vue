@@ -1,38 +1,18 @@
 <template>
   <div
     v-show="menu"
-    class="mx-auto px-0 fixed left-0 right-0 top-0 h-[100dvh] z-40 bg-brand-500 dark:bg-black"
+    class="top-0 right-0 left-0 z-40 fixed bg-brand dark:bg-onyx mx-auto px-0 h-[100dvh]"
   >
     <header
-      class="
-      flex
-      justify-start
-      items-center
-      w-full
-      mx-auto
-      fixed
-      z-40
-      top-0
-      inset-x-0
-      h-20 md:h-24
-      bg-brand-500
-      dark:bg-black
-  "
+      class="top-0 z-40 fixed inset-x-0 flex justify-start items-center bg-brand dark:bg-onyx mx-auto w-full h-20 md:h-24"
     >
       <NuxtLink
         to="/"
-        class="
-          w-20 md:w-24
-          h-20 md:h-24
-          flex items-center justify-center bg-white dark:bg-brand-500"
+        class="flex justify-center items-center bg-vanil dark:bg-brand w-20 md:w-24 h-20 md:h-24"
         @click="menu = false"
       >
         <AppLogomark
-          class="
-          w-12 md:w-14
-          h-12 md:h-14
-          text-black
-        "
+          class="w-12 md:w-14 h-12 md:h-14 text-onyx"
         />
       </NuxtLink>
 
@@ -42,16 +22,13 @@
         @click="menu = false"
       >
         <AppLogotype
-          class="
-          h-6 md:h-7
-          ms-6
-        "
+          class="ms-6 h-6 md:h-7"
         />
       </NuxtLink>
 
-      <div class="flex absolute right-0 flex-row gap-1 items-center">
+      <div class="right-0 absolute flex flex-row items-center gap-1">
         <div
-          class="justify-self-start py-3 cursor-pointer ps-2 md:ps-3.5 pe-4 md:pe-6"
+          class="justify-self-start py-3 ps-2 md:ps-3.5 pe-4 md:pe-6 cursor-pointer"
           @click="menu = !menu"
         >
           <svg
@@ -70,22 +47,21 @@
       </div>
     </header>
 
-    <nav class="pt-32 mx-4 md:mx-24 px-2 text-2xl md:text-3xl tracking-tight overscroll-contain">
+    <nav class="mx-4 md:mx-24 px-2 pt-32 overscroll-contain text-2xl md:text-3xl tracking-tight">
       <section class="flex justify-start items-start w-full h-full">
         <ul class="block w-full">
           <li
             v-for="(menuItem, index) in menuItems1"
             :key="index"
-            class="py-1 md:py-2 my-0"
+            class="my-0 py-1 md:py-2"
           >
             <NuxtLink
               :to="menuItem.url"
-              class="flex items-center py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+              class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
               <span class="flex-1">{{ menuItem.title }}</span>
-              <span class="arrow mx-2 opacity-0 group-hover:opacity-100 rotate-180"> <--- </span>
+              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
             </NuxtLink>
           </li>
         </ul>
@@ -96,16 +72,15 @@
           <li
             v-for="(menuItem, index) in menuItems2"
             :key="index"
-            class="py-1 md:py-2 my-0"
+            class="my-0 py-1 md:py-2"
           >
             <NuxtLink
               :to="menuItem.url"
-              class="flex items-center justify-between py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+              class="group flex justify-between items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
               <span class="">{{ menuItem.title }}</span>
-              <span class="arrow mx-2 opacity-0 group-hover:opacity-100 rotate-180"> <--- </span>
+              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
             </NuxtLink>
           </li>
         </ul>
@@ -116,16 +91,15 @@
           <li
             v-for="(menuItem, index) in menuItems3"
             :key="index"
-            class="py-1 md:py-2 my-0"
+            class="my-0 py-1 md:py-2"
           >
             <NuxtLink
               :to="menuItem.url"
-              class="flex items-center py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+              class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
               <span class="flex-1">{{ menuItem.title }}</span>
-              <span class="arrow mx-2 opacity-0 group-hover:opacity-100 rotate-180"> <--- </span>
+              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
             </NuxtLink>
           </li>
         </ul>
@@ -136,16 +110,15 @@
           <li
             v-for="(menuItem, index) in menuItems4"
             :key="index"
-            class="py-1 md:py-2 my-0"
+            class="my-0 py-1 md:py-2"
           >
             <NuxtLink
               :to="menuItem.url"
-              class="flex items-center py-2 ps-2 mx-1 rounded-md group text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5
-"
+              class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
               <span class="flex-1">{{ menuItem.title }}</span>
-              <span class="arrow mx-2 opacity-0 group-hover:opacity-100 rotate-180"> <--- </span>
+              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
             </NuxtLink>
           </li>
         </ul>
@@ -247,8 +220,8 @@ onMounted(() => {
 .router-link-exact-active {
   @apply
     font-bold
-    text-white
-    dark:text-brand-500
+    text-vanil
+    dark:text-brand
 }
 
 .router-link-exact-active .arrow {
