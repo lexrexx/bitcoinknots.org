@@ -21,7 +21,7 @@ const isDark = computed({
     >
       <AppIcon
         name="CustomColorMode"
-        class="w-6 h-6 text-black dark:text-white"
+        class="w-6 h-6 text-black dark:text-white hover:text-white dark:hover:text-brand-500"
       />
     </button>
   </div>

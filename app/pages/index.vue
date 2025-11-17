@@ -32,10 +32,10 @@
     <!-- Next Section -->
     <!-- Hero -->
     <section class="my-28 py-12 --rounded-2xl --bg-brand-500/100">
-      <div class="ms-16 text-left">
-        <h1 class="text-[11rem] font-bold tracking-tighter max-w-4xl leading-[1]">
+      <div class="ms-8 lg:ms-16 text-left">
+        <h1 class="text-8xl md:text-9xl lg:text-[11rem] font-bold tracking-tighter max-w-4xl leading-[1]">
           Bitcoin Is
-          <span class="text-white dark:text-brand-500">
+          <span class="block text-white dark:text-brand-500">
             Money
           </span>
         </h1>
@@ -48,7 +48,7 @@
           <button
             type="button"
             class="
-              text-black dark:text-white
+              text-black dark:text-white hover:text-white dark:hover:text-brand-500
               --hover:bg-white/90 --dark:hover:bg-black/90
               focus:ring-4
               focus:ring-black/80 dark:focus:ring-brand-500/80
@@ -57,7 +57,7 @@
               text-xl
               uppercase
               border-2
-              border-black dark:border-white
+              border-black dark:border-white hover:border-white dark:hover:border-brand-500
               px-10
               py-8
               mt-12

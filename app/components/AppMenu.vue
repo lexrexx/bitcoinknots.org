@@ -5,28 +5,35 @@
   >
     <header
       class="
-    bg-brand-500
-    dark:bg-black
-      h-24
+      flex
+      justify-start
+      items-center
+      w-full
       mx-auto
       fixed
       z-40
       top-0
       inset-x-0
-      w-full
-      flex
-      justify-start
-      items-center
+      h-20 md:h-24
+      bg-brand-500
+      dark:bg-black
   "
     >
-      <!-- <span class="block w-[1px] h-24 bg-black/10 dark:bg-white/10" /> -->
-
       <NuxtLink
         to="/"
-        class="w-24 h-24 --bg-red-300 flex items-center justify-center bg-white dark:bg-brand-500 border-r border-black/10 dark:border-white/10"
+        class="
+          w-20 md:w-24
+          h-20 md:h-24
+          flex items-center justify-center bg-white dark:bg-brand-500"
         @click="menu = false"
       >
-        <AppLogomark class="w-14 h-14 text-black" />
+        <AppLogomark
+          class="
+          w-12 md:w-14
+          h-12 md:h-14
+          text-black
+        "
+        />
       </NuxtLink>
 
       <NuxtLink
@@ -34,12 +41,17 @@
         class="p-0"
         @click="menu = false"
       >
-        <AppLogotype class="h-7 ms-6" />
+        <AppLogotype
+          class="
+          h-6 md:h-7
+          ms-6
+        "
+        />
       </NuxtLink>
 
       <div class="flex absolute right-0 flex-row gap-1 items-center">
         <div
-          class="justify-self-start py-3 cursor-pointer ps-3.5 pe-6"
+          class="justify-self-start py-3 cursor-pointer ps-2 md:ps-3.5 pe-4 md:pe-6"
           @click="menu = !menu"
         >
           <svg
@@ -58,13 +70,13 @@
       </div>
     </header>
 
-    <nav class="pt-32 mx-24 px-2 --font-bold text-3xl tracking-tight overscroll-contain">
+    <nav class="pt-32 mx-4 md:mx-24 px-2 text-2xl md:text-3xl tracking-tight overscroll-contain">
       <section class="flex justify-start items-start w-full h-full">
         <ul class="block w-full">
           <li
             v-for="(menuItem, index) in menuItems1"
             :key="index"
-            class="py-2 my-0"
+            class="py-1 md:py-2 my-0"
           >
             <NuxtLink
               :to="menuItem.url"
@@ -84,7 +96,7 @@
           <li
             v-for="(menuItem, index) in menuItems2"
             :key="index"
-            class="py-2 my-0"
+            class="py-1 md:py-2 my-0"
           >
             <NuxtLink
               :to="menuItem.url"
@@ -104,7 +116,7 @@
           <li
             v-for="(menuItem, index) in menuItems3"
             :key="index"
-            class="py-2 my-0"
+            class="py-1 md:py-2 my-0"
           >
             <NuxtLink
               :to="menuItem.url"
@@ -124,7 +136,7 @@
           <li
             v-for="(menuItem, index) in menuItems4"
             :key="index"
-            class="py-2 my-0"
+            class="py-1 md:py-2 my-0"
           >
             <NuxtLink
               :to="menuItem.url"

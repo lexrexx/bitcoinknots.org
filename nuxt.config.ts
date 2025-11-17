@@ -6,12 +6,25 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
   ],
-  // devtools: { enabled: true },
-  ssr: false,
+  devtools: { enabled: false },
+  // ssr: false,
   app: {
+    // baseURL: '/',
     baseURL: '/bitcoinknots.org/',
   },
   compatibilityDate: '2025-07-15',
+  nitro: {
+    preset: 'static',
+    serveStatic: true,
+    prerender: {
+      crawlLinks: true,
+      // failOnError: false,
+      // routes: [
+      //   // '/sitemap.xml',
+      //   ...routes
+      // ]
+    },
+  },
   eslint: {
     config: {
       stylistic: true,
