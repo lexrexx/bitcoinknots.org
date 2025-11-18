@@ -15,10 +15,12 @@ export default {
       // vanil: '#FDF0D5',
       onyx: '#0C090D',
     },
-    // padding: {
-    //   '1/2': '50%',
-    //   'full': '100%',
-    // },
+    extend : {
+      padding: {
+        '1/2': '50%',
+        'full': '100%',
+      },
+    }
   },
   plugins: [],
 }

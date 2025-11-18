@@ -3,8 +3,9 @@
   <div class="mx-auto w-full container">
     <!-- Squared -->
     <!-- <div class="gap-8 grid grid-cols-12 mt-28">
+
       <div class="col-span-4">
-        <div class="block bg-brand pb-full rounded-3xl w-full">
+        <div class="block bg-onyx pb-full rounded-3xl w-full">
           <div class="flex w-full h-full">
             <h1 class="absolute m-10 font-bold text-9xl leading-[1] tracking-tighter">
               Bitcoin Is
@@ -17,11 +18,11 @@
       </div>
 
       <div class="col-span-5">
-        <div class="block bg-brand pb-full rounded-3xl w-full">
+        <div class="block bg-onyx pb-full rounded-3xl w-full">
           <div class="flex w-full h-full">
-            <h1 class="absolute m-10 font-bold text-9xl leading-[1] tracking-tighter">
+            <h1 class="absolute text-vanil m-10 font-bold text-9xl leading-[1] tracking-tighter">
               Bitcoin Is
-              <span class="block text-vanil dark:text-vanil">
+              <span class="block text-brand dark:text-vanil">
                 Money
               </span>
             </h1>
@@ -31,36 +32,76 @@
     </div> -->
     <!-- Next Section -->
     <!-- Hero -->
-    <section class="--bg-brand/100 my-28 py-12 --rounded-2xl">
-      <div class="ms-8 lg:ms-16 text-left">
-        <h1 class="max-w-4xl font-bold lg:text-[11rem] text-8xl md:text-9xl leading-[1] tracking-tighter">
+    <section class="my-28 py-8">
+      <div class="ms-4 text-left grid grid-cols-12">
+        <h1 class="col-span-9 col-start-1 font-bold lg:text-[12rem] xl:text[13rem] text-8xl md:text-9xl leading-[1] tracking-tighter">
           Bitcoin Is
           <span class="block text-vanil dark:text-brand">
             Money
           </span>
         </h1>
 
-        <h2 class="mt-28 mb-4 text-3xl uppercase tracking-wider">
-          Take Control ---> Own Your Node
+        <h2 class="col-span-12 flex justify-between items-end w-full mt-24 mb-4 text-4xl uppercase tracking-wider">
+          <span class="">Take Control</span>
+          <!-- <span class="dark:text-brand">---</span> -->
+          <span class="text-vanil dark:text-brand">---></span>
+          <span class="">Own Your Node</span>
+          <NuxtLink to="#Download" class="">
+            <button
+              type="button"
+              class="
+                px-10
+                py-10
+                rounded-xl
+                border-4
+                focus:outline-none
+                focus:ring-4
+                border-onyx
+                hover:border-vanil
+                dark:border-brand
+                dark:hover:border-vanil
+                focus:ring-onyx
+                dark:focus:ring-vanil
+                text-onyx
+                hover:text-vanil
+                dark:text-brand
+                dark:hover:text-vanil
+                font-bold
+                text-2xl
+                uppercase
+                tracking-wide
+              "
+            >
+              Get Bitcoin Knots
+            </button>
+          </NuxtLink>
         </h2>
 
-        <NuxtLink to="#Features">
-          <button
-            type="button"
-            class="me-6 mt-12 px-10 py-8 border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:border-brand rounded-lg focus:outline-none focus:ring-4 focus:ring-onyx/80 dark:focus:ring-brand/80 font-bold text-onyx hover:text-vanil dark:hover:text-brand dark:text-vanil text-xl uppercase tracking-wide"
-          >
-            Learn More
-          </button>
-        </NuxtLink>
+        <!-- <h2 class="col-span-12 text-right mt-28 mb-4 text-5xl uppercase tracking-wider">
+          Take Control --- Own Your Node
+        </h2> -->
 
-        <NuxtLink to="#Download">
-          <button
-            type="button"
-            class="bg-vanil dark:bg-brand mt-12 px-10 py-8 rounded-lg focus:outline-none focus:ring-4 focus:ring-vanil/80 dark:focus:ring-onyx/80 font-bold text-onyx dark:text-onyx text-xl uppercase tracking-wide"
-          >
-            Get Knots Now
-          </button>
-        </NuxtLink>
+        <div class="col-span-12 text-right mt-8 w-full">
+          <!-- <NuxtLink to="#Features">
+            <button
+              type="button"
+              class="me-6 px-10 py-8 border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:border-brand rounded-lg focus:outline-none focus:ring-4 focus:ring-onyx/80 dark:focus:ring-brand/80 font-bold text-onyx hover:text-vanil dark:hover:text-brand dark:text-vanil text-xl uppercase tracking-wide"
+            >
+              Learn More
+            </button>
+          </NuxtLink> -->
+
+          <!-- <span class="text-4xl uppercase tracking-wider">---</span> -->
+          
+          <!-- <NuxtLink to="#Download" class="">
+            <button
+              type="button"
+              class="--bg-vanil border-4 border-onyx dark:bg-brand px-10 py-8 rounded-lg focus:outline-none focus:ring-4 focus:ring-vanil/80 dark:focus:ring-onyx/80 font-bold text-onyx dark:text-onyx text-2xl uppercase tracking-wide"
+            >
+              Get Bitcoin Knots
+            </button>
+          </NuxtLink> -->
+        </div>
       </div>
     </section>
 

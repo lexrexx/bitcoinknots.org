@@ -10,7 +10,7 @@
           <NuxtLink
             :to="appConfig.xUrl"
             target="_blank"
-            class="mx-2"
+            class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
             <AppIcon
               name="X"
@@ -20,7 +20,7 @@
           <NuxtLink
             :to="appConfig.discordUrl"
             target="_blank"
-            class="mx-2"
+            class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
             <AppIcon
               name="Discord"
@@ -30,7 +30,7 @@
           <NuxtLink
             :to="appConfig.telegramUrl"
             target="_blank"
-            class="mx-2"
+            class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
             <AppIcon
               name="Telegram"
@@ -40,7 +40,7 @@
           <NuxtLink
             :to="appConfig.githubUrl"
             target="_blank"
-            class="mx-2"
+            class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
             <AppIcon
               name="Github"
