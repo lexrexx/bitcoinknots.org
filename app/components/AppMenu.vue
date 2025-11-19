@@ -191,7 +191,7 @@ const menuItems4 = ref([
   },
   {
     title: 'FAQ',
-    url: '#faq',
+    url: '#Faq',
     // slug: 'faq',
   },
   // {

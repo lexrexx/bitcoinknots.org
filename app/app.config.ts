@@ -1,6 +1,6 @@
 // Usage:
-//    script: const appConfig = useAppConfig()
-//    template: {{ appConfig.key }}
+//    <script>: const appConfig = useAppConfig()
+//    <template>: {{ appConfig.key }}
 
 export default defineAppConfig({
   title: 'Bitcoin Knots',

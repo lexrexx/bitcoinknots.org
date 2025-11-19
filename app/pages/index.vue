@@ -120,8 +120,14 @@
         </span>
       </h2>
 
+      <!-- <h3 class="col-span-12 flex justify-between items-start w-full mt-20 mb-4 text-4xl uppercase tracking-wider">
+        <span class="">Bitcoin</span>
+        <span class="text-onyx dark:text-brand">---</span>
+        <span class="">Knots</span>
+      </h3> -->
+
       <p class="col-span-12 col-start-1 mt-32 mb-12 text-4xl leading-normal">
-        <span class="font-bold">Bitcoin <span class="text-vanil dark:text-brand">Knots ---></span></span> is a full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
+        <span class="font-bold">Bitcoin <--> Knots </span>is a full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
       </p>
 
       <!-- <h2 class="col-span-12 flex justify-between items-start w-full my-24 text-5xl uppercase tracking-wider">
@@ -235,41 +241,49 @@
       <div class="--ms-16 text-left">
         <h2 class="--mx-auto max-w-4xl font-bold text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
           Download
-          <span class="text-vanil dark:text-brand">
-            Knots
+          <span class="block text-vanil dark:text-brand">
+            & Verify
           </span>
         </h2>
 
-        <h2 class="col-span-12 flex justify-between items-start w-full mt-20 mb-4 text-4xl uppercase tracking-wider">
+        <h3 class="col-span-12 flex justify-between items-start w-full mt-20 mb-4 text-4xl uppercase tracking-wider">
           <span class="">Choose Your</span>
           <span class="text-onyx dark:text-brand">---></span>
-          <span class="">Operating System</span>
-        </h2>
+          <span class="">Operating System :</span>
+        </h3>
 
         <!-- Pre -->
-        <div class="gap-4 grid grid-cols-3 mt-20">
-          <NuxtLink
-            to="#"
-            class="font-bold text-onyx dark:text-vanil text-lg"
-          >
-            Release Notes
-            <!-- <span class="inline-block -rotate-45 relative -top-1.5 -left-1.5 text-sm">➔</span> -->
-          </NuxtLink>
-          <NuxtLink
-            to="#"
-            class="text-onyx dark:text-brand text-lg"
-          >+ Fingerprint</NuxtLink>
-          <div class="flex place-content-between w-full">
+        <div class="gap-4 grid grid-cols-3 mt-20 items-center">
+          <div class="col-start-1 flex place-content-between w-full">
+            <div class="flex">
+              <NuxtLink
+                to="#"
+                class="items-center flex m-1 px-2 py-1 border-2 border-onyx dark:border-brand rounded-md font-bold text-2xs text-onyx dark:text-brand tracking-tight"
+              >
+                Fingerprint
+              </NuxtLink>
+              <NuxtLink
+                to="#"
+                class="items-center flex m-1 px-2 py-1 border-2 border-onyx dark:border-brand rounded-md font-bold text-2xs text-onyx dark:text-brand tracking-tight"
+              >
+                Signature
+              </NuxtLink>
+            </div>
+          </div>
+          <div class="flex justify-between items-center col-start-3">
             <NuxtLink
-              to="#"
-              class="text-onyx dark:text-brand text-lg"
-            >+ Signature</NuxtLink>
-            <NuxtLink
-              to="#"
-              class="-mt-3 text-onyx dark:text-vanil text-lg"
+              target="blank"
+              to="https://github.com/bitcoinknots/bitcoin/releases"
+              class="font-bold text-onyx dark:text-vanil text-lg underline"
             >
-              <AppVersion />
+              Release Notes
+            <!-- <span class="inline-block -rotate-45 relative -top-1.5 -left-1.5 text-sm">➔</span> -->
             </NuxtLink>
+
+            <AppVersion
+              to="#Download"
+              class="text-lg"
+            />
           </div>
         </div>
 
@@ -380,6 +394,59 @@
     </section>
 
     <!-- Next Section -->
+    <!-- Faq -->
+    <section
+      id="Faq"
+      class="mx-4 mb-24 pt-32"
+    >
+      <h2 class="font-bold text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
+        Get
+        <span class="block text-vanil dark:text-brand">
+          Answers
+        </span>
+      </h2>
+
+      <h3 class="col-span-12 flex justify-between items-start w-full mt-20 mb-4 text-4xl uppercase tracking-wider">
+        <span class="">To Common Questions</span>
+        <span class="text-onyx dark:text-brand">---></span>
+        <span class="">About Knots :</span>
+      </h3>
+
+      <!-- <h3 class="text-4xl font-bold tracking-tight">
+          To common questions about Bitcoin Knots.
+        </h3> -->
+
+      <div class="grid grid-cols-3 gap-12 mt-24">
+        <div class="qa text-2xl">
+          <div class="q py-4 font-bold">
+            I already run Bitcoin Core. Why should I consider Bitcoin Knots?
+          </div>
+          <div class="a py-4 text-xl">
+            Think of Bitcoin Knots as "Bitcoin Core with optional extras." If you're happy with Core, it's an excellent choice. However, if you need features like Pay-to-Endpoint for censorship resistance, early access to privacy patches like Coinswap, or a more conservative release cycle, then Knots is for you. It's the power-user's node.
+          </div>
+        </div>
+
+        <div class="qa text-2xl">
+          <div class="q py-4 font-bold">
+            Is Bitcoin Knots a "hard fork" or an "altcoin"?
+          </div>
+          <div class="a py-4 text-xl">
+            Absolutely not. Bitcoin Knots is a software fork, not a consensus fork. It follows all the same rules as Bitcoin Core. You will be running a fully validating Bitcoin node on the exact same Bitcoin network. The differences lie in added features, policy patches, and release timing.
+          </div>
+
+        </div>
+        <div class="qa text-2xl">
+          <div class="q py-4 font-bold">
+            Is it safe to run Bitcoin Knots on the main network with real bitcoin?
+          </div>
+          <div class="a py-4 text-xl">
+            Yes. Bitcoin Knots is built for production use on the main Bitcoin network. It is a stable, fully-validating node. As with any Bitcoin software, you should always verify the digital signatures of the download to ensure you have the authentic version.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Section -->
     <!-- Mail -->
     <section
       id="Mail"
@@ -388,7 +455,7 @@
       <div class="">
         <h2 class="max-w-4xl font-bold text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
           Join the
-          <span class="text-vanil dark:text-brand">
+          <span class="block text-vanil dark:text-brand">
             Inner Circle
           </span>
         </h2>
