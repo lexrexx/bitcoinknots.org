@@ -8,10 +8,10 @@ export default {
     colors: {
       white: '#FFFFFF', // pure-white
       black: '#000000', // pure-black
-      brand: '#FF5C29', // tiger-flame (killer-orange)
+      brand: '#FF5E2C', // tiger-flame (killer-orange)
       vanil: '#FFE5C4', // papaya-whip (off-white)
       onyx:  '#140F11', // onyx (off-black)
-      // https://coolors.co/ff5c29-140f11-000000-ffe5c4-ffffff
+      // https://coolors.co/ff5e2c-140f11-000000-ffe5c4-ffffff
       // Before
       // brand: '#FC6435', // tiger-flame (killer-orange) *
       // vanil: '#FFEFD5', // papaya-whip (off-white) *
