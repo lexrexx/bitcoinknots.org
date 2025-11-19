@@ -41,12 +41,21 @@
           </span>
         </h1>
 
-        <h2 class="col-span-12 flex justify-between items-end w-full mt-24 mb-4 text-4xl uppercase tracking-wider">
+        <h2 class="col-span-12 flex justify-between items-start w-full mt-24 mb-4 text-5xl uppercase tracking-wider">
           <span class="">Take Control</span>
-          <!-- <span class="dark:text-brand">---</span> -->
-          <span class="text-vanil dark:text-brand">---></span>
+          <span class="text-onyx dark:text-brand">---></span>
           <span class="">Own Your Node</span>
-          <NuxtLink to="#Download" class="">
+        </h2>
+
+        <!-- <h2 class="col-span-12 text-right mt-28 mb-4 text-5xl uppercase tracking-wider">
+          Take Control --- Own Your Node
+        </h2> -->
+
+        <div class="col-span-12 text-right mt-8 w-full">
+          <NuxtLink
+            to="#Download"
+            class=""
+          >
             <button
               type="button"
               class="
@@ -75,13 +84,6 @@
               Get Bitcoin Knots
             </button>
           </NuxtLink>
-        </h2>
-
-        <!-- <h2 class="col-span-12 text-right mt-28 mb-4 text-5xl uppercase tracking-wider">
-          Take Control --- Own Your Node
-        </h2> -->
-
-        <div class="col-span-12 text-right mt-8 w-full">
           <!-- <NuxtLink to="#Features">
             <button
               type="button"
@@ -92,7 +94,7 @@
           </NuxtLink> -->
 
           <!-- <span class="text-4xl uppercase tracking-wider">---</span> -->
-          
+
           <!-- <NuxtLink to="#Download" class="">
             <button
               type="button"
@@ -109,27 +111,34 @@
     <!-- Features -->
     <section
       id="Features"
-      class="mx-4 mb-24 pt-32"
+      class="mx-4 grid grid-cols-12 pt-32"
     >
-      <!-- <section class="bg-brand/100 mt-28 py-24 rounded-2xl"> -->
+      <h2 class="col-span-9 font-bold col-start-1 text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
+        Built for
+        <span class="text-vanil dark:text-brand">
+          Sovereignty
+        </span>
+      </h2>
 
-      <div class="--ms-16 text-left">
-        <h2 class="max-w-4xl font-bold text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
-          Built for
-          <span class="text-vanil dark:text-brand">
-            Sovereignty
-          </span>
-        </h2>
+      <p class="col-span-12 col-start-1 mt-32 mb-12 text-4xl leading-normal">
+        <span class="font-bold">Bitcoin <span class="text-vanil dark:text-brand">Knots ---></span></span> is a full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
+      </p>
 
-        <p class="mt-32 mb-12 max-w-5xl text-3xl leading-normal">
-          <span class="font-bold">Bitcoin Knots</span> is a full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
-        </p>
-        <p class="mt-12 mb-32 font-bold text-vanil text-3xl leading-normal">
-          Join the experts and take your node to the next level.
-        </p>
+      <!-- <h2 class="col-span-12 flex justify-between items-start w-full my-24 text-5xl uppercase tracking-wider">
+        <span class="">Be a Sovereign</span>
+        <span class="text-onyx dark:text-brand rotate-180"><--- </span>
+        <span class="">Node Operator</span>
+      </h2> -->
 
-        <!-- Content -->
-        <div class="gap-8 grid grid-cols-2 pt-12">
+      <!-- <p class="col-span-12 text-3xl uppercase tracking-wider my-12">Be a Sovereign --- Node Operator</p> -->
+
+      <!-- <p class="col-span-12 col-start-1 mt-12 mb-32 font-bold text-onyx text-4xl leading-tight">
+          Join the experts and take your node to the next level:
+        </p> -->
+
+      <!-- Content -->
+      <div class="col-span-12 my-24">
+        <div class="gap-8 grid grid-cols-2">
           <div>
             <div class="bg-onyx dark:bg-vanil p-8 rounded-2xl text-vanil dark:text-onyx">
               <span class="block text-brand text-2xl">/ A</span>
@@ -231,8 +240,10 @@
           </span>
         </h2>
 
-        <h2 class="mt-24 text-3xl uppercase tracking-wider">
-          ---> Choose Your Flavor
+        <h2 class="col-span-12 flex justify-between items-start w-full mt-20 mb-4 text-4xl uppercase tracking-wider">
+          <span class="">Choose Your</span>
+          <span class="text-onyx dark:text-brand">---></span>
+          <span class="">Operating System</span>
         </h2>
 
         <!-- Pre -->
@@ -240,15 +251,18 @@
           <NuxtLink
             to="#"
             class="font-bold text-onyx dark:text-vanil text-lg"
-          >Release Notes</NuxtLink>
+          >
+            Release Notes
+            <!-- <span class="inline-block -rotate-45 relative -top-1.5 -left-1.5 text-sm">➔</span> -->
+          </NuxtLink>
           <NuxtLink
             to="#"
-            class="text-vanil dark:text-brand text-lg"
+            class="text-onyx dark:text-brand text-lg"
           >+ Fingerprint</NuxtLink>
           <div class="flex place-content-between w-full">
             <NuxtLink
               to="#"
-              class="text-vanil dark:text-brand text-lg"
+              class="text-onyx dark:text-brand text-lg"
             >+ Signature</NuxtLink>
             <NuxtLink
               to="#"

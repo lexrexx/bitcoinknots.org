@@ -15,7 +15,7 @@ const props = defineProps({
   },
   collapsed: {
     type: Boolean,
-    default: false,
+    default: true,
   },
 })
 const emit = defineEmits(['toggle'])

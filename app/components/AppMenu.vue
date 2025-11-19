@@ -57,11 +57,11 @@
           >
             <NuxtLink
               :to="menuItem.url"
-              class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
+              class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
-              <span class="flex-1">{{ menuItem.title }}</span>
-              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
+              <span class="">{{ menuItem.title }}</span>
+              <span class="w-28 opacity-0 group-hover:opacity-100 px-2 arrow">---></span>
             </NuxtLink>
           </li>
         </ul>
@@ -76,11 +76,11 @@
           >
             <NuxtLink
               :to="menuItem.url"
-              class="group flex justify-between items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
+              class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
               <span class="">{{ menuItem.title }}</span>
-              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
+              <span class="w-28 opacity-0 group-hover:opacity-100 px-2 arrow">---></span>
             </NuxtLink>
           </li>
         </ul>
@@ -95,11 +95,11 @@
           >
             <NuxtLink
               :to="menuItem.url"
-              class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
+              class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
-              <span class="flex-1">{{ menuItem.title }}</span>
-              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
+              <span class="">{{ menuItem.title }}</span>
+              <span class="w-28 opacity-0 group-hover:opacity-100 px-2 arrow">---></span>
             </NuxtLink>
           </li>
         </ul>
@@ -114,11 +114,11 @@
           >
             <NuxtLink
               :to="menuItem.url"
-              class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
+              class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
               @click="menu = false"
             >
-              <span class="flex-1">{{ menuItem.title }}</span>
-              <span class="opacity-0 group-hover:opacity-100 mx-2 rotate-180 arrow"> <--- </span>
+              <span class="">{{ menuItem.title }}</span>
+              <span class="w-28 opacity-0 group-hover:opacity-100 px-2 arrow">---></span>
             </NuxtLink>
           </li>
         </ul>
@@ -222,11 +222,12 @@ onMounted(() => {
     font-bold
     text-vanil
     dark:text-brand
+    pe-4
 }
 
 .router-link-exact-active .arrow {
   @apply
     opacity-100
-    rotate-0
+    rotate-180
 }
 </style>
