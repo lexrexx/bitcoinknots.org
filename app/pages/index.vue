@@ -337,12 +337,30 @@
         >
           <template #collapseContent>
             <ul class="mt-4 mb-6 text-2xl text-left collapsed">
-              <AppCollapsedItem :to="appConfig.files.x86" title="x86-64" />
-              <AppCollapsedItem :to="appConfig.files.aarch64" title="aarch64" />
-              <AppCollapsedItem :to="appConfig.files.ppc64_be" title="ppc64 BE" />
-              <AppCollapsedItem :to="appConfig.files.ppc64_le" title="ppc64 LE" />
-              <AppCollapsedItem :to="appConfig.files.riscv64" title="riscv64" />
-              <AppCollapsedItem :to="appConfig.files.arm" title="arm" />
+              <AppCollapsedItem
+                :to="appConfig.files.x86"
+                title="x86-64"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.aarch64"
+                title="aarch64"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.ppc64_be"
+                title="ppc64 BE"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.ppc64_le"
+                title="ppc64 LE"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.riscv64"
+                title="riscv64"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.arm"
+                title="arm"
+              />
               <AppCollapsedItem
                 :to="appConfig.url.ubuntu"
                 title="Ubuntu PPA"

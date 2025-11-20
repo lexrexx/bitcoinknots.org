@@ -30,12 +30,12 @@ export default defineAppConfig({
     riscv64: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-riscv64-linux-gnu.tar.gz ',
     arm: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-arm-linux-gnueabihf.tar.gz',
     ubuntu: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110.tar.gz',
-    intel_app: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin.zip',              // Intel Mac App
-    intel: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin.tar.gz',               // Intel Mac Terminal
-    apple_app: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin-unsigned.zip',     // Apple Silicon App
-    apple: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin-unsigned.tar.gz',      // Apple Silicon Terminal
-    windows_exe: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-win64-setup-pgpverifiable.exe',      // Windows Install (exe)
-    windows: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-win64-debug.zip',                        // Windows Portable (zip)
-    source: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110.tar.gz '
-  }
+    intel_app: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin.zip', // Intel Mac App
+    intel: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin.tar.gz', // Intel Mac Terminal
+    apple_app: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin-unsigned.zip', // Apple Silicon App
+    apple: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-apple-darwin-unsigned.tar.gz', // Apple Silicon Terminal
+    windows_exe: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-win64-setup-pgpverifiable.exe', // Windows Install (exe)
+    windows: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-win64-debug.zip', // Windows Portable (zip)
+    source: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110.tar.gz ',
+  },
 })

@@ -44,7 +44,6 @@ useHead({
     { rel: 'manifest', href: '/site.webmanifest' },
   ],
 })
-
 </script>
 
 <style lang="postcss">
