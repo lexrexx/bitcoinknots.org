@@ -18,8 +18,9 @@
       <span class="title">
         {{ props.title }}
       </span>
-      
-      <span class="
+
+      <span
+        class="
         btn
         p-1
         rounded
@@ -30,7 +31,7 @@
         dark:bg-vanil/10
         "
       >
-      {{ props.type }}
+        {{ props.type }}
       </span>
     </NuxtLink>
   </li>

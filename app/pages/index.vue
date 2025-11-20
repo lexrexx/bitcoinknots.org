@@ -34,23 +34,19 @@
     <!-- Hero -->
     <section class="my-28 py-8">
       <div class="ms-4 text-left grid grid-cols-12">
-        <h1 class="col-span-9 col-start-1 font-bold lg:text-[12rem] xl:text[13rem] text-8xl md:text-9xl leading-[1] tracking-tighter">
+        <h1 class="col-span-9 col-start-1 font-bold lg:text-[16rem] xl:text[13rem] text-8xl md:text-9xl leading-[1] tracking-tighter">
           Bitcoin Is
           <span class="block text-vanil dark:text-brand">
             Money
           </span>
         </h1>
-
+        
         <h2 class="col-span-12 flex justify-between items-start w-full mt-24 mb-4 text-5xl uppercase tracking-wider">
           <span class="">Take Control</span>
           <span class="text-onyx dark:text-brand">---></span>
           <span class="">Own Your Node</span>
         </h2>
-
-        <!-- <h2 class="col-span-12 text-right mt-28 mb-4 text-5xl uppercase tracking-wider">
-          Take Control --- Own Your Node
-        </h2> -->
-
+        
         <div class="col-span-12 text-right mt-8 w-full">
           <NuxtLink
             to="#Download"
@@ -62,19 +58,19 @@
                 px-10
                 py-10
                 rounded-xl
-                border-4
+                --border-4
                 focus:outline-none
                 focus:ring-4
-                border-onyx
-                hover:border-vanil
-                dark:border-brand
-                dark:hover:border-vanil
+                bg-onyx
+                dark:bg-brand
+                hover:bg-vanil
+                dark:hover:bg-vanil
                 focus:ring-onyx
                 dark:focus:ring-vanil
-                text-onyx
-                hover:text-vanil
-                dark:text-brand
-                dark:hover:text-vanil
+                text-vanil
+                dark:text-onyx
+                hover:text-onyx
+                dark:hover:text-onyx
                 font-bold
                 text-2xl
                 uppercase
@@ -108,9 +104,9 @@
     </section>
 
     <!-- Next Section -->
-    <!-- Features -->
+    <!-- About -->
     <section
-      id="Features"
+      id="About"
       class="mx-4 grid grid-cols-12 pt-32"
     >
       <h2 class="col-span-9 font-bold col-start-1 text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
@@ -123,90 +119,125 @@
       <p class="col-span-12 col-start-1 mt-32 mb-12 text-4xl leading-normal">
         <span class="font-bold">Bitcoin <--> Knots </span>is a free and open-source full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
       </p>
+    </section>
+
+    <!-- Next Section -->
+    <!-- Features -->
+    <section
+      id="Features"
+      class="mx-4 grid grid-cols-12 pt-32"
+    >
+
+      <h2 class="col-span-12 font-bold col-start-1 text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
+        Power  
+        <span class="block text-vanil dark:text-brand">
+          Features
+        </span>
+      </h2>
+
+        <h3 class="mt-24 col-span-9 text-4xl leading-normal tracking-snug">
+          Maintains full Bitcoin compatibility, while offering enhanced tools for node sovereignty and chain cleanliness.
+        </h3>
+
 
       <!-- Content -->
       <div class="col-span-12 my-24">
-        <div class="gap-8 grid grid-cols-2">
+        <div class="gap-24 grid grid-cols-2">
           <div>
-            <div class="bg-onyx dark:bg-vanil p-8 rounded-2xl text-vanil dark:text-onyx">
-              <span class="block text-brand text-2xl">/ A</span>
-              <h5 class="inline-block mt-12 pb-2 font-bold text-4xl">
+            <div class=" text-onyx dark:text-vanil">
+              <span class="block text-vanil dark:text-brand text-2xl">/ A</span>
+              <h5 class="mb-16 mt-8 font-bold text-4xl tracking-tight">
                 Advanced Features
+                <span class="block mt-12 font-normal text-vanil dark:text-brand">---></span>
               </h5>
             </div>
-            <ul class="text-xl">
-              <li class="mt-4 p-8 rounded-2xl w-full">
+            <ul class="text-xl mx-8">
+
+
+              <li class="grid grid-cols-[1fr, auto]">
                 <!-- <span class="inline-block bg-onyx rounded-2xl"> -->
                 <AppIcon
                   name="Network"
-                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
+                  class="-ms-6 w-24 h-24 text-vanil dark:text-brand"
                 />
                 <!-- </span> -->
-                <h6 class="my-4 font-bold text-2xl">
+                
+                <h6 class="ms-8 font-bold text-2xl">
                   Pay-to-Endpoint
                 </h6>
-                <p>Go beyond basic payments. This feature helps protect against network-level censorship by allowing payments to be sent directly to a node's IP address, strengthening Bitcoin's peer-to-peer ethos.</p>
+                <p class="col-start-2 ms-8 -mt-8 pb-24">
+                  Go beyond basic payments. This feature helps protect against network-level censorship by allowing payments to be sent directly to a node's IP address, strengthening Bitcoin's peer-to-peer ethos.
+                </p>
               </li>
-              <li class="mt-4 p-8 rounded-2xl w-full">
+
+
+
+              <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
                   name="Incognito"
-                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
+                  class="-ms-6 w-24 h-24 text-vanil dark:text-brand"
                 />
-                <h6 class="my-4 font-bold text-2xl">
+                <h6 class="ms-8 font-bold text-2xl">
                   Coinswap Implementation
                 </h6>
-                <p>Enhance your privacy on-chain. Coinswap is a trustless protocol for obfuscating the trail of your coins, making chain analysis more difficult. Knots brings this powerful feature directly to your node.</p>
+                <p class="col-start-2 ms-8 -mt-8 pb-24">
+                  Enhance your privacy on-chain. Coinswap is a trustless protocol for obfuscating the trail of your coins, making chain analysis more difficult. Knots brings this powerful feature directly to your node.</p>
               </li>
-              <li class="mt-4 p-8 rounded-2xl w-full">
+              <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
                   name="Sliders"
-                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
+                  class="-ms-6 w-24 h-24 text-vanil dark:text-brand"
                 />
-                <h6 class="my-4 font-bold text-2xl">
+                <h6 class="ms-8 font-bold text-2xl">
                   RPC & Config Enhancements
                 </h6>
-                <p>Unlock greater control for advanced users and developers. Knots includes additional Remote Procedure Call (RPC) commands and configuration options, giving you finer-grained control over your node's behavior.</p>
+                <p class="col-start-2 ms-8 -mt-8 pb-24">
+                  Unlock greater control for advanced users and developers. Knots includes additional Remote Procedure Call (RPC) commands and configuration options, giving you finer-grained control over your node's behavior.</p>
               </li>
             </ul>
           </div>
 
           <div>
-            <div class="bg-vanil dark:bg-brand p-8 rounded-2xl text-onyx">
-              <span class="block text-brand dark:text-vanil text-2xl">/ B</span>
-              <h5 class="inline-block mt-12 pb-2 font-bold text-4xl">
+            <div class=" text-onyx dark:text-vanil">
+              <span class="block text-vanil dark:text-brand text-2xl">/ B</span>
+              <h5 class="mb-16 mt-8 font-bold text-4xl tracking-tight">
                 Core Experience
+                <span class="block mt-12 font-normal text-vanil dark:text-brand">---></span>
               </h5>
             </div>
             <ul class="text-xl">
-              <li class="mt-4 p-8 rounded-2xl w-full">
+              <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
                   name="Checkmark"
-                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
+                  class="-ms-6 w-24 h-24 text-vanil dark:text-brand"
                 />
-                <h6 class="my-4 font-bold text-2xl">
+                <h6 class="ms-8 font-bold text-2xl">
                   Bitcoin Core Compatibility
                 </h6>
-                <p>The solid foundation you trust. Bitcoin Knots is a full-node implementation that validates all consensus rules, ensuring complete compatibility and security of the Bitcoin network.</p>
+                <p class="col-start-2 ms-8 -mt-8 pb-24">
+                  The solid foundation you trust. Bitcoin Knots is a full-node implementation that validates all consensus rules, ensuring complete compatibility and security of the Bitcoin network.</p>
               </li>
-              <li class="mt-4 p-8 rounded-2xl w-full">
+              <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
                   name="GUI"
-                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
+                  class="-ms-6 w-24 h-24 text-vanil dark:text-brand"
                 />
-                <h6 class="my-4 font-bold text-2xl">
+                <h6 class="ms-8 font-bold text-2xl">
                   Graphical User Interface (GUI) Patches
                 </h6>
-                <p>A more informative and usable node experience. The Knots GUI includes various community-developed patches that add helpful information and tools not found in the standard interface.</p>
+                <p class="col-start-2 ms-8 -mt-8 pb-24">
+                  A more informative and usable node experience. The Knots GUI includes various community-developed patches that add helpful information and tools not found in the standard interface.</p>
               </li>
-              <li class="mt-4 p-8 rounded-2xl w-full">
+              <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
                   name="Clock"
-                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
+                  class="-ms-6 w-24 h-24 text-vanil dark:text-brand"
                 />
-                <h6 class="my-4 font-bold text-2xl">
+                <h6 class="ms-8 font-bold text-2xl">
                   Conservative Release Cycle
                 </h6>
-                <p>Stability for the long haul. Knots often incorporates features from Bitcoin Core after they have undergone extensive testing, offering a robust and reliable node option for production environments.</p>
+                <p class="col-start-2 ms-8 -mt-8 pb-24">
+                  Stability for the long haul. Knots often incorporates features from Bitcoin Core after they have undergone extensive testing, offering a robust and reliable node option for production environments.</p>
               </li>
             </ul>
           </div>
@@ -272,7 +303,7 @@
 
         <!-- Step 3 -->
         <div class="col-start-3">
-          <p class="text-2xl font-bold tracking-tight py-4">
+          <p class="text-2xl font-bold tracking-tight py-4 text-vanil dark:text-brand">
             Verify Your Download
           </p>
           <p class="text-xl py-4">
@@ -480,8 +511,8 @@
       <!-- QA -->
       <div class="grid grid-cols-4 gap-0 mt-24">
         <!-- QA #1 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             I already run Bitcoin Core. Why should I consider Bitcoin Knots?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -490,8 +521,8 @@
         </div>
 
         <!-- QA #2 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             Is Bitcoin Knots a "hard fork" or an "altcoin"?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -500,8 +531,8 @@
         </div>
 
         <!-- QA #3 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             Is it safe to run Bitcoin Knots on the main network with real bitcoin?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -510,8 +541,8 @@
         </div>
 
         <!-- QA #4 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             What is the main philosophical difference between Knots and Core?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -520,8 +551,8 @@
         </div>
 
         <!-- QA #5 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             I've heard about a debate regarding OP_RETURN and data. What is Bitcoin Knots' stance?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -530,8 +561,8 @@
         </div>
 
         <!-- QA #6 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             So, does the OP_RETURN policy mean Knots is incompatible with the network?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -540,8 +571,8 @@
         </div>
 
         <!-- QA #7 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             Can I run both Bitcoin Core and Bitcoin Knots on the same machine?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -550,8 +581,8 @@
         </div>
 
         <!-- QA #8 -->
-        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
-          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
+        <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil dark:hover:text-onyx hover:bg-onyx dark:hover:bg-vanil cursor-pointer">
+          <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-onyx">
             Where can I get help if I have a problem?
           </div>
           <div class="a text-base invisible group-hover:visible">
@@ -597,7 +628,7 @@
           </h4>
           <p class="">
             This is the simplest method and doesn't require a Google account. Just send a blank email to <NuxtLink
-              :to="appConfig.group_mailto"
+              :to="appConfig.url.group_mailto"
               class="font-bold"
             >bitcoin-knots-announce+subscribe@googlegroups.com</NuxtLink>. You will receive a confirmation email. Simply reply to it to complete your subscription.
           </p>
