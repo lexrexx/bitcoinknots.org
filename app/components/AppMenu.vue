@@ -141,6 +141,11 @@ const menuItems1 = ref([
     url: '/',
   },
   {
+    title: 'About',
+    url: '#About',
+    // slug: '',
+  },
+  {
     title: 'Features',
     url: '#Features',
     // slug: '',
@@ -155,22 +160,22 @@ const menuItems2 = ref([
   },
   {
     title: 'Verify',
-    url: '#Verify',
+    url: '#Download',
     // slug: '',
   },
 ])
 
 const menuItems3 = ref([
-  {
-    title: 'Documentation',
-    url: '#Documentation',
-    // slug: 'documentation',
-  },
-  {
-    title: 'Blog',
-    url: '#Blog',
-    // slug: '',
-  },
+  // {
+  //   title: 'Documentation',
+  //   url: '#Documentation',
+  //   // slug: 'documentation',
+  // },
+  // {
+  //   title: 'Blog',
+  //   url: '#Blog',
+  //   // slug: '',
+  // },
   // {
   //   title: 'News',
   //   url: '/'
@@ -181,24 +186,24 @@ const menuItems3 = ref([
   //   url: '/'
   //   // slug: 'about',
   // }
-])
-
-const menuItems4 = ref([
-  {
-    title: 'Contribute',
-    url: '#Contribute',
-    // slug: '',
-  },
   {
     title: 'FAQ',
     url: '#Faq',
     // slug: 'faq',
   },
+])
+
+const menuItems4 = ref([
   // {
-  //   title: 'News',
-  //   url: '/'
-  //   // slug: 'news',
+  //   title: 'Contribute',
+  //   url: '#Contribute',
+  //   // slug: '',
   // },
+  {
+    title: 'News',
+    url: '#News'
+    // slug: 'news',
+  },
   // {
   //   title: 'About',
   //   url: '/'

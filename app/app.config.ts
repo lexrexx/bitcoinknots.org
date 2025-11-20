@@ -5,7 +5,7 @@
 export default defineAppConfig({
   title: 'Bitcoin Knots',
   vweb: '0.1.1',
-  vapp: '30',
+  vapp: '29.2',
   url: {
     // internal
     contrast: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110.desc.html',

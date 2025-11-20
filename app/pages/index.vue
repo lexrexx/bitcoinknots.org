@@ -40,13 +40,13 @@
             Money
           </span>
         </h1>
-        
+
         <h2 class="col-span-12 flex justify-between items-start w-full mt-24 mb-4 text-5xl uppercase tracking-wider">
           <span class="">Take Control</span>
           <span class="text-onyx dark:text-brand">---></span>
           <span class="">Own Your Node</span>
         </h2>
-        
+
         <div class="col-span-12 text-right mt-8 w-full">
           <NuxtLink
             to="#Download"
@@ -116,9 +116,27 @@
         </span>
       </h2>
 
-      <p class="col-span-12 col-start-1 mt-32 mb-12 text-4xl leading-normal">
+      <p class="col-span-9 col-start-1 mt-32 mb-12 text-4xl leading-normal">
         <span class="font-bold">Bitcoin <--> Knots </span>is a free and open-source full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
       </p>
+
+      <div class="col-span-6 mt-12 me-12">
+        <h3 class="text-2xl font-bold py-4 text-vanil dark:text-brand">
+          A Node for the Original Vision
+        </h3>
+        <p class="py-4 text-lg leading-relaxed">
+          In a climate of increasing block space debate and protocol changes that risk altering Bitcoin's core value proposition, running a node is more critical than ever. Bitcoin Knots is built for those who believe in a conservative approach to consensus and a clear separation between monetary layer and application layer. It implements default policies that prioritize financial transactions, helping to safeguard the chain from bloat and ensure it remains accessible for its primary purpose: peer-to-peer electronic cash.
+        </p>
+      </div>
+
+      <div class="col-span-6 mt-12 me-12">
+        <h3 class="text-2xl font-bold py-4 text-vanil dark:text-brand">
+          Your Voice in the Consensus
+        </h3>
+        <p class="py-4 text-lg leading-relaxed">
+          While other clients may follow a path of increasing permissiveness, Knots provides a technical implementation for a different viewpoint. By choosing Knots, you are not just running a node, you are casting a vote for a specific vision of Bitcoin's future. You are taking a stand for a scalable, efficient, and sovereign monetary network, directly enforcing your preferred rules on the network you help secure.
+        </p>
+      </div>
     </section>
 
     <!-- Next Section -->
@@ -127,18 +145,16 @@
       id="Features"
       class="mx-4 grid grid-cols-12 pt-32"
     >
-
       <h2 class="col-span-12 font-bold col-start-1 text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
-        Power  
+        Power
         <span class="block text-vanil dark:text-brand">
           Features
         </span>
       </h2>
 
-        <h3 class="mt-24 col-span-9 text-4xl leading-normal tracking-snug">
-          Maintains full Bitcoin compatibility, while offering enhanced tools for node sovereignty and chain cleanliness.
-        </h3>
-
+      <h3 class="mt-24 col-span-9 text-4xl leading-normal tracking-snug">
+        Maintains full Bitcoin compatibility, while offering enhanced tools for node sovereignty and chain cleanliness.
+      </h3>
 
       <!-- Content -->
       <div class="col-span-12 my-24">
@@ -146,14 +162,11 @@
           <div>
             <div class=" text-onyx dark:text-vanil">
               <span class="block text-vanil dark:text-brand text-2xl">/ A</span>
-              <h5 class="mb-16 mt-8 font-bold text-4xl tracking-tight">
+              <h5 class="mb-32 mt-8 font-bold text-5xl tracking-tight">
                 Advanced Features
-                <span class="block mt-12 font-normal text-vanil dark:text-brand">---></span>
               </h5>
             </div>
             <ul class="text-xl mx-8">
-
-
               <li class="grid grid-cols-[1fr, auto]">
                 <!-- <span class="inline-block bg-onyx rounded-2xl"> -->
                 <AppIcon
@@ -161,7 +174,7 @@
                   class="-ms-6 w-24 h-24 text-vanil dark:text-brand"
                 />
                 <!-- </span> -->
-                
+
                 <h6 class="ms-8 font-bold text-2xl">
                   Pay-to-Endpoint
                 </h6>
@@ -169,8 +182,6 @@
                   Go beyond basic payments. This feature helps protect against network-level censorship by allowing payments to be sent directly to a node's IP address, strengthening Bitcoin's peer-to-peer ethos.
                 </p>
               </li>
-
-
 
               <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
@@ -181,7 +192,8 @@
                   Coinswap Implementation
                 </h6>
                 <p class="col-start-2 ms-8 -mt-8 pb-24">
-                  Enhance your privacy on-chain. Coinswap is a trustless protocol for obfuscating the trail of your coins, making chain analysis more difficult. Knots brings this powerful feature directly to your node.</p>
+                  Enhance your privacy on-chain. Coinswap is a trustless protocol for obfuscating the trail of your coins, making chain analysis more difficult. Knots brings this powerful feature directly to your node.
+                </p>
               </li>
               <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
@@ -192,7 +204,8 @@
                   RPC & Config Enhancements
                 </h6>
                 <p class="col-start-2 ms-8 -mt-8 pb-24">
-                  Unlock greater control for advanced users and developers. Knots includes additional Remote Procedure Call (RPC) commands and configuration options, giving you finer-grained control over your node's behavior.</p>
+                  Unlock greater control for advanced users and developers. Knots includes additional Remote Procedure Call (RPC) commands and configuration options, giving you finer-grained control over your node's behavior.
+                </p>
               </li>
             </ul>
           </div>
@@ -200,10 +213,9 @@
           <div>
             <div class=" text-onyx dark:text-vanil">
               <span class="block text-vanil dark:text-brand text-2xl">/ B</span>
-              <h5 class="mb-16 mt-8 font-bold text-4xl tracking-tight">
+              <h5 class="mb-32 mt-8 font-bold text-5xl tracking-tight">
                 Core Experience
-                <span class="block mt-12 font-normal text-vanil dark:text-brand">---></span>
-              </h5>
+                </h5>
             </div>
             <ul class="text-xl">
               <li class="grid grid-cols-[1fr, auto]">
@@ -215,7 +227,8 @@
                   Bitcoin Core Compatibility
                 </h6>
                 <p class="col-start-2 ms-8 -mt-8 pb-24">
-                  The solid foundation you trust. Bitcoin Knots is a full-node implementation that validates all consensus rules, ensuring complete compatibility and security of the Bitcoin network.</p>
+                  The solid foundation you trust. Bitcoin Knots is a full-node implementation that validates all consensus rules, ensuring complete compatibility and security of the Bitcoin network.
+                </p>
               </li>
               <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
@@ -226,7 +239,8 @@
                   Graphical User Interface (GUI) Patches
                 </h6>
                 <p class="col-start-2 ms-8 -mt-8 pb-24">
-                  A more informative and usable node experience. The Knots GUI includes various community-developed patches that add helpful information and tools not found in the standard interface.</p>
+                  A more informative and usable node experience. The Knots GUI includes various community-developed patches that add helpful information and tools not found in the standard interface.
+                </p>
               </li>
               <li class="grid grid-cols-[1fr, auto]">
                 <AppIcon
@@ -237,7 +251,8 @@
                   Conservative Release Cycle
                 </h6>
                 <p class="col-start-2 ms-8 -mt-8 pb-24">
-                  Stability for the long haul. Knots often incorporates features from Bitcoin Core after they have undergone extensive testing, offering a robust and reliable node option for production environments.</p>
+                  Stability for the long haul. Knots often incorporates features from Bitcoin Core after they have undergone extensive testing, offering a robust and reliable node option for production environments.
+                </p>
               </li>
             </ul>
           </div>
@@ -595,7 +610,7 @@
     <!-- Next Section -->
     <!-- Mail -->
     <section
-      id="Mail"
+      id="News"
       class="mx-4 mb-24 pt-32"
     >
       <div class="">
