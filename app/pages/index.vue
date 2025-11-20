@@ -228,12 +228,12 @@
       </h2>
 
       <!-- Steps -->
-      <div class="grid grid-cols-2 gap-12 justify-between items-start w-full mt-24">
+      <div class="grid grid-cols-3 gap-12 justify-between items-start w-full mt-24">
         <div class="">
-          <p class="text-3xl font-bold tracking-tight py-4">
+          <p class="text-2xl font-bold tracking-tight py-4">
             Step 1
           </p>
-          <p class="text-2xl py-4">
+          <p class="text-xl py-4">
             Download Bitcoin Knots for your operating system by selection an option below:
           </p>
           <p class="text-3xl text-onyx dark:text-brand py-4 --absolute inline-block">
@@ -243,30 +243,67 @@
         </div>
         <!-- <p class="text-3xl text-onyx dark:text-brand py-4 --absolute inline-block"> ---</p> -->
 
+        <!-- Step 2 -->
         <div class="col-start-2">
-          <p class="text-3xl font-bold tracking-tight py-4">
+          <p class="text-2xl font-bold tracking-tight py-4">
             Step 2
           </p>
-          <p class="text-2xl py-4">
-            Verify your download using the digital signature and fingerprint files provided here:
+          <p class="text-xl py-4">
+            Download the digital signature and fingerprint files provided here:
           </p>
 
           <!-- <span class="">Operating System</span> -->
           <div class="flex mt-4 mb-8">
             <NuxtLink
               to="#"
-              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-brand rounded-md font-bold text-lg text-onyx dark:text-brand tracking-tight"
+              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Fingerprint
             </NuxtLink>
             <NuxtLink
               to="#"
-              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-brand rounded-md font-bold text-lg text-onyx dark:text-brand tracking-tight"
+              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Signature
             </NuxtLink>
           </div>
-          <span class="text-3xl text-onyx dark:text-brand py-4"><--> </span>
+          <!-- <span class="text-3xl text-onyx dark:text-brand py-4"><--</span> -->
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-start-3">
+          <p class="text-2xl font-bold tracking-tight py-4">
+            Verify Your Download
+          </p>
+          <p class="text-xl py-4">
+            Follow our simple, OS-specific guides to ensure your copy of Bitcoin Knots is authentic and secure.
+          </p>
+
+          <!-- <span class="">Operating System</span> -->
+          <div class="flex mt-4 mb-8">
+            <NuxtLink
+              to="/pdf/verify/knots-linux.pdf"
+              target="blank"
+              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+            >
+              Linux
+            </NuxtLink>
+            <NuxtLink
+              to="/pdf/verify/knots-macos.pdf"
+              target="blank"
+              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+            >
+              MacOS
+            </NuxtLink>
+            <NuxtLink
+              to="/pdf/verify/knots-windows.pdf"
+              target="blank"
+              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+            >
+              Windows
+            </NuxtLink>
+          </div>
+          <!-- <span class="text-3xl text-onyx dark:text-brand py-4"><-- </span> -->
         </div>
       </div>
 
