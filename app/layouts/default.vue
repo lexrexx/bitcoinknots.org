@@ -7,6 +7,7 @@
 <style lang="postcss">
 body {
   @apply
+  antialiased
   text-onyx dark:text-vanil
   bg-brand dark:bg-onyx
   selection:text-vanil dark:selection:text-onyx
