@@ -11,7 +11,7 @@
         <!-- Social -->
         <div class="flex">
           <NuxtLink
-            :to="appConfig.xUrl"
+            :to="appConfig.url.x"
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
@@ -21,7 +21,7 @@
             />
           </NuxtLink>
           <NuxtLink
-            :to="appConfig.discordUrl"
+            :to="appConfig.url.discord"
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
@@ -31,7 +31,7 @@
             />
           </NuxtLink>
           <NuxtLink
-            :to="appConfig.telegramUrl"
+            :to="appConfig.url.telegram"
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
@@ -41,7 +41,7 @@
             />
           </NuxtLink>
           <NuxtLink
-            :to="appConfig.githubUrl"
+            :to="appConfig.url.github"
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >

@@ -139,7 +139,7 @@
                 <!-- <span class="inline-block bg-onyx rounded-2xl"> -->
                 <AppIcon
                   name="Network"
-                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
+                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
                 />
                 <!-- </span> -->
                 <h6 class="my-4 font-bold text-2xl">
@@ -150,7 +150,7 @@
               <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Incognito"
-                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
+                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
                 />
                 <h6 class="my-4 font-bold text-2xl">
                   Coinswap Implementation
@@ -160,7 +160,7 @@
               <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Sliders"
-                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
+                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
                 />
                 <h6 class="my-4 font-bold text-2xl">
                   RPC & Config Enhancements
@@ -181,7 +181,7 @@
               <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Checkmark"
-                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
+                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
                 />
                 <h6 class="my-4 font-bold text-2xl">
                   Bitcoin Core Compatibility
@@ -191,7 +191,7 @@
               <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="GUI"
-                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
+                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
                 />
                 <h6 class="my-4 font-bold text-2xl">
                   Graphical User Interface (GUI) Patches
@@ -201,7 +201,7 @@
               <li class="mt-4 p-8 rounded-2xl w-full">
                 <AppIcon
                   name="Clock"
-                  class="-ms-6 w-32 h-32 text-vanil dark:text-brand"
+                  class="-ms-6 w-28 h-28 text-vanil dark:text-brand"
                 />
                 <h6 class="my-4 font-bold text-2xl">
                   Conservative Release Cycle
@@ -255,13 +255,13 @@
           <!-- <span class="">Operating System</span> -->
           <div class="flex mt-4 mb-8">
             <NuxtLink
-              to="#"
+              :to="appConfig.url.fingerprint"
               class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Fingerprint
             </NuxtLink>
             <NuxtLink
-              to="#"
+              :to="appConfig.url.signature"
               class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Signature
@@ -311,15 +311,15 @@
       <div class="gap-4 grid grid-cols-3 mt-12 items-center">
         <NuxtLink
           target="blank"
-          to="https://github.com/bitcoinknots/bitcoin/releases"
+          :to="appConfig.url.gh_notes"
           class="font-bold text-onyx dark:text-vanil text-lg underline"
         >
           Release Notes
-          <!-- <span class="inline-block -rotate-45 relative -top-1.5 -left-1.5 text-sm">➔</span> -->
         </NuxtLink>
+
         <div class="flex justify-end items-center col-start-3">
           <AppVersion
-            to="#Download"
+            :to="appConfig.url.gh_repo"
             class="text-lg"
           />
         </div>
@@ -337,13 +337,14 @@
         >
           <template #collapseContent>
             <ul class="mt-4 mb-6 text-2xl text-left collapsed">
-              <AppCollapsedItem title="x86-64" />
-              <AppCollapsedItem title="aarch64" />
-              <AppCollapsedItem title="ppc64 BE" />
-              <AppCollapsedItem title="ppc64 LE" />
-              <AppCollapsedItem title="riscv64" />
-              <AppCollapsedItem title="arm" />
+              <AppCollapsedItem :to="appConfig.files.x86" title="x86-64" />
+              <AppCollapsedItem :to="appConfig.files.aarch64" title="aarch64" />
+              <AppCollapsedItem :to="appConfig.files.ppc64_be" title="ppc64 BE" />
+              <AppCollapsedItem :to="appConfig.files.ppc64_le" title="ppc64 LE" />
+              <AppCollapsedItem :to="appConfig.files.riscv64" title="riscv64" />
+              <AppCollapsedItem :to="appConfig.files.arm" title="arm" />
               <AppCollapsedItem
+                :to="appConfig.url.ubuntu"
                 title="Ubuntu PPA"
                 class="pb-4 border-none"
               />
@@ -362,18 +363,22 @@
           <template #collapseContent>
             <ul class="mt-4 mb-6 text-2xl text-left collapsed">
               <AppCollapsedItem
+                :to="appConfig.files.intel_app"
                 title="Intel Mac"
                 type="App"
               />
               <AppCollapsedItem
+                :to="appConfig.files.intel"
                 title="Intel Mac"
                 type="Terminal"
               />
               <AppCollapsedItem
+                :to="appConfig.files.apple_app"
                 title="Apple Silicon"
                 type="App"
               />
               <AppCollapsedItem
+                :to="appConfig.files.apple"
                 title="Apple Silicon"
                 type="Terminal"
                 class="pb-4 border-none"
@@ -394,10 +399,12 @@
             <template #collapseContent>
               <ul class="mt-4 mb-6 text-2xl text-left collapsed">
                 <AppCollapsedItem
+                  :to="appConfig.files.windows_exe"
                   title="Install"
                   type="EXE"
                 />
                 <AppCollapsedItem
+                  :to="appConfig.files.windows"
                   title="Portable"
                   type="ZIP"
                 />
@@ -417,10 +424,12 @@
             <template #collapseContent>
               <ul class="mt-4 mb-6 text-2xl text-left collapsed">
                 <AppCollapsedItem
+                  :to="appConfig.url.gh_repo"
                   title="Github"
                   type="REPO"
                 />
                 <AppCollapsedItem
+                  :to="appConfig.files.source"
                   title="Archive"
                   type="TAR"
                 />
@@ -570,7 +579,7 @@
           </h4>
           <p class="">
             This is the simplest method and doesn't require a Google account. Just send a blank email to <NuxtLink
-              to="mailto:bitcoin-knots-announce+subscribe@googlegroups.com"
+              :to="appConfig.group_mailto"
               class="font-bold"
             >bitcoin-knots-announce+subscribe@googlegroups.com</NuxtLink>. You will receive a confirmation email. Simply reply to it to complete your subscription.
           </p>
@@ -588,7 +597,7 @@
           </h4>
           <p>
             If you prefer to manage subscriptions through Google Groups. <NuxtLink
-              to="https://groups.google.com/g/bitcoin-knots-announce"
+              :to="appConfig.url.group"
               class="font-bold"
             >Click here to visit the Google Groups page</NuxtLink> and click the <span class="italic">"Join Group"</span> button.
           </p>
@@ -600,6 +609,8 @@
 </template>
 
 <script setup>
+const appConfig = useAppConfig()
+
 const collapsePanels = ref([
   { id: 0, isVisible: false },
   { id: 1, isVisible: false },
