@@ -1,5 +1,5 @@
 {
-  "name": "BitcoinKnots.org",
+  "name": "Bitcoin Knots",
   "short_name": "Knots",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#f9613e",
-  "background_color": "#f9613e",
+  "theme_color": "#FF5E2C",
+  "background_color": "#FF5E2C",
   "display": "standalone"
 }

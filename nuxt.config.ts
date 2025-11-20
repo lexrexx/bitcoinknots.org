@@ -9,8 +9,8 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   // ssr: false,
   app: {
-    // baseURL: '/',
-    baseURL: '/bitcoinknots.org/',
+    baseURL: '/',
+    // baseURL: '/bitcoinknots.org/',
   },
   compatibilityDate: '2025-07-15',
   nitro: {

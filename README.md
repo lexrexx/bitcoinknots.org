@@ -28,3 +28,18 @@ npm run preview
 ```
 
 [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) | [Deployment Docs](https://nuxt.com/docs/getting-started/deployment)
+
+### Deployment
+
+```bash
+## Generate
+# Generate Static site. Verify baseUrl is accurate before running... 
+npm run generate
+
+# Site was generated to .output/public
+# Preview this build using
+npx serve .output/public
+
+# You can now deploy .output/public to any static hosting!
+
+```
