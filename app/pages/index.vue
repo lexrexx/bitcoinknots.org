@@ -478,7 +478,7 @@
       </h3>
 
       <!-- QA -->
-      <div class="grid grid-cols-3 gap-0 mt-24">
+      <div class="grid grid-cols-4 gap-0 mt-24">
         <!-- QA #1 -->
         <div class="qa group text-xl p-8 rounded-3xl text-onyx dark:text-vanil hover:text-vanil hover:bg-onyx/100 hover:dark:bg-vanil/10 cursor-pointer">
           <div class="q mb-8 font-bold opacity-100 group-hover:opacity-100 group-hover:text-vanil dark:group-hover:text-brand">
