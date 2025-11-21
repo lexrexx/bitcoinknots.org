@@ -3,7 +3,7 @@ export default {
   content: [],
   theme: {
     fontFamily: {
-      sans: ['Inter', 'Helvetica', 'Ariel', 'sans-serif'],
+      sans: ['Inter', 'Helvetica', 'Ariel', 'sans-serif']
     },
     colors: {
       white: '#FFFFFF', // pure-white
@@ -12,7 +12,7 @@ export default {
       brand: '#FF5E2C', // tiger-flame (killer-orange)
       vanil: '#FFDFC4', // papaya-whip (off-white)
       // vanil: '#FFE5C4', // papaya-whip (off-white)
-      onyx: '#140F11', // onyx (off-black)
+      onyx: '#140F11' // onyx (off-black)
       // https://coolors.co/ff5e2c-140f11-000000-ffe5c4-ffffff
       // Before
       // brand: '#FF5E2C', // tiger-flame (killer-orange)
@@ -36,9 +36,9 @@ export default {
     extend: {
       padding: {
         '1/2': '50%',
-        'full': '100%',
-      },
-    },
+        full: '100%'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }

@@ -7,19 +7,11 @@
       class="flex justify-center items-center bg-vanil dark:bg-brand border-onyx/10 dark:border-vanil/10 border-r w-20 md:w-24 h-20 md:h-24"
       @click="menu = false"
     >
-      <AppLogomark
-        class="w-12 md:w-14 h-12 md:h-14 text-onyx"
-      />
+      <AppLogomark class="w-12 md:w-14 h-12 md:h-14 text-onyx" />
     </NuxtLink>
 
-    <NuxtLink
-      to="/"
-      class="p-0"
-      @click="menu = false"
-    >
-      <AppLogotype
-        class="ms-6 h-6 md:h-7"
-      />
+    <NuxtLink to="/" class="p-0" @click="menu = false">
+      <AppLogotype class="ms-6 h-6 md:h-7" />
     </NuxtLink>
 
     <div class="right-0 absolute flex flex-row items-center gap-1">

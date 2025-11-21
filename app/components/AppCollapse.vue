@@ -2,21 +2,21 @@
 const props = defineProps({
   id: {
     type: Number,
-    required: true,
+    required: true
   },
   title: {
     type: String,
-    required: true,
+    required: true
   },
   // (Icon) name
   icon: {
     type: String,
-    required: true,
+    required: true
   },
   collapsed: {
     type: Boolean,
-    default: true,
-  },
+    default: true
+  }
 })
 const emit = defineEmits(['toggle'])
 const toggleCollapse = () => {
@@ -35,7 +35,9 @@ const toggleCollapse = () => {
           :name="icon"
           class="w-24 h-24 text-onyx dark:group-hover:text-brand dark:text-vanil group-hover:text-vanil"
         />
-        <h3 class="ms-1 font-bold dark:group-hover:text-brand group-hover:text-vanil text-3xl tracking-tight">
+        <h3
+          class="ms-1 font-bold dark:group-hover:text-brand group-hover:text-vanil text-3xl tracking-tight"
+        >
           {{ title }}
         </h3>
       </div>

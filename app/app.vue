@@ -30,7 +30,7 @@ useSeoMeta({
   twitterDescription: '',
   twitterCard: 'summary_large_image',
   twitterSite: 'https://bitcoinknots.org',
-  twitterCreator: '@bitcoinknots',
+  twitterCreator: '@bitcoinknots'
 })
 
 useHead({
@@ -41,8 +41,8 @@ useHead({
     { rel: 'icon', type: 'image/svg+xml', href: './favicon.svg' },
     { rel: 'shortcut icon', href: './favicon.ico' },
     { name: 'apple-mobile-web-app-title', content: 'Bitcoin Knots' },
-    { rel: 'manifest', href: '/site.webmanifest' },
-  ],
+    { rel: 'manifest', href: '/site.webmanifest' }
+  ]
 })
 </script>
 

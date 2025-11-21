@@ -1,4 +1,5 @@
 ![Bitcoin Knots v30](/public/social/knots-gh-repo.png)
+
 # [Bitcoin Knots](https://lexrexx.github.io/bitcoinknots.org/)
 
 A fresh website design & development for - [bitcoinknots.org](https://bitcoinknots.org)
@@ -33,7 +34,7 @@ npm run preview
 
 ```bash
 ## Generate
-# Generate Static site. Verify baseUrl is accurate before running... 
+# Generate Static site. Verify baseUrl is accurate before running...
 npm run generate
 
 # Site was generated to .output/public
