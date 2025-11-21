@@ -5,32 +5,32 @@ export default defineNuxtConfig({
   // ssr: false,
   app: {
     // baseURL: '/',
-    baseURL: '/bitcoinknots.org/'
+    baseURL: '/bitcoinknots.org/',
   },
   compatibilityDate: '2025-07-15',
   nitro: {
     preset: 'static',
     serveStatic: true,
     prerender: {
-      crawlLinks: true
+      crawlLinks: true,
       // failOnError: false,
       // routes: [
       //   // '/sitemap.xml',
       //   ...routes
       // ]
-    }
+    },
   },
   eslint: {
     config: {
-      stylistic: true
-    }
+      stylistic: true,
+    },
   },
   fonts: {
     families: [
       {
         name: 'Inter',
-        provider: 'google'
-      }
+        provider: 'google',
+      },
     ],
     defaults: {
       weights: [400, 700],
@@ -41,12 +41,12 @@ export default defineNuxtConfig({
         // 'greek-ext',
         // 'greek',
         // 'vietnamese',
-        'latin-ext'
+        'latin-ext',
         // 'latin',
-      ]
-    }
+      ],
+    },
   },
   tailwindcss: {
     // Options
-  }
+  },
 })

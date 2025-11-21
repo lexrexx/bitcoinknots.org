@@ -2,7 +2,10 @@
   <li
     class="px-8 py-6 border-onyx/10 dark:border-vanil/10 border-b w-full dark:group-hover:text-brand group-hover:text-vanil"
   >
-    <NuxtLink :to="to" class="flex justify-between items-center">
+    <NuxtLink
+      :to="to"
+      class="flex justify-between items-center"
+    >
       <span class="title">
         {{ props.title }}
       </span>
@@ -18,18 +21,18 @@
 const props = defineProps({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   to: {
     type: String,
-    required: true
+    required: true,
   },
   // (Icon) name
   type: {
     type: String,
     required: false,
-    default: 'tar'
-  }
+    default: 'tar',
+  },
 })
 </script>
 

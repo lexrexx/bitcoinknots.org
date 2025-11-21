@@ -14,7 +14,11 @@
         <AppLogomark class="w-12 md:w-14 h-12 md:h-14 text-onyx" />
       </NuxtLink>
 
-      <NuxtLink to="/" class="p-0" @click="menu = false">
+      <NuxtLink
+        to="/"
+        class="p-0"
+        @click="menu = false"
+      >
         <AppLogotype class="ms-6 h-6 md:h-7" />
       </NuxtLink>
 
@@ -42,7 +46,11 @@
     <nav class="mx-4 md:mx-24 px-2 pt-32 overscroll-contain text-2xl md:text-3xl tracking-tight">
       <section class="flex justify-start items-start w-full h-full">
         <ul class="block w-full">
-          <li v-for="(menuItem, index) in menuItems1" :key="index" class="my-0 py-1 md:py-2">
+          <li
+            v-for="(menuItem, index) in menuItems1"
+            :key="index"
+            class="my-0 py-1 md:py-2"
+          >
             <NuxtLink
               :to="menuItem.url"
               class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -57,7 +65,11 @@
 
       <section class="flex justify-start items-start w-full h-full">
         <ul class="block w-full">
-          <li v-for="(menuItem, index) in menuItems2" :key="index" class="my-0 py-1 md:py-2">
+          <li
+            v-for="(menuItem, index) in menuItems2"
+            :key="index"
+            class="my-0 py-1 md:py-2"
+          >
             <NuxtLink
               :to="menuItem.url"
               class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -72,7 +84,11 @@
 
       <section class="flex justify-start items-start w-full h-full">
         <ul class="block w-full">
-          <li v-for="(menuItem, index) in menuItems3" :key="index" class="my-0 py-1 md:py-2">
+          <li
+            v-for="(menuItem, index) in menuItems3"
+            :key="index"
+            class="my-0 py-1 md:py-2"
+          >
             <NuxtLink
               :to="menuItem.url"
               class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -87,7 +103,11 @@
 
       <section class="flex justify-start items-start w-full h-full">
         <ul class="block w-full">
-          <li v-for="(menuItem, index) in menuItems4" :key="index" class="my-0 py-1 md:py-2">
+          <li
+            v-for="(menuItem, index) in menuItems4"
+            :key="index"
+            class="my-0 py-1 md:py-2"
+          >
             <NuxtLink
               :to="menuItem.url"
               class="group flex items-center justify-between w-12/12 hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -114,31 +134,31 @@ const menu = useState('menu', () => false)
 const menuItems1 = ref([
   {
     title: 'Home',
-    url: '/'
+    url: '/',
   },
   {
     title: 'About',
-    url: '#About'
+    url: '#About',
     // slug: '',
   },
   {
     title: 'Features',
-    url: '#Features'
+    url: '#Features',
     // slug: '',
-  }
+  },
 ])
 
 const menuItems2 = ref([
   {
     title: 'Download',
-    url: '#Download'
+    url: '#Download',
     // slug: '',
   },
   {
     title: 'Verify',
-    url: '#Download'
+    url: '#Download',
     // slug: '',
-  }
+  },
 ])
 
 const menuItems3 = ref([
@@ -164,9 +184,9 @@ const menuItems3 = ref([
   // }
   {
     title: 'FAQ',
-    url: '#Faq'
+    url: '#Faq',
     // slug: 'faq',
-  }
+  },
 ])
 
 const menuItems4 = ref([
@@ -177,9 +197,9 @@ const menuItems4 = ref([
   // },
   {
     title: 'News',
-    url: '#News'
+    url: '#News',
     // slug: 'news',
-  }
+  },
   // {
   //   title: 'About',
   //   url: '/'

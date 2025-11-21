@@ -21,7 +21,7 @@ export default defineAppConfig({
     discord: 'https://discord.gg/3Ccegp9YrU',
     github: 'https://github.com/bitcoinknots',
     telegram: 'https://t.me/Bitcoin_Knots',
-    x: 'https://x.com/BitcoinKnots'
+    x: 'https://x.com/BitcoinKnots',
   },
   files: {
     x86: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-linux-gnu.tar.gz',
@@ -49,6 +49,6 @@ export default defineAppConfig({
     windows:
       'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-win64-debug.zip', // Windows Portable (zip)
     source:
-      'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110.tar.gz '
-  }
+      'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110.tar.gz ',
+  },
 })

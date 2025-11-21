@@ -13,7 +13,7 @@ const appConfig = useAppConfig()
 const props = defineProps({
   to: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>

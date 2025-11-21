@@ -1,5 +1,8 @@
 <template>
-  <div v-show="menu" class="top-0 right-0 left-0 z-40 fixed mx-auto px-0 h-[100dvh] --container">
+  <div
+    v-show="menu"
+    class="top-0 right-0 left-0 z-40 fixed mx-auto px-0 h-[100dvh] --container"
+  >
     <nav
       class="bg-brand dark:bg-onyx [@supports(backdrop-filter:blur(0px))]:bg-brand/90 [@supports(backdrop-filter:blur(0px))]:dark:bg-onyx/90 backdrop-filter backdrop-blur-[10px] ---ms-[1px] ps-0 --pt-20 pb-2 h-full"
     >
@@ -10,7 +13,11 @@
       >
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li v-for="(menuItem, index) in menuItems1" :key="index" class="my-0 py-2">
+            <li
+              v-for="(menuItem, index) in menuItems1"
+              :key="index"
+              class="my-0 py-2"
+            >
               <NuxtLink
                 :to="menuItem.url"
                 class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -25,7 +32,11 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li v-for="(menuItem, index) in menuItems2" :key="index" class="my-0 py-2">
+            <li
+              v-for="(menuItem, index) in menuItems2"
+              :key="index"
+              class="my-0 py-2"
+            >
               <NuxtLink
                 :to="menuItem.url"
                 class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -40,7 +51,11 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li v-for="(menuItem, index) in menuItems3" :key="index" class="my-0 py-2">
+            <li
+              v-for="(menuItem, index) in menuItems3"
+              :key="index"
+              class="my-0 py-2"
+            >
               <NuxtLink
                 :to="menuItem.url"
                 class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -55,7 +70,11 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li v-for="(menuItem, index) in menuItems4" :key="index" class="my-0 py-2">
+            <li
+              v-for="(menuItem, index) in menuItems4"
+              :key="index"
+              class="my-0 py-2"
+            >
               <NuxtLink
                 :to="menuItem.url"
                 class="group flex items-center hover:bg-onyx/5 dark:hover:bg-vanil/5 mx-1 py-2 ps-2 rounded-md text-onyx dark:text-vanil"
@@ -85,39 +104,39 @@ const menu = useState('menu', () => false)
 const menuItems1 = ref([
   {
     title: 'Home',
-    url: '/'
+    url: '/',
   },
   {
     title: 'Features',
-    url: '#Features'
+    url: '#Features',
     // slug: '',
-  }
+  },
 ])
 
 const menuItems2 = ref([
   {
     title: 'Download',
-    url: '#Download'
+    url: '#Download',
     // slug: '',
   },
   {
     title: 'Verify',
-    url: '#Verify'
+    url: '#Verify',
     // slug: '',
-  }
+  },
 ])
 
 const menuItems3 = ref([
   {
     title: 'Documentation',
-    url: '#Documentation'
+    url: '#Documentation',
     // slug: 'documentation',
   },
   {
     title: 'Blog',
-    url: '#Blog'
+    url: '#Blog',
     // slug: '',
-  }
+  },
   // {
   //   title: 'News',
   //   url: '/'
@@ -133,14 +152,14 @@ const menuItems3 = ref([
 const menuItems4 = ref([
   {
     title: 'Contribute',
-    url: '#Contribute'
+    url: '#Contribute',
     // slug: '',
   },
   {
     title: 'FAQ',
-    url: '#faq'
+    url: '#faq',
     // slug: 'faq',
-  }
+  },
   // {
   //   title: 'News',
   //   url: '/'

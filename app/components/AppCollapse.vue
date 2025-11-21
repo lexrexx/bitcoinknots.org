@@ -2,21 +2,21 @@
 const props = defineProps({
   id: {
     type: Number,
-    required: true
+    required: true,
   },
   title: {
     type: String,
-    required: true
+    required: true,
   },
   // (Icon) name
   icon: {
     type: String,
-    required: true
+    required: true,
   },
   collapsed: {
     type: Boolean,
-    default: true
-  }
+    default: true,
+  },
 })
 const emit = defineEmits(['toggle'])
 const toggleCollapse = () => {

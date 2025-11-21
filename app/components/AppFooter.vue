@@ -15,28 +15,40 @@
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
-            <AppIcon name="X" class="w-12 h-12 text-onyx dark:text-vanil" />
+            <AppIcon
+              name="X"
+              class="w-12 h-12 text-onyx dark:text-vanil"
+            />
           </NuxtLink>
           <NuxtLink
             :to="appConfig.url.discord"
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
-            <AppIcon name="Discord" class="w-12 h-12 text-onyx dark:text-vanil" />
+            <AppIcon
+              name="Discord"
+              class="w-12 h-12 text-onyx dark:text-vanil"
+            />
           </NuxtLink>
           <NuxtLink
             :to="appConfig.url.telegram"
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
-            <AppIcon name="Telegram" class="w-12 h-12 text-onyx dark:text-vanil" />
+            <AppIcon
+              name="Telegram"
+              class="w-12 h-12 text-onyx dark:text-vanil"
+            />
           </NuxtLink>
           <NuxtLink
             :to="appConfig.url.github"
             target="_blank"
             class="mx-1.5 focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
-            <AppIcon name="Github" class="w-12 h-12 text-onyx dark:text-vanil" />
+            <AppIcon
+              name="Github"
+              class="w-12 h-12 text-onyx dark:text-vanil"
+            />
           </NuxtLink>
         </div>
       </section>

@@ -10,7 +10,11 @@
       <AppLogomark class="w-12 md:w-14 h-12 md:h-14 text-onyx" />
     </NuxtLink>
 
-    <NuxtLink to="/" class="p-0" @click="menu = false">
+    <NuxtLink
+      to="/"
+      class="p-0"
+      @click="menu = false"
+    >
       <AppLogotype class="ms-6 h-6 md:h-7" />
     </NuxtLink>
 
