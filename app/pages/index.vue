@@ -1,6 +1,6 @@
 <template>
   <!-- <NuxtLayout :name="layout"> -->
-  <div class="container mx-auto w-full">
+  <div class="container mx-auto w-full overflow-hidden">
     <!-- Squared -->
     <!-- <div class="gap-8 grid grid-cols-12 mt-28">
 
@@ -30,109 +30,116 @@
         </div>
       </div>
     </div> -->
-    <!--  -->
-    <!--  -->
+
     <AppBreakpoints />
 
-
-    <!-- // MARK: Hero -->
-    <section class="my-28 py-8">
-      <div class="@container mx-4 grid grid-cols-12 text-left">
+    <!-- MARK: Hero -->
+    <section class="relative h-screen pt-36">
+      <div class="@container mx-4">
         <h1
           class="
-          col-span-12
-          col-start-1
-          text-[11cqw]
-          font-bold leading-[1] tracking-tighter
+          text-[21cqw] sm:text-[17cqw] lg:text-[15cqw] xl:text-[14cqw] 2xl:text-[11cqw]
+          font-bold
+          leading-[1]
+          tracking-tighter
           "
         >
           Bitcoin Is
-          <span class="
+          <span
+            class="
             block
-            text-vanil
-            dark:text-brand
-          "> Money </span>
+            text-vanil dark:text-brand
+          "
+          > Money </span>
         </h1>
 
         <h2
           class="
-            flex
+            flex bottom-52
             items-start
             justify-between
-            col-span-12
-            mb-4
-            mt-[4cqw]
-            uppercase
-            text-[2.5cqw]
+            md:relative md:bottom-0
+            mt-[10cqw] md:mt-[8cqw] lg:mt-[6cqw]
+            text-[3.2cqw] md:text-[3cqw] lg:text-[2.75cqw] 2xl:text-[2.5cqw]
             tracking-[.5cqw]
-          ">
+            uppercase
+          "
+        >
           <span class="">Take Control</span>
-          <span class="
+          <span
+            class="
             text-onyx
             dark:text-brand
-          ">---></span>
+          "
+          >---></span>
           <span class="">Own Your Node</span>
         </h2>
-
-        <div class="col-span-12 mt-8 w-full text-right">
-          <NuxtLink
-            to="#Download"
-            class=""
-          >
-            <button
-              type="button"
-              class="
-                --border-4
-                rounded-xl
-                bg-onyx
-                px-10
-                py-10
-                text-2xl
-                font-bold
-                uppercase
-                tracking-wide
-                focus:outline-none focus:ring-4 focus:ring-onyx
-                text-vanil
-                hover:bg-vanil hover:text-onyx
-                dark:bg-brand dark:text-onyx dark:hover:bg-vanil dark:hover:text-onyx
-                dark:focus:ring-vanil
-              ">
-              Get Bitcoin Knots
-            </button>
-          </NuxtLink>
-          <!-- <NuxtLink to="#Features">
-            <button
-              type="button"
-              class="me-6 px-10 py-8 border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:border-brand rounded-lg focus:outline-none focus:ring-4 focus:ring-onyx/80 dark:focus:ring-brand/80 font-bold text-onyx hover:text-vanil dark:hover:text-brand dark:text-vanil text-xl uppercase tracking-wide"
-            >
-              Learn More
-            </button>
-          </NuxtLink> -->
-
-          <!-- <span class="text-4xl uppercase tracking-wider">---</span> -->
-
-          <!-- <NuxtLink to="#Download" class="">
-            <button
-              type="button"
-              class="--bg-vanil border-4 border-onyx dark:bg-brand px-10 py-8 rounded-lg focus:outline-none focus:ring-4 focus:ring-vanil/80 dark:focus:ring-onyx/80 font-bold text-onyx dark:text-onyx text-2xl uppercase tracking-wide"
-            >
-              Get Bitcoin Knots
-            </button>
-          </NuxtLink> -->
-        </div>
+      </div>
+      <div
+        class="
+          absolute
+          w-full
+          md:flex md:flex-row-reverse items-center
+          bottom-4 md:bottom-12
+          px-4
+        "
+      >
+        <NuxtLink
+          to="#Download"
+          class="
+            mb-4 md:mb-0
+            w-full md:w-auto
+            block
+            md:inline-block
+            rounded-lg lg:rounded-xl
+            px-4 md:px-5 --2xl:px-7
+            py-6 md:py-8 --2xl:py-10
+            text-xl --2xl:text-2xl
+            font-bold
+            uppercase
+            text-center
+            tracking-wide
+            focus:outline-none
+            focus:ring-4
+            border-2
+            border-onyx dark:border-brand hover:border-vanil dark:hover:border-vanil
+            text-vanil dark:text-onyx hover:text-onyx dark:hover:text-onyx
+            bg-onyx dark:bg-brand hover:bg-vanil dark:hover:bg-vanil
+            focus:ring-onyx dark:focus:ring-vanil
+          "
+        >
+          Get Bitcoin Knots
+        </NuxtLink>
+        <NuxtLink
+          to="#Features"
+          class="
+            me-4
+            w-full md:w-auto
+            block
+            md:inline-block
+            rounded-lg lg:rounded-xl
+            px-4 md:px-5 --2xl:px-6
+            py-6 md:py-8 --2xl:py-9
+            text-xl --2xl:text-2xl
+            font-bold
+            uppercase
+            text-center
+            tracking-wide
+            focus:outline-none
+            focus:ring-4
+            border-2
+            text-onyx dark:text-vanil
+            hover:text-vanil dark:hover:text-brand
+            border-onyx dark:border-vanil
+            hover:border-vanil dark:hover:border-brand
+            focus:ring-onyx dark:focus:ring-vanil
+          "
+        >
+          Learn More
+        </NuxtLink>
       </div>
     </section>
 
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
     <!-- MARK: About -->
     <section
       id="About"
@@ -149,10 +156,12 @@
         "
       >
         Built for
-        <span class="
+        <span
+          class="
           text-vanil
           dark:text-brand
-        "> Sovereignty </span>
+        "
+        > Sovereignty </span>
       </h2>
 
       <p class="col-span-9 col-start-1 mb-12 mt-32 text-4xl leading-normal">
@@ -164,20 +173,24 @@
       </p>
 
       <div class="col-span-5 me-12 mt-12">
-        <h3 class="
+        <h3
+          class="
           py-4 text-3xl font-bold
           dark:text-brand
-        ">
+        "
+        >
           A Node for the Original Vision
         </h3>
         <p class="py-4 text-xl leading-relaxed">
           In a climate of increasing block space debate and protocol changes that risk altering
           Bitcoin's core value proposition, running a node is more critical than ever.
         </p>
-        <p class="
+        <p
+          class="
           my-4 border-l-4 border-onyx ps-8 text-xl leading-relaxed
           dark:border-brand
-        ">
+        "
+        >
           Bitcoin Knots is built for those who believe in a conservative approach to consensus and a
           clear separation between monetary layer and application layer.
         </p>
@@ -189,10 +202,12 @@
       </div>
 
       <div class="col-span-5 me-12 mt-12">
-        <h3 class="
+        <h3
+          class="
           py-4 text-3xl font-bold
           dark:text-brand
-        ">
+        "
+        >
           Your Voice in the Consensus
         </h3>
         <p class="py-4 text-xl leading-relaxed">
@@ -209,13 +224,6 @@
     </section>
 
     <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
     <!-- MARK: Features -->
     <section
       id="Features"
@@ -228,10 +236,12 @@
         "
       >
         Power
-        <span class="
+        <span
+          class="
           block text-vanil
           dark:text-brand
-        "> Features </span>
+        "
+        > Features </span>
       </h2>
 
       <h3 class="tracking-snug col-span-9 mt-24 text-4xl leading-normal">
@@ -243,14 +253,18 @@
       <div class="col-span-12 my-24">
         <div class="grid grid-cols-2 gap-24">
           <div>
-            <div class="
+            <div
+              class="
               text-onyx
               dark:text-vanil
-            ">
-              <span class="
+            "
+            >
+              <span
+                class="
                 block text-2xl text-vanil
                 dark:text-brand
-              ">/ A</span>
+              "
+              >/ A</span>
               <h5 class="mb-32 mt-8 text-5xl font-bold tracking-tight">
                 Advanced Features
               </h5>
@@ -315,14 +329,18 @@
           </div>
 
           <div>
-            <div class="
+            <div
+              class="
               text-onyx
               dark:text-vanil
-            ">
-              <span class="
+            "
+            >
+              <span
+                class="
                 block text-2xl text-vanil
                 dark:text-brand
-              ">/ B</span>
+              "
+              >/ B</span>
               <h5 class="mb-32 mt-8 text-5xl font-bold tracking-tight">
                 Core Experience
               </h5>
@@ -409,10 +427,12 @@
         "
       >
         Download
-        <span class="
+        <span
+          class="
           block text-vanil
           dark:text-brand
-        "> & Verify </span>
+        "
+        > & Verify </span>
       </h2>
 
       <!-- Pre -->
@@ -572,15 +592,17 @@
       <div class="mt-24 grid w-full grid-cols-3 items-start justify-between gap-12">
         <div class="">
           <p class="inline-block border-t-4 py-4 text-2xl font-bold tracking-tight">
-          Step 1
+            Step 1
           </p>
           <p class="py-4 text-xl">
             Download Bitcoin Knots for your operating system by selection an option above.
           </p>
-          <p class="
+          <p
+            class="
             --absolute inline-block py-4 text-3xl text-onyx
             dark:text-brand
-          ">
+          "
+          >
             --->
           </p>
           <!-- <span class="">Operating System</span> -->
@@ -680,8 +702,7 @@
           </div>
           <!-- <span class="text-3xl text-onyx dark:text-brand py-4"><-- </span> -->
         </div>
-      </div>      
-      
+      </div>
     </section>
 
     <!--  -->
@@ -701,15 +722,19 @@
       id="Faq"
       class="--mb-24 mx-4 pt-32"
     >
-      <h2 class="
+      <h2
+        class="
         text-[10rem] font-bold leading-[1] tracking-tighter text-onyx
         dark:text-vanil
-      ">
+      "
+      >
         Get
-        <span class="
+        <span
+          class="
           block text-vanil
           dark:text-brand
-        "> Answers </span>
+        "
+        > Answers </span>
       </h2>
 
       <h3
@@ -742,10 +767,12 @@
           >
             I already run Bitcoin Core. Why should I consider Bitcoin Knots?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             Think of Bitcoin Knots as "Bitcoin Core with optional extras." If you're happy with
             Core, it's an excellent choice. However, if you need features like Pay-to-Endpoint for
             censorship resistance, early access to privacy patches like Coinswap, or a more
@@ -770,10 +797,12 @@
           >
             Is Bitcoin Knots a "hard fork" or an "altcoin"?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             Absolutely not. Bitcoin Knots is a software fork, not a consensus fork. It follows all
             the same rules as Bitcoin Core. You will be running a fully validating Bitcoin node on
             the exact same Bitcoin network. The differences lie in added features, policy patches,
@@ -798,10 +827,12 @@
           >
             Is it safe to run Bitcoin Knots on the main network with real bitcoin?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             Yes. Bitcoin Knots is built for production use on the main Bitcoin network. It is a
             stable, fully-validating node. As with any Bitcoin software, you should always verify
             the digital signatures of the download to ensure you have the authentic version.
@@ -825,10 +856,12 @@
           >
             What is the main philosophical difference between Knots and Core?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             Bitcoin Core focuses on being a minimal, consensus-critical base layer for the entire
             network. Bitcoin Knots takes this solid base and integrates additional features and
             policy changes that are deemed useful but may be too experimental, controversial, or
@@ -854,10 +887,12 @@
           >
             I've heard about a debate regarding OP_RETURN and data. What is Bitcoin Knots' stance?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             This is a key differentiator. The Bitcoin Knots client implements a default policy that
             restricts the size of data carriers like OP_RETURN more than Bitcoin Core's default. The
             goal is to conserve block space for financial transactions and reduce blockchain bloat.
@@ -883,10 +918,12 @@
           >
             So, does the OP_RETURN policy mean Knots is incompatible with the network?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             Not at all. Your node will still validate all blocks and transactions that follow the
             consensus rules. The policy only affects which unconfirmed transactions your node will
             willingly relay to its peers. This is similar to how different nodes may have different
@@ -912,10 +949,12 @@
           >
             Can I run both Bitcoin Core and Bitcoin Knots on the same machine?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             Yes, but you must configure them to use different data directories and ports to avoid
             conflicts. This is an advanced setup and requires carefully editing the bitcoin.conf
             file for one or both instances. We recommend most users run one primary node.
@@ -939,10 +978,12 @@
           >
             Where can I get help if I have a problem?
           </div>
-          <div class="
+          <div
+            class="
             a invisible text-base
             group-hover:visible
-          ">
+          "
+          >
             The best place for community support is the Bitcoin Knots mailing list. For bug reports
             and technical discussions, you can open an issue on the official GitHub repository.
             Remember, this is open-source software; patience and detailed problem reports are
@@ -977,10 +1018,12 @@
           "
         >
           Join the
-          <span class="
+          <span
+            class="
             block text-vanil
             dark:text-brand
-          "> Inner Circle </span>
+          "
+          > Inner Circle </span>
         </h2>
 
         <h3 class="--uppercase tracking-snug mt-12 max-w-5xl text-4xl leading-normal">
@@ -1013,7 +1056,9 @@
             <NuxtLink
               :to="appConfig.url.group_mailto"
               class="font-bold"
-            >bitcoin-knots-announce+subscribe@googlegroups.com</NuxtLink>. You will receive a confirmation email. Simply reply to it to complete your
+            >
+              bitcoin-knots-announce+subscribe@googlegroups.com
+            </NuxtLink>. You will receive a confirmation email. Simply reply to it to complete your
             subscription.
           </p>
         </div>
