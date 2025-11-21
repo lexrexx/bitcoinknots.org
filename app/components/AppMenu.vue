@@ -218,7 +218,7 @@ onMounted(() => {
 </script>
 
 <style lang="postcss" scoped>
-.router-link-exact-active {
+li a.router-link-exact-active {
   @apply font-bold
     text-vanil
     dark:text-brand
