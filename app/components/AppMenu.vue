@@ -201,7 +201,7 @@ const menuItems4 = ref([
   // },
   {
     title: 'News',
-    url: '#News'
+    url: '#News',
     // slug: 'news',
   },
   // {

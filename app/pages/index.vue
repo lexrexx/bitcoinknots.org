@@ -30,11 +30,26 @@
         </div>
       </div>
     </div> -->
-    <!-- Next Section -->
-    <!-- Hero -->
+    <!--  -->
+    <!--  -->
+    <AppBreakpoints />
+    <!-- // MARK: Hero -->
     <section class="my-28 py-8">
       <div class="ms-4 text-left grid grid-cols-12">
-        <h1 class="col-span-9 col-start-1 font-bold lg:text-[16rem] xl:text[13rem] text-8xl md:text-9xl leading-[1] tracking-tighter">
+        <h1
+          class="
+          col-span-12
+          col-start-1
+          font-bold
+          leading-[1]
+          tracking-tighter
+          text-5xl
+          --xs:text-7xl
+          md:text-8xl
+          lg:text-[10rem]
+          xl:text[14rem]
+`        "
+        >
           Bitcoin Is
           <span class="block text-vanil dark:text-brand">
             Money
@@ -103,13 +118,36 @@
       </div>
     </section>
 
-    <!-- Next Section -->
-    <!-- About -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- MARK: About -->
     <section
       id="About"
-      class="mx-4 grid grid-cols-12 pt-32"
-    >
-      <h2 class="col-span-9 font-bold col-start-1 text-[10rem] text-onyx dark:text-vanil leading-[1] tracking-tighter">
+      class="
+        grid
+        grid-cols-12
+        mx-4
+        lg:pt-32
+      ">
+      <h2 class="
+        col-span-9
+        col-start-1
+        font-bold
+        leading-[1]
+        text-6xl
+        lg:text-[10rem]
+        tracking-tighter
+        text-onyx
+        dark:text-vanil
+      ">
         Built for
         <span class="text-vanil dark:text-brand">
           Sovereignty
@@ -120,27 +158,43 @@
         <span class="font-bold">Bitcoin <--> Knots </span>is a free and open-source full node implementation that empowers you to fully validate the blockchain and enforce Bitcoin's rules. It includes advanced features and privacy patches not yet available in other clients, giving you greater control over your financial sovereignty.
       </p>
 
-      <div class="col-span-6 mt-12 me-12">
-        <h3 class="text-2xl font-bold py-4 text-vanil dark:text-brand">
+      <div class="col-span-5 mt-12 me-12">
+        <h3 class="text-3xl font-bold py-4 dark:text-brand">
           A Node for the Original Vision
         </h3>
-        <p class="py-4 text-lg leading-relaxed">
-          In a climate of increasing block space debate and protocol changes that risk altering Bitcoin's core value proposition, running a node is more critical than ever. Bitcoin Knots is built for those who believe in a conservative approach to consensus and a clear separation between monetary layer and application layer. It implements default policies that prioritize financial transactions, helping to safeguard the chain from bloat and ensure it remains accessible for its primary purpose: peer-to-peer electronic cash.
+        <p class="py-4 text-xl leading-relaxed">
+          In a climate of increasing block space debate and protocol changes that risk altering Bitcoin's core value proposition, running a node is more critical than ever.
+        </p>
+        <p class="my-4 text-xl leading-relaxed ps-8 border-l-4 border-onyx dark:border-brand">
+          Bitcoin Knots is built for those who believe in a conservative approach to consensus and a clear separation between monetary layer and application layer.
+        </p>
+        <p class="py-4 text-xl leading-relaxed">
+          It implements default policies that prioritize financial transactions, helping to safeguard the chain from bloat and ensure it remains accessible for its primary purpose: peer-to-peer electronic cash.
         </p>
       </div>
 
-      <div class="col-span-6 mt-12 me-12">
-        <h3 class="text-2xl font-bold py-4 text-vanil dark:text-brand">
+      <div class="col-span-5 mt-12 me-12">
+        <h3 class="text-3xl font-bold py-4 dark:text-brand">
           Your Voice in the Consensus
         </h3>
-        <p class="py-4 text-lg leading-relaxed">
-          While other clients may follow a path of increasing permissiveness, Knots provides a technical implementation for a different viewpoint. By choosing Knots, you are not just running a node, you are casting a vote for a specific vision of Bitcoin's future. You are taking a stand for a scalable, efficient, and sovereign monetary network, directly enforcing your preferred rules on the network you help secure.
+        <p class="py-4 text-xl leading-relaxed">
+          While other clients may follow a path of increasing permissiveness, Knots provides a technical implementation for a different viewpoint.
+        </p>
+        <p class="py-4 text-xl leading-relaxed">
+          By choosing Knots, you are not just running a node, you are casting a vote for a specific vision of Bitcoin's future. You are taking a stand for a scalable, efficient, and sovereign monetary network, directly enforcing your preferred rules on the network you help secure.
         </p>
       </div>
     </section>
 
-    <!-- Next Section -->
-    <!-- Features -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- MARK: Features -->
     <section
       id="Features"
       class="mx-4 grid grid-cols-12 pt-32"
@@ -215,7 +269,7 @@
               <span class="block text-vanil dark:text-brand text-2xl">/ B</span>
               <h5 class="mb-32 mt-8 font-bold text-5xl tracking-tight">
                 Core Experience
-                </h5>
+              </h5>
             </div>
             <ul class="text-xl">
               <li class="grid grid-cols-[1fr, auto]">
@@ -260,8 +314,19 @@
       </div>
     </section>
 
-    <!-- Next Section -->
-    <!-- Download & Verify -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- MARK: Download & Verify -->
     <section
       id="Download"
       class="mx-4 --mb-24 pt-32"
@@ -276,7 +341,7 @@
       <!-- Steps -->
       <div class="grid grid-cols-3 gap-12 justify-between items-start w-full mt-24">
         <div class="">
-          <p class="text-2xl font-bold tracking-tight py-4">
+          <p class="text-2xl font-bold tracking-tight py-4 border-t-4 inline-block">
             Step 1
           </p>
           <p class="text-xl py-4">
@@ -291,24 +356,24 @@
 
         <!-- Step 2 -->
         <div class="col-start-2">
-          <p class="text-2xl font-bold tracking-tight py-4">
+          <p class="text-2xl font-bold tracking-tight py-4 border-t-4 inline-block">
             Step 2
           </p>
           <p class="text-xl py-4">
-            Download the digital signature and fingerprint files provided here:
+            Download the digital fingerprint and signature files provided here:
           </p>
 
           <!-- <span class="">Operating System</span> -->
           <div class="flex mt-4 mb-8">
             <NuxtLink
               :to="appConfig.url.fingerprint"
-              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+              class="items-center flex me-4 px-3 py-2 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Fingerprint
             </NuxtLink>
             <NuxtLink
               :to="appConfig.url.signature"
-              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+              class="items-center flex me-4 px-3 py-2 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Signature
             </NuxtLink>
@@ -318,33 +383,33 @@
 
         <!-- Step 3 -->
         <div class="col-start-3">
-          <p class="text-2xl font-bold tracking-tight py-4 text-vanil dark:text-brand">
+          <p class="text-2xl font-bold tracking-tight py-4 text-vanil dark:text-brand border-t-4 inline-block">
             Verify Your Download
           </p>
           <p class="text-xl py-4">
-            Follow our simple, OS-specific guides to ensure your copy of Bitcoin Knots is authentic and secure.
+            Follow our simple, OS-specific guides to ensure your copy of Bitcoin Knots is authentic and secure:
           </p>
 
           <!-- <span class="">Operating System</span> -->
           <div class="flex mt-4 mb-8">
             <NuxtLink
-              to="/pdf/verify/knots-linux.pdf"
-              target="blank"
-              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+              to="pdf/verify/knots-linux.pdf"
+              external
+              class="items-center flex me-4 px-3 py-2 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Linux
             </NuxtLink>
             <NuxtLink
               to="/pdf/verify/knots-macos.pdf"
-              target="blank"
-              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+              external
+              class="items-center flex me-4 px-3 py-2 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               MacOS
             </NuxtLink>
             <NuxtLink
               to="/pdf/verify/knots-windows.pdf"
-              target="blank"
-              class="items-center flex me-4 px-3 py-3 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
+              external
+              class="items-center flex me-4 px-3 py-2 border-2 border-onyx dark:border-vanil rounded-md font-bold text-lg text-onyx dark:text-vanil hover:text-vanil dark:hover:text-brand hover:border-vanil dark:hover:border-brand tracking-tight"
             >
               Windows
             </NuxtLink>
@@ -504,7 +569,18 @@
       </div>
     </section>
 
-    <!-- Next Section -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
     <!-- Faq -->
     <section
       id="Faq"
@@ -607,7 +683,18 @@
       </div>
     </section>
 
-    <!-- Next Section -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
+    <!-- -->
     <!-- Mail -->
     <section
       id="News"
