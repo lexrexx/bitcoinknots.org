@@ -11,11 +11,6 @@
 </template>
 
 <script setup>
-import AppMenu from './components/macro/AppMenu.vue'
-import AppFooter from './components/macro/AppFooter.vue'
-import AppHeader from './components/macro/AppHeader.vue'
-import PageContainer from './components/macro/PageContainer.vue'
-
 // const menu = useMenu()
 // const nuxtApp = useNuxtApp()
 

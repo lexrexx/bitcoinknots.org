@@ -13,7 +13,11 @@
         lg:pt-32
       "
     >
-      <h2
+      <AppTitle
+        title-a="Built for"
+        title-b="Sovereignty"
+      />
+      <!-- <h2
         class="
           col-span-9 col-start-1 text-6xl font-bold leading-[1] tracking-tighter text-onyx
           lg:text-[10rem]
@@ -27,7 +31,7 @@
           dark:text-brand
         "
         > Sovereignty </span>
-      </h2>
+      </h2> -->
 
       <p class="col-span-9 col-start-1 mb-12 mt-32 text-4xl leading-normal">
         <!--  eslint-disable-next-line vue/no-parsing-error -->
@@ -102,7 +106,11 @@
       id="Features"
       class="mx-4 grid grid-cols-12 pt-32"
     >
-      <h2
+      <AppTitle
+        title-a="Power"
+        title-b="Features"
+      />
+      <!-- <h2
         class="
           col-span-12 col-start-1 text-[10rem] font-bold leading-[1] tracking-tighter text-onyx
           dark:text-vanil
@@ -115,7 +123,7 @@
           dark:text-brand
         "
         > Features </span>
-      </h2>
+      </h2> -->
 
       <h3 class="tracking-snug col-span-9 mt-24 text-4xl leading-normal">
         Maintains full Bitcoin compatibility, while offering enhanced tools for node sovereignty and
@@ -281,7 +289,11 @@
       id="Download"
       class="--mb-24 mx-4 pt-32"
     >
-      <h2
+      <AppTitle
+        title-a="Download"
+        title-b="& Verify"
+      />
+      <!-- <h2
         class="
           --mx-auto max-w-4xl text-[10rem] font-bold leading-[1] tracking-tighter text-onyx
           dark:text-vanil
@@ -294,7 +306,7 @@
           dark:text-brand
         "
         > & Verify </span>
-      </h2>
+      </h2> -->
 
       <!-- Pre -->
       <div class="mt-24 grid grid-cols-3 items-center gap-4">
@@ -609,20 +621,10 @@
       id="Faq"
       class="--mb-24 mx-4 pt-32"
     >
-      <h2
-        class="
-        text-[10rem] font-bold leading-[1] tracking-tighter text-onyx
-        dark:text-vanil
-      "
-      >
-        Get
-        <span
-          class="
-          block text-vanil
-          dark:text-brand
-        "
-        > Answers </span>
-      </h2>
+      <AppTitle
+        title-a="Get"
+        title-b="Answers"
+      />
 
       <h3
         class="
@@ -886,20 +888,10 @@
       class="mx-4 mb-24 pt-32"
     >
       <div class="">
-        <h2
-          class="
-            max-w-4xl text-[10rem] font-bold leading-[1] tracking-tighter text-onyx
-            dark:text-vanil
-          "
-        >
-          Stay In
-          <span
-            class="
-            block text-vanil
-            dark:text-brand
-          "
-          > The Loop </span>
-        </h2>
+        <AppTitle
+          title-a="Stay In"
+          title-b="The Loop"
+        />
 
         <h3 class="--uppercase tracking-snug mt-12 max-w-5xl text-4xl leading-normal">
           Get release announcements and critical security advisories directly from the lead
@@ -967,12 +959,6 @@
 </template>
 
 <script setup>
-import AppHero from '~/components/macro/AppHero.vue'
-import AppCollapse from '~/components/micro/AppCollapse.vue'
-import AppCollapsedItem from '~/components/nano/AppCollapsedItem.vue'
-import AppIcon from '~/components/nano/AppIcon.vue'
-import AppLogomark from '~/components/nano/AppLogomark.vue'
-
 const appConfig = useAppConfig()
 
 const collapsePanels = ref([
