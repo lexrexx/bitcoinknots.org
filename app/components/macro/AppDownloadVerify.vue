@@ -14,7 +14,7 @@
 
     <div class="col-start-3 flex items-center justify-end">
       <AppVersion
-        :to="appConfig.url.gh_repo"
+        to="#Download"
         class="text-lg"
       />
     </div>

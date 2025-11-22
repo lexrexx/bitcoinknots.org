@@ -1,7 +1,21 @@
 <template>
   <NuxtLink
     :to="props.to"
-    class="flex justify-center items-center m-1 px-2 py-1 border-2 border-onyx dark:border-brand rounded-md font-bold text-2xs text-onyx dark:text-brand tracking-tight"
+    class="
+      flex
+      justify-center
+      items-center
+      m-1
+      px-2
+      py-1
+      border-2
+      rounded-md
+      font-bold
+      text-2xs
+      tracking-tight
+      text-onyx dark:text-brand hover:text-vanil
+      border-onyx dark:border-brand hover:border-vanil
+    "
   >
     v{{ appConfig.vapp }}
   </NuxtLink>
