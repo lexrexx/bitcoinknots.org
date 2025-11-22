@@ -650,20 +650,20 @@
       </h3>
 
       <!-- QA -->
-      <div class="mt-24 grid grid-cols-4 gap-0">
+      <div class="mt-24 grid grid-cols-4 gap-4">
         <!-- QA #1 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             I already run Bitcoin Core. Why should I consider Bitcoin Knots?
@@ -684,16 +684,16 @@
         <!-- QA #2 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             Is Bitcoin Knots a "hard fork" or an "altcoin"?
@@ -714,16 +714,16 @@
         <!-- QA #3 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             Is it safe to run Bitcoin Knots on the main network with real bitcoin?
@@ -743,16 +743,16 @@
         <!-- QA #4 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             What is the main philosophical difference between Knots and Core?
@@ -774,16 +774,16 @@
         <!-- QA #5 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             I've heard about a debate regarding OP_RETURN and data. What is Bitcoin Knots' stance?
@@ -805,16 +805,16 @@
         <!-- QA #6 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             So, does the OP_RETURN policy mean Knots is incompatible with the network?
@@ -836,16 +836,16 @@
         <!-- QA #7 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             Can I run both Bitcoin Core and Bitcoin Knots on the same machine?
@@ -865,16 +865,16 @@
         <!-- QA #8 -->
         <div
           class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx
-            hover:bg-onyx hover:text-vanil
-            dark:text-vanil dark:hover:bg-vanil dark:hover:text-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            hover:border-onyx hover:text-onyx dark:hover:text-vanil
+            dark:text-vanil dark:hover:border-vanil
           "
         >
           <div
             class="
               q mb-8 font-bold opacity-100
-              group-hover:text-vanil group-hover:opacity-100
-              dark:group-hover:text-onyx
+              group-hover:border-vanil group-hover:opacity-100
+              dark:group-hover:text-vanil
             "
           >
             Where can I get help if I have a problem?
