@@ -904,13 +904,13 @@
             dark:text-vanil
           "
         >
-          Join the
+          Stay In
           <span
             class="
             block text-vanil
             dark:text-brand
           "
-          > Inner Circle </span>
+          > The Loop </span>
         </h2>
 
         <h3 class="--uppercase tracking-snug mt-12 max-w-5xl text-4xl leading-normal">
