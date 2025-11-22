@@ -94,6 +94,7 @@
             focus:ring-4
             border-2
             text-onyx dark:text-vanil
+            bg-brand dark:bg-onyx
             hover:text-vanil dark:hover:text-brand
             border-onyx dark:border-vanil
             hover:border-vanil dark:hover:border-brand

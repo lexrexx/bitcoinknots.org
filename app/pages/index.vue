@@ -66,7 +66,7 @@
         </p>
       </div>
 
-      <div class="col-span-5 me-12 mt-12 mb-48">
+      <div class="col-span-5 me-12 mt-12">
         <h3
           class="
           py-4 text-3xl font-bold
@@ -86,45 +86,17 @@
           help secure.
         </p>
       </div>
-
-      <!-- Squared -->
-      <div class="col-span-4 gap-4 me-4">
-        <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
-          <div class="@container flex w-full h-full relative justify-center items-center" />
-          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-vanil" />
-        </div>
+      <div class="py-28 col-span-5 text-9xl text-vanil dark:text-brand font-bold flex justify-start items-center">
+        --->
       </div>
-
-      <div class="col-span-4 gap-4 me-4">
-        <div class="block bg-onyx dark:bg-vanil pb-full rounded-3xl w-full relative">
-          <div class="@container flex w-full h-full relative justify-center items-center" />
-          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-onyx" />
-        </div>
+      <div
+        id="Knots"
+        class="py-28 col-span-7 col-start-6"
+      >
+        <AppLogotype class="w-full" />
       </div>
-
-      <div class="col-span-4 gap-4 me-4">
-        <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
-          <div class="@container flex w-full h-full relative justify-center items-center" />
-          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-onyx" />
-        </div>
-      </div>
-
-      <!-- <div class="col-span-4 gap-4 me-4">
-        <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
-          <div class="@container flex w-full h-full relative justify-center items-center" />
-          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-brand" />
-        </div>
-      </div> -->
-
-      <!-- <div class="col-span-4 gap-4 me-4">
-        <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
-          <div class="@container flex w-full h-full relative justify-center items-center" />
-          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-brand dark:text-vanil" />
-        </div>
-      </div> -->
     </section>
 
-    <!--  -->
     <!-- MARK: Features -->
     <section
       id="Features"
@@ -304,18 +276,6 @@
       </div>
     </section>
 
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
     <!-- MARK: Download & Verify -->
     <section
       id="Download"
@@ -357,7 +317,7 @@
         </div>
       </div>
 
-      <!-- Downloads -->
+      <!-- MARK: Downloads -->
       <div class="my-6 grid grid-cols-3 gap-4">
         <!-- Linux Downloads -->
         <AppCollapse
@@ -604,21 +564,47 @@
           <!-- <span class="text-3xl text-onyx dark:text-brand py-4"><-- </span> -->
         </div>
       </div>
+
+      <!-- MARK: Branding -->
+      <div class="grid grid-cols-12 gap-4 mt-24">
+        <div class="col-span-4">
+          <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
+            <div class="@container flex w-full h-full relative justify-center items-center" />
+            <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-vanil" />
+          </div>
+        </div>
+
+        <div class="col-span-4">
+          <div class="block bg-onyx dark:bg-vanil pb-full rounded-3xl w-full relative">
+            <div class="@container flex w-full h-full relative justify-center items-center" />
+            <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-onyx" />
+          </div>
+        </div>
+
+        <div class="col-span-4">
+          <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
+            <div class="@container flex w-full h-full relative justify-center items-center" />
+            <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-onyx" />
+          </div>
+        </div>
+
+      <!-- <div class="col-span-4">
+              <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
+                <div class="@container flex w-full h-full relative justify-center items-center" />
+                <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-brand" />
+              </div>
+            </div> -->
+
+      <!-- <div class="col-span-4">
+              <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
+                <div class="@container flex w-full h-full relative justify-center items-center" />
+                <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-brand dark:text-vanil" />
+              </div>
+            </div> -->
+      </div>
     </section>
 
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!-- Faq -->
+    <!-- MARK: Faq -->
     <section
       id="Faq"
       class="--mb-24 mx-4 pt-32"
