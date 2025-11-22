@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },
   components: {
     dirs: [
+      '~/components/layout',
       '~/components/macro',
       '~/components/micro',
       '~/components/nano',

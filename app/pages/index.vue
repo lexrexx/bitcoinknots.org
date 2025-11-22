@@ -6,32 +6,18 @@
     <AppHero />
 
     <!-- MARK: About -->
-    <section
+    <!-- <section
       id="About"
       class="
         mx-4 grid grid-cols-12
         lg:pt-32
       "
-    >
+    > -->
+    <AppGridSection>
       <AppTitle
         title-a="Built for"
         title-b="Sovereignty"
       />
-      <!-- <h2
-        class="
-          col-span-9 col-start-1 text-6xl font-bold leading-[1] tracking-tighter text-onyx
-          lg:text-[10rem]
-          dark:text-vanil
-        "
-      >
-        Built for
-        <span
-          class="
-          text-vanil
-          dark:text-brand
-        "
-        > Sovereignty </span>
-      </h2> -->
 
       <p class="col-span-9 col-start-1 mb-12 mt-32 text-4xl leading-normal">
         <!--  eslint-disable-next-line vue/no-parsing-error -->
@@ -99,7 +85,7 @@
       >
         <AppLogotype class="w-full" />
       </div>
-    </section>
+    </AppGridSection>
 
     <!-- MARK: Features -->
     <section
@@ -110,20 +96,6 @@
         title-a="Power"
         title-b="Features"
       />
-      <!-- <h2
-        class="
-          col-span-12 col-start-1 text-[10rem] font-bold leading-[1] tracking-tighter text-onyx
-          dark:text-vanil
-        "
-      >
-        Power
-        <span
-          class="
-          block text-vanil
-          dark:text-brand
-        "
-        > Features </span>
-      </h2> -->
 
       <h3 class="tracking-snug col-span-9 mt-24 text-4xl leading-normal">
         Maintains full Bitcoin compatibility, while offering enhanced tools for node sovereignty and
@@ -284,7 +256,29 @@
       </div>
     </section>
 
-    <!-- MARK: Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
+    <!-- Download & Verify -->
     <section
       id="Download"
       class="--mb-24 mx-4 pt-32"
@@ -293,327 +287,10 @@
         title-a="Download"
         title-b="& Verify"
       />
-      <!-- <h2
-        class="
-          --mx-auto max-w-4xl text-[10rem] font-bold leading-[1] tracking-tighter text-onyx
-          dark:text-vanil
-        "
-      >
-        Download
-        <span
-          class="
-          block text-vanil
-          dark:text-brand
-        "
-        > & Verify </span>
-      </h2> -->
 
-      <!-- Pre -->
-      <div class="mt-24 grid grid-cols-3 items-center gap-4">
-        <NuxtLink
-          target="blank"
-          :to="appConfig.url.gh_notes"
-          class="
-            text-lg font-bold text-onyx underline
-            dark:text-vanil
-          "
-        >
-          Release Notes
-        </NuxtLink>
+      <AppDownloadVerify />
 
-        <div class="col-start-3 flex items-center justify-end">
-          <AppVersion
-            :to="appConfig.url.gh_repo"
-            class="text-lg"
-          />
-        </div>
-      </div>
-
-      <!-- MARK: Downloads -->
-      <div class="my-6 grid grid-cols-3 gap-4">
-        <!-- Linux Downloads -->
-        <AppCollapse
-          :id="0"
-          :collapsed="collapsePanels[0].isVisible"
-          title="Linux"
-          icon="Linux"
-          @toggle="toggleCollapse"
-        >
-          <template #collapseContent>
-            <ul class="collapsed mb-6 mt-4 text-left text-2xl">
-              <AppCollapsedItem
-                :to="appConfig.files.x86"
-                title="x86-64"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.aarch64"
-                title="aarch64"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.ppc64_be"
-                title="ppc64 BE"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.ppc64_le"
-                title="ppc64 LE"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.riscv64"
-                title="riscv64"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.arm"
-                title="arm"
-              />
-              <AppCollapsedItem
-                :to="appConfig.url.ubuntu"
-                title="Ubuntu PPA"
-                class="border-none pb-4"
-              />
-            </ul>
-          </template>
-        </AppCollapse>
-
-        <!-- MacOS Downloads -->
-        <AppCollapse
-          :id="1"
-          :collapsed="collapsePanels[1].isVisible"
-          title="MacOS"
-          icon="Apple"
-          @toggle="toggleCollapse"
-        >
-          <template #collapseContent>
-            <ul class="collapsed mb-6 mt-4 text-left text-2xl">
-              <AppCollapsedItem
-                :to="appConfig.files.intel_app"
-                title="Intel Mac"
-                type="App"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.intel"
-                title="Intel Mac"
-                type="Terminal"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.apple_app"
-                title="Apple Silicon"
-                type="App"
-              />
-              <AppCollapsedItem
-                :to="appConfig.files.apple"
-                title="Apple Silicon"
-                type="Terminal"
-                class="border-none pb-4"
-              />
-            </ul>
-          </template>
-        </AppCollapse>
-
-        <!-- Windows Downloads -->
-        <div class="">
-          <AppCollapse
-            :id="2"
-            :collapsed="collapsePanels[2].isVisible"
-            title="Windows"
-            icon="Windows"
-            @toggle="toggleCollapse"
-          >
-            <template #collapseContent>
-              <ul class="collapsed mb-6 mt-4 text-left text-2xl">
-                <AppCollapsedItem
-                  :to="appConfig.files.windows_exe"
-                  title="Install"
-                  type="EXE"
-                />
-                <AppCollapsedItem
-                  :to="appConfig.files.windows"
-                  title="Portable"
-                  type="ZIP"
-                />
-              </ul>
-            </template>
-          </AppCollapse>
-
-          <!-- Source Code Downloads -->
-          <AppCollapse
-            :id="3"
-            :collapsed="collapsePanels[3].isVisible"
-            title="Source Code"
-            icon="Github"
-            class="col-start-3 mt-4"
-            @toggle="toggleCollapse"
-          >
-            <template #collapseContent>
-              <ul class="collapsed mb-6 mt-4 text-left text-2xl">
-                <AppCollapsedItem
-                  :to="appConfig.url.gh_repo"
-                  title="Github"
-                  type="REPO"
-                />
-                <AppCollapsedItem
-                  :to="appConfig.files.source"
-                  title="Archive"
-                  type="TAR"
-                />
-              </ul>
-            </template>
-          </AppCollapse>
-        </div>
-      </div>
-
-      <!-- Steps -->
-      <div class="mt-24 grid w-full grid-cols-3 items-start justify-between gap-12">
-        <div class="">
-          <p class="inline-block border-t-4 py-4 text-2xl font-bold tracking-tight">
-            Step 1
-          </p>
-          <p class="py-4 text-xl">
-            Download Bitcoin Knots for your operating system by selection an option above.
-          </p>
-          <p
-            class="
-            --absolute inline-block py-4 text-3xl text-onyx
-            dark:text-brand
-          "
-          >
-            --->
-          </p>
-          <!-- <span class="">Operating System</span> -->
-        </div>
-        <!-- <p class="text-3xl text-onyx dark:text-brand py-4 --absolute inline-block"> ---</p> -->
-
-        <!-- Step 2 -->
-        <div class="col-start-2">
-          <p class="inline-block border-t-4 py-4 text-2xl font-bold tracking-tight">
-            Step 2
-          </p>
-          <p class="py-4 text-xl">
-            Download the digital fingerprint and signature files provided here.
-          </p>
-
-          <!-- <span class="">Operating System</span> -->
-          <div class="mb-8 mt-4 flex">
-            <NuxtLink
-              :to="appConfig.url.fingerprint"
-              class="
-                me-4 flex items-center rounded-md border-2 border-onyx px-3 py-2 text-lg font-bold
-                tracking-tight text-onyx
-                hover:border-vanil hover:text-vanil
-                dark:border-vanil dark:text-vanil dark:hover:border-brand dark:hover:text-brand
-              "
-            >
-              Fingerprint
-            </NuxtLink>
-            <NuxtLink
-              :to="appConfig.url.signature"
-              class="
-                me-4 flex items-center rounded-md border-2 border-onyx px-3 py-2 text-lg font-bold
-                tracking-tight text-onyx
-                hover:border-vanil hover:text-vanil
-                dark:border-vanil dark:text-vanil dark:hover:border-brand dark:hover:text-brand
-              "
-            >
-              Signature
-            </NuxtLink>
-          </div>
-          <!-- <span class="text-3xl text-onyx dark:text-brand py-4"><--</span> -->
-        </div>
-
-        <!-- Step 3 -->
-        <div class="col-start-3">
-          <p
-            class="
-              inline-block border-t-4 py-4 text-2xl font-bold tracking-tight text-vanil
-              dark:text-brand
-            "
-          >
-            Verify Your Download
-          </p>
-          <p class="py-4 text-xl">
-            Follow our simple, OS-specific guides to ensure your copy of Bitcoin Knots is authentic
-            and secure:
-          </p>
-
-          <!-- <span class="">Operating System</span> -->
-          <div class="mb-8 mt-4 flex">
-            <NuxtLink
-              to="pdf/verify/knots-linux.pdf"
-              external
-              class="
-                me-4 flex items-center rounded-md border-2 border-onyx px-3 py-2 text-lg font-bold
-                tracking-tight text-onyx
-                hover:border-vanil hover:text-vanil
-                dark:border-vanil dark:text-vanil dark:hover:border-brand dark:hover:text-brand
-              "
-            >
-              Linux
-            </NuxtLink>
-            <NuxtLink
-              to="/pdf/verify/knots-macos.pdf"
-              external
-              class="
-                me-4 flex items-center rounded-md border-2 border-onyx px-3 py-2 text-lg font-bold
-                tracking-tight text-onyx
-                hover:border-vanil hover:text-vanil
-                dark:border-vanil dark:text-vanil dark:hover:border-brand dark:hover:text-brand
-              "
-            >
-              MacOS
-            </NuxtLink>
-            <NuxtLink
-              to="/pdf/verify/knots-windows.pdf"
-              external
-              class="
-                me-4 flex items-center rounded-md border-2 border-onyx px-3 py-2 text-lg font-bold
-                tracking-tight text-onyx
-                hover:border-vanil hover:text-vanil
-                dark:border-vanil dark:text-vanil dark:hover:border-brand dark:hover:text-brand
-              "
-            >
-              Windows
-            </NuxtLink>
-          </div>
-          <!-- <span class="text-3xl text-onyx dark:text-brand py-4"><-- </span> -->
-        </div>
-      </div>
-
-      <!-- MARK: Branding -->
-      <div class="grid grid-cols-12 gap-4 mt-24">
-        <div class="col-span-4">
-          <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
-            <div class="@container flex w-full h-full relative justify-center items-center" />
-            <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-vanil" />
-          </div>
-        </div>
-
-        <div class="col-span-4">
-          <div class="block bg-onyx dark:bg-vanil pb-full rounded-3xl w-full relative">
-            <div class="@container flex w-full h-full relative justify-center items-center" />
-            <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-onyx" />
-          </div>
-        </div>
-
-        <div class="col-span-4">
-          <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
-            <div class="@container flex w-full h-full relative justify-center items-center" />
-            <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-onyx" />
-          </div>
-        </div>
-
-      <!-- <div class="col-span-4">
-              <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
-                <div class="@container flex w-full h-full relative justify-center items-center" />
-                <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-brand" />
-              </div>
-            </div> -->
-
-      <!-- <div class="col-span-4">
-              <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
-                <div class="@container flex w-full h-full relative justify-center items-center" />
-                <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-brand dark:text-vanil" />
-              </div>
-            </div> -->
-      </div>
+      <AppBrandCollage class="mt-24" />
     </section>
 
     <!-- MARK: Faq -->
@@ -633,253 +310,10 @@
         "
       >
         <span class="">Common Questions ---> About Knots</span>
-        <!-- <span class="text-onyx dark:text-brand">---</span> -->
-        <!-- <span class="">About Knots :</span> -->
       </h3>
 
       <!-- QA -->
-      <div class="mt-24 grid grid-cols-4 gap-4">
-        <!-- QA #1 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            I already run Bitcoin Core. Why should I consider Bitcoin Knots?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            Think of Bitcoin Knots as "Bitcoin Core with optional extras." If you're happy with
-            Core, it's an excellent choice. However, if you need features like Pay-to-Endpoint for
-            censorship resistance, early access to privacy patches like Coinswap, or a more
-            conservative release cycle, then Knots is for you. It's the power-user's node.
-          </div>
-        </div>
-
-        <!-- QA #2 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            Is Bitcoin Knots a "hard fork" or an "altcoin"?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            Absolutely not. Bitcoin Knots is a software fork, not a consensus fork. It follows all
-            the same rules as Bitcoin Core. You will be running a fully validating Bitcoin node on
-            the exact same Bitcoin network. The differences lie in added features, policy patches,
-            and release timing.
-          </div>
-        </div>
-
-        <!-- QA #3 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            Is it safe to run Bitcoin Knots on the main network with real bitcoin?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            Yes. Bitcoin Knots is built for production use on the main Bitcoin network. It is a
-            stable, fully-validating node. As with any Bitcoin software, you should always verify
-            the digital signatures of the download to ensure you have the authentic version.
-          </div>
-        </div>
-
-        <!-- QA #4 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            What is the main philosophical difference between Knots and Core?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            Bitcoin Core focuses on being a minimal, consensus-critical base layer for the entire
-            network. Bitcoin Knots takes this solid base and integrates additional features and
-            policy changes that are deemed useful but may be too experimental, controversial, or
-            low-priority for immediate inclusion into Core. Knots serves as a testing ground and
-            provides options for users who want more than the baseline.
-          </div>
-        </div>
-
-        <!-- QA #5 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            I've heard about a debate regarding OP_RETURN and data. What is Bitcoin Knots' stance?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            This is a key differentiator. The Bitcoin Knots client implements a default policy that
-            restricts the size of data carriers like OP_RETURN more than Bitcoin Core's default. The
-            goal is to conserve block space for financial transactions and reduce blockchain bloat.
-            It's important to understand that this is a node policy, not a consensus rule. Other
-            nodes on the network may still relay and mine transactions that exceed this limit.
-          </div>
-        </div>
-
-        <!-- QA #6 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            So, does the OP_RETURN policy mean Knots is incompatible with the network?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            Not at all. Your node will still validate all blocks and transactions that follow the
-            consensus rules. The policy only affects which unconfirmed transactions your node will
-            willingly relay to its peers. This is similar to how different nodes may have different
-            mempool size limits or fee requirements. It's about how you choose to participate in the
-            peer-to-peer network.
-          </div>
-        </div>
-
-        <!-- QA #7 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            Can I run both Bitcoin Core and Bitcoin Knots on the same machine?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            Yes, but you must configure them to use different data directories and ports to avoid
-            conflicts. This is an advanced setup and requires carefully editing the bitcoin.conf
-            file for one or both instances. We recommend most users run one primary node.
-          </div>
-        </div>
-
-        <!-- QA #8 -->
-        <div
-          class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
-            hover:border-onyx hover:text-onyx dark:hover:text-vanil
-            dark:text-vanil dark:hover:border-vanil
-          "
-        >
-          <div
-            class="
-              q mb-8 font-bold opacity-100
-              group-hover:border-vanil group-hover:opacity-100
-              dark:group-hover:text-vanil
-            "
-          >
-            Where can I get help if I have a problem?
-          </div>
-          <div
-            class="
-            a invisible text-base
-            group-hover:visible
-          "
-          >
-            The best place for community support is the Bitcoin Knots mailing list. For bug reports
-            and technical discussions, you can open an issue on the official GitHub repository.
-            Remember, this is open-source software; patience and detailed problem reports are
-            appreciated.
-          </div>
-        </div>
-      </div>
+      <AppFaq class="mt-24" />
     </section>
 
     <!-- Mail -->
@@ -960,23 +394,4 @@
 
 <script setup>
 const appConfig = useAppConfig()
-
-const collapsePanels = ref([
-  { id: 0, isVisible: false },
-  { id: 1, isVisible: false },
-  { id: 2, isVisible: false },
-  { id: 3, isVisible: false },
-])
-
-const openCollapse = (id) => {
-  collapsePanels.value.forEach((el, index) => {
-    if (id === index) {
-      el.isVisible = !el.isVisible
-    }
-  })
-}
-
-const toggleCollapse = (id) => {
-  openCollapse(id)
-}
 </script>
