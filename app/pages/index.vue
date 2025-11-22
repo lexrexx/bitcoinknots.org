@@ -4,35 +4,6 @@
   <div class="container mx-auto w-full overflow-hidden">
     <!-- MARK: Hero -->
     <AppHero />
-    <!-- Squared -->
-    <!-- <div class="gap-8 grid grid-cols-12 mt-28">
-
-      <div class="col-span-4">
-        <div class="block bg-onyx pb-full rounded-3xl w-full">
-          <div class="flex w-full h-full">
-            <h1 class="absolute m-10 font-bold text-9xl leading-[1] tracking-tighter">
-              Bitcoin Is
-              <span class="block text-vanil dark:text-vanil">
-                Money
-              </span>
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-span-5">
-        <div class="block bg-onyx pb-full rounded-3xl w-full">
-          <div class="flex w-full h-full">
-            <h1 class="absolute text-vanil m-10 font-bold text-9xl leading-[1] tracking-tighter">
-              Bitcoin Is
-              <span class="block text-brand dark:text-vanil">
-                Money
-              </span>
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- MARK: About -->
     <section
@@ -95,7 +66,7 @@
         </p>
       </div>
 
-      <div class="col-span-5 me-12 mt-12">
+      <div class="col-span-5 me-12 mt-12 mb-48">
         <h3
           class="
           py-4 text-3xl font-bold
@@ -115,6 +86,42 @@
           help secure.
         </p>
       </div>
+
+      <!-- Squared -->
+      <div class="col-span-4 gap-4 me-4">
+        <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
+          <div class="@container flex w-full h-full relative justify-center items-center" />
+          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-vanil" />
+        </div>
+      </div>
+
+      <div class="col-span-4 gap-4 me-4">
+        <div class="block bg-onyx dark:bg-vanil pb-full rounded-3xl w-full relative">
+          <div class="@container flex w-full h-full relative justify-center items-center" />
+          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-onyx" />
+        </div>
+      </div>
+
+      <div class="col-span-4 gap-4 me-4">
+        <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
+          <div class="@container flex w-full h-full relative justify-center items-center" />
+          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-onyx dark:text-onyx" />
+        </div>
+      </div>
+
+      <!-- <div class="col-span-4 gap-4 me-4">
+        <div class="block bg-brand dark:bg-onyx pb-full rounded-3xl w-full relative">
+          <div class="@container flex w-full h-full relative justify-center items-center" />
+          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-vanil dark:text-brand" />
+        </div>
+      </div> -->
+
+      <!-- <div class="col-span-4 gap-4 me-4">
+        <div class="block bg-vanil dark:bg-brand pb-full rounded-3xl w-full relative">
+          <div class="@container flex w-full h-full relative justify-center items-center" />
+          <AppLogomark class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-brand dark:text-vanil" />
+        </div>
+      </div> -->
     </section>
 
     <!--  -->
