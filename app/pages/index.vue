@@ -880,18 +880,6 @@
       </div>
     </section>
 
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
     <!-- Mail -->
     <section
       id="News"
@@ -979,6 +967,12 @@
 </template>
 
 <script setup>
+import AppHero from '~/components/macro/AppHero.vue'
+import AppCollapse from '~/components/micro/AppCollapse.vue'
+import AppCollapsedItem from '~/components/nano/AppCollapsedItem.vue'
+import AppIcon from '~/components/nano/AppIcon.vue'
+import AppLogomark from '~/components/nano/AppLogomark.vue'
+
 const appConfig = useAppConfig()
 
 const collapsePanels = ref([

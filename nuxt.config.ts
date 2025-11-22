@@ -7,6 +7,13 @@ export default defineNuxtConfig({
     // baseURL: '/',
     baseURL: '/bitcoinknots.org/',
   },
+  components: {
+    dirs: [
+      '~/components/macro',
+      '~/components/micro',
+      '~/components/nano',
+    ],
+  },
   compatibilityDate: '2025-07-15',
   nitro: {
     preset: 'static',
