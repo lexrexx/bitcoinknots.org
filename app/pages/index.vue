@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/no-multiple-template-root -->
 <template>
-  <AppBreakpoints />
+  <!-- <AppBreakpoints /> -->
   <div class="container mx-auto w-full overflow-hidden">
     <AppHero />
     <section
@@ -246,9 +246,22 @@
         title-b="& Verify"
       />
 
+      <!-- <h3
+        class="
+          w-full lg:w-10/12 xl:w-9/12
+          mb-12
+          mt-12 sm:mt-14 md:mt-20 lg:mt-32
+          text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl
+          leading-normal sm:leading-normal md:leading-normal lg:leading-normal xl:leading-normal
+          tracking-[1]
+      "
+      >
+        Open Source + Digitally Signed + Always Verify.
+      </h3> -->
+
       <AppDownloadVerify />
 
-      <AppBrandCollage class="mt-24" />
+      <!-- <AppBrandCollage class="mt-24" /> -->
     </section>
 
     <!-- MARK: Faq -->
