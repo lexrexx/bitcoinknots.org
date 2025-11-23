@@ -33,10 +33,13 @@ const toggleCollapse = () => {
       <div class="flex items-center my-2 p-4">
         <AppIcon
           :name="icon"
-          class="w-24 h-24 text-onyx dark:group-hover:text-brand dark:text-vanil group-hover:text-vanil"
+          class="
+            w-24 lg:w-20 xl:w-24
+            h-24 lg:h-20 xl:h-24
+          text-onyx dark:group-hover:text-brand dark:text-vanil group-hover:text-vanil"
         />
         <h3
-          class="ms-1 font-bold dark:group-hover:text-brand group-hover:text-vanil text-3xl tracking-tight"
+          class="ms-1 md:ms-4 lg:ms-1 font-bold dark:group-hover:text-brand group-hover:text-vanil  text-2xl md:text-3xl lg:text-2xl xl:text-3xl tracking-tight"
         >
           {{ title }}
         </h3>

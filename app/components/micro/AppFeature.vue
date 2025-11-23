@@ -1,7 +1,7 @@
 <template>
   <!-- <li class="grid grid-cols-1 md:grid-cols-[1fr,auto] -ms-4 my-8"> -->
   <li class="flex-row md:flex md:-ms-4 my-8 me-8 xl:me-16">
-    <div class="md:inline-bloc -ms-4">
+    <div class="flex">
       <AppIcon
         :name="props.icon"
         class="
@@ -11,8 +11,8 @@
       "
       />
     </div>
-    <div class="md:ms-8 lg:ms-4 my-4">
-      <h6 class="text-2xl font-bold mb-4">
+    <div class="md:ms-8 lg:ms-4 md:my-4">
+      <h6 class="text-xl sm:text-2xl lg:text-2xl font-bold md:mb-4">
         {{ props.title }}
       </h6>
       <p class="mb-4 md:mb-2">

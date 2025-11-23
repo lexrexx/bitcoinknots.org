@@ -41,13 +41,7 @@
           >
             A Node for the Original Vision
           </h3>
-          <p
-            class="
-              py-2 md:py-4
-              sm:text-base md:text-lg lg:text-xl
-              leading-relaxed lg:leading-normal
-            "
-          >
+          <p>
             In a climate of increasing block space debate and protocol changes that risk altering
             Bitcoin's core value proposition, running a node is more critical than ever.
           </p>
@@ -65,13 +59,7 @@
             Bitcoin Knots is built for those who believe in a conservative approach to consensus and a
             clear separation between monetary layer and application layer.
           </p>
-          <p
-            class="
-              py-2 md:py-4
-              sm:text-base md:text-lg lg:text-xl
-              leading-relaxed lg:leading-normal
-            "
-          >
+          <p>
             It implements default policies that prioritize financial transactions, helping to
             safeguard the chain from bloat and ensure it remains accessible for its primary purpose:
             peer-to-peer electronic cash.
@@ -89,23 +77,11 @@
           >
             Your Voice in the Consensus
           </h3>
-          <p
-            class="
-              py-2 md:py-4
-              sm:text-base md:text-lg lg:text-xl
-              leading-relaxed lg:leading-normal
-            "
-          >
+          <p>
             While other clients may follow a path of increasing permissiveness, Knots provides a
             technical implementation for a different viewpoint.
           </p>
-          <p
-            class="
-              py-2 md:py-4
-              sm:text-base md:text-lg lg:text-xl
-              leading-relaxed lg:leading-normal
-            "
-          >
+          <p>
             By choosing Knots, you are not just running a node, you are casting a vote for a specific
             vision of Bitcoin's future. You are taking a stand for a scalable, efficient, and
             sovereign monetary network, directly enforcing your preferred rules on the network you
@@ -140,7 +116,7 @@
 
       <h3
         class="
-                w-full lg:w-10/12 xl:w-9/12
+          w-full lg:w-10/12 xl:w-9/12
           mb-12
           mt-12 sm:mt-14 md:mt-20 lg:mt-32
           text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl
@@ -153,7 +129,7 @@
       </h3>
 
       <!-- Content -->
-      <div class="col-span-12 my-24">
+      <div class="col-span-12">
         <div class="grid lg:grid-cols-2 lg:gap-12 xl:gap-24">
           <div>
             <div
@@ -174,9 +150,9 @@
                 class="
                   font-bold
                   tracking-tight
-                  mb-12 lg:mb-16 xl:mb-24
+                  md:mb-20 xl:mb-24
                   mt-4 lg:mt-8
-                  text-2xl sm:text-3xl md:text-4xl xl:text-5xl
+                  text-3xl sm:text-3xl md:text-4xl xl:text-5xl
                 "
               >
                 Advanced Features
@@ -285,11 +261,13 @@
 
       <h3
         class="
-          col-span-12 mb-4 mt-20 flex w-full items-start justify-between text-4xl uppercase
+          col-span-12 mb-4 mt-8 sm:mt-12 md:mt-16 xl:mt-24 flex w-full items-start justify-between text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase
           tracking-wider
         "
       >
-        <span class="">Common Questions ---> About Knots</span>
+        Common Questions
+        <span class="text-vanil dark:text-brand"> ---> </span>
+        About Knots
       </h3>
 
       <!-- QA -->

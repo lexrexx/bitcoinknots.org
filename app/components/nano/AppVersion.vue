@@ -11,7 +11,7 @@
       border-2
       rounded-md
       font-bold
-      text-2xs
+      text-sm md:text-base lg:text-lg
       tracking-tight
       text-onyx dark:text-brand hover:text-vanil
       border-onyx dark:border-brand hover:border-vanil

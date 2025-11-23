@@ -1,9 +1,9 @@
 <template>
-  <div class="mt-24 grid grid-cols-4 gap-4">
+  <div class="mt-24 grid lg: grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
     <!-- QA #1 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
@@ -33,7 +33,7 @@
     <!-- QA #2 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
@@ -63,7 +63,7 @@
     <!-- QA #3 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
@@ -92,7 +92,7 @@
     <!-- QA #4 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
@@ -123,7 +123,7 @@
     <!-- QA #5 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
@@ -154,7 +154,7 @@
     <!-- QA #6 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
@@ -185,7 +185,7 @@
     <!-- QA #7 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
@@ -214,7 +214,7 @@
     <!-- QA #8 -->
     <div
       class="
-            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-4 border-brand dark:border-onyx
+            qa group cursor-pointer rounded-3xl p-8 text-xl text-onyx border-2 border-brand dark:border-onyx
             hover:border-onyx hover:text-onyx dark:hover:text-vanil
             dark:text-vanil dark:hover:border-vanil
           "
