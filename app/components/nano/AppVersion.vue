@@ -7,7 +7,7 @@
       items-center
       m-1
       px-2
-      py-1
+      py-2
       border-2
       rounded-md
       font-bold

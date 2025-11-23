@@ -23,7 +23,6 @@
     <div class="col-start-3 flex items-center justify-end">
       <AppVersion
         to="#Download"
-        class="text-lg"
       />
     </div>
   </div>

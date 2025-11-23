@@ -285,31 +285,40 @@
           title-b="The Loop"
         />
 
-        <h3 class="--uppercase tracking-snug mt-12 max-w-5xl text-4xl leading-normal">
+        <h3
+          class="
+          w-full lg:w-10/12 xl:w-9/12
+          mb-12
+          mt-12 sm:mt-14 md:mt-20 lg:mt-32
+          text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl
+          leading-normal sm:leading-normal md:leading-normal lg:leading-normal xl:leading-normal
+          tracking-[1]
+      "
+        >
           Get release announcements and critical security advisories directly from the lead
           maintainer ---> Luke Dashjr.
         </h3>
 
-        <p class="my-12 text-3xl font-bold tracking-tight">
+        <p class="my-12 text-xl md:text-2xl xl:text-3xl font-bold tracking-tight">
           Choose your preferred way to subscribe:
         </p>
       </div>
 
-      <div class="my-6 grid grid-cols-2 gap-12 text-lg">
+      <div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-12 text-lg">
         <div class="">
           <div class="">
             <AppIcon
               name="Email"
               class="
-                -ms-3 h-24 w-24 text-vanil
+                -ms-3 h-20 w-20 md:h-24 md:w-24 text-vanil
                 dark:text-brand
               "
             />
           </div>
-          <h4 class="my-4 text-2xl font-bold">
+          <h4 class="my-2 md:my-4 text-xl xl:text-2xl font-bold">
             Subscribe with any Email Address
           </h4>
-          <p class="">
+          <p>
             This is the simplest method and doesn't require a Google account. Just send a blank
             email to
             <NuxtLink
@@ -327,12 +336,12 @@
             <AppIcon
               name="G"
               class="
-                -ms-5 h-24 w-24 text-vanil
+                -ms-4 h-20 w-20 md:h-24 md:w-24 text-vanil
                 dark:text-brand
               "
             />
           </div>
-          <h4 class="my-4 text-2xl font-bold">
+          <h4 class="my-2 md:my-4 text-xl xl:text-2xl font-bold">
             Subscribe with a Google Account
           </h4>
           <p>

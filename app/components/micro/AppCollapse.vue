@@ -44,7 +44,7 @@ const toggleCollapse = () => {
           {{ title }}
         </h3>
       </div>
-      <div v-if="!props.collapsed">
+      <div v-if="props.collapsed">
         <slot name="collapseContent" />
       </div>
     </button>
