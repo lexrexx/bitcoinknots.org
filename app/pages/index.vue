@@ -1,110 +1,160 @@
+<!-- eslint-disable vue/no-multiple-template-root -->
 <template>
-  <!-- <NuxtLayout :name="layout"> -->
-  <!-- <AppBreakpoints /> -->
+  <AppBreakpoints />
   <div class="container mx-auto w-full overflow-hidden">
-    <!-- MARK: Hero -->
     <AppHero />
-
-    <!-- MARK: About -->
-    <!-- <section
-      id="About"
-      class="
-        mx-4 grid grid-cols-12
-        lg:pt-32
-      "
-    > -->
-    <AppGridSection>
+    <section
+      class="mx-4 relative"
+    >
       <AppTitle
+        id="About"
         title-a="Built for"
         title-b="Sovereignty"
       />
 
-      <p class="col-span-9 col-start-1 mb-12 mt-32 text-4xl leading-normal">
+      <p
+        class="
+          w-full lg:w-10/12 xl:w-9/12
+          lg:mb-12
+          mt-12 sm:mt-14 md:mt-20 lg:mt-32
+          text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+          leading-normal sm:leading-normal md:leading-normal lg:leading-normal xl:leading-normal
+          tracking-[1]
+        "
+      >
         <!--  eslint-disable-next-line vue/no-parsing-error -->
-        <span class="font-bold">Bitcoin <--> Knots </span>is a free and open-source full node
+        <span class="font-bold tracking-tight"> Bitcoin Knots </span> ---> Is a free and open-source full node
         implementation that empowers you to fully validate the blockchain and enforce Bitcoin's
         rules. It includes advanced features and privacy patches not yet available in other clients,
         giving you greater control over your financial sovereignty.
       </p>
 
-      <div class="col-span-5 me-12 mt-12">
-        <h3
-          class="
-          py-4 text-3xl font-bold
-          dark:text-brand
-        "
-        >
-          A Node for the Original Vision
-        </h3>
-        <p class="py-4 text-xl leading-relaxed">
-          In a climate of increasing block space debate and protocol changes that risk altering
-          Bitcoin's core value proposition, running a node is more critical than ever.
-        </p>
-        <p
-          class="
-          my-4 border-l-4 border-onyx ps-8 text-xl leading-relaxed
-          dark:border-brand
-        "
-        >
-          Bitcoin Knots is built for those who believe in a conservative approach to consensus and a
-          clear separation between monetary layer and application layer.
-        </p>
-        <p class="py-4 text-xl leading-relaxed">
-          It implements default policies that prioritize financial transactions, helping to
-          safeguard the chain from bloat and ensure it remains accessible for its primary purpose:
-          peer-to-peer electronic cash.
-        </p>
+      <div class="grid lg:grid-cols-12 lg:gap-8 2xl:gap-0">
+        <div class="lg:col-span-6 2xl:col-span-5 xl:me-12 mt-12">
+          <h3
+            class="
+              py-2 md:py-4
+              text-xl sm:text-xl md:text-2xl xl:text-3xl
+              font-bold
+              dark:text-brand
+            "
+          >
+            A Node for the Original Vision
+          </h3>
+          <p
+            class="
+              py-2 md:py-4
+              sm:text-base md:text-lg lg:text-xl
+              leading-relaxed lg:leading-normal
+            "
+          >
+            In a climate of increasing block space debate and protocol changes that risk altering
+            Bitcoin's core value proposition, running a node is more critical than ever.
+          </p>
+          <p
+            class="
+              my-2 lg:my-4
+              ps-8
+              sm:text-base md:text-lg lg:text-xl
+              leading-relaxed lg:leading-normal
+              border-l-8
+              border-onyx
+              dark:border-brand
+            "
+          >
+            Bitcoin Knots is built for those who believe in a conservative approach to consensus and a
+            clear separation between monetary layer and application layer.
+          </p>
+          <p
+            class="
+              py-2 md:py-4
+              sm:text-base md:text-lg lg:text-xl
+              leading-relaxed lg:leading-normal
+            "
+          >
+            It implements default policies that prioritize financial transactions, helping to
+            safeguard the chain from bloat and ensure it remains accessible for its primary purpose:
+            peer-to-peer electronic cash.
+          </p>
+        </div>
+
+        <div class="lg:col-span-6 2xl:col-span-5 xl:me-12 mt-12">
+          <h3
+            class="
+              py-2 md:py-4
+              text-xl sm:text-xl md:text-2xl xl:text-3xl
+              font-bold
+              dark:text-brand
+            "
+          >
+            Your Voice in the Consensus
+          </h3>
+          <p
+            class="
+              py-2 md:py-4
+              sm:text-base md:text-lg lg:text-xl
+              leading-relaxed lg:leading-normal
+            "
+          >
+            While other clients may follow a path of increasing permissiveness, Knots provides a
+            technical implementation for a different viewpoint.
+          </p>
+          <p
+            class="
+              py-2 md:py-4
+              sm:text-base md:text-lg lg:text-xl
+              leading-relaxed lg:leading-normal
+            "
+          >
+            By choosing Knots, you are not just running a node, you are casting a vote for a specific
+            vision of Bitcoin's future. You are taking a stand for a scalable, efficient, and
+            sovereign monetary network, directly enforcing your preferred rules on the network you
+            help secure.
+          </p>
+        </div>
       </div>
 
-      <div class="col-span-5 me-12 mt-12">
-        <h3
-          class="
-          py-4 text-3xl font-bold
-          dark:text-brand
-        "
+      <div class="grid grid-cols-12">
+        <div class="hidden lg:flex py-28 col-span-5 text-9xl text-vanil dark:text-brand font-bold justify-start items-center">
+          --->
+        </div>
+        <div
+          id="Knots"
+          class="pt-16 lg:py-28 col-span-12 lg:col-span-7 lg:col-start-6"
         >
-          Your Voice in the Consensus
-        </h3>
-        <p class="py-4 text-xl leading-relaxed">
-          While other clients may follow a path of increasing permissiveness, Knots provides a
-          technical implementation for a different viewpoint.
-        </p>
-        <p class="py-4 text-xl leading-relaxed">
-          By choosing Knots, you are not just running a node, you are casting a vote for a specific
-          vision of Bitcoin's future. You are taking a stand for a scalable, efficient, and
-          sovereign monetary network, directly enforcing your preferred rules on the network you
-          help secure.
-        </p>
+          <AppLogotype class="w-full" />
+        </div>
       </div>
-      <div class="py-28 col-span-5 text-9xl text-vanil dark:text-brand font-bold flex justify-start items-center">
-        --->
-      </div>
-      <div
-        id="Knots"
-        class="py-28 col-span-7 col-start-6"
-      >
-        <AppLogotype class="w-full" />
-      </div>
-    </AppGridSection>
+    </section>
 
-    <!-- MARK: Features -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// Features -->
     <section
       id="Features"
-      class="mx-4 grid grid-cols-12 pt-32"
+      class="mx-4"
     >
       <AppTitle
+        id="Features"
         title-a="Power"
         title-b="Features"
       />
 
-      <h3 class="tracking-snug col-span-9 mt-24 text-4xl leading-normal">
+      <h3
+        class="
+                w-full lg:w-10/12 xl:w-9/12
+          mb-12
+          mt-12 sm:mt-14 md:mt-20 lg:mt-32
+          text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl
+          leading-normal sm:leading-normal md:leading-normal lg:leading-normal xl:leading-normal
+          tracking-[1]
+      "
+      >
         Maintains full Bitcoin compatibility, while offering enhanced tools for node sovereignty and
         chain cleanliness.
       </h3>
 
       <!-- Content -->
       <div class="col-span-12 my-24">
-        <div class="grid grid-cols-2 gap-24">
+        <div class="grid lg:grid-cols-2 lg:gap-12 xl:gap-24">
           <div>
             <div
               class="
@@ -114,70 +164,46 @@
             >
               <span
                 class="
-                block text-2xl text-vanil
-                dark:text-brand
+                  block
+                  sm:text-lg md:text-xl lg:text-2xl
+                  text-vanil
+                  dark:text-brand
               "
               >/ A</span>
-              <h5 class="mb-32 mt-8 text-5xl font-bold tracking-tight">
+              <h5
+                class="
+                  font-bold
+                  tracking-tight
+                  mb-12 lg:mb-16 xl:mb-24
+                  mt-4 lg:mt-8
+                  text-2xl sm:text-3xl md:text-4xl xl:text-5xl
+                "
+              >
                 Advanced Features
               </h5>
             </div>
-            <ul class="mx-8 text-xl">
-              <li class="grid-cols-[1fr, auto] grid">
-                <!-- <span class="inline-block bg-onyx rounded-2xl"> -->
-                <AppIcon
-                  name="Network"
-                  class="
-                    -ms-6 h-24 w-24 text-vanil
-                    dark:text-brand
-                  "
-                />
-                <!-- </span> -->
-
-                <h6 class="ms-8 text-2xl font-bold">
-                  Pay-to-Endpoint
-                </h6>
-                <p class="col-start-2 -mt-8 ms-8 pb-24">
-                  Go beyond basic payments. This feature helps protect against network-level
+            <ul class="text-xl">
+              <AppFeature
+                icon="Network"
+                title="Pay-to-Endpoint"
+                body="Go beyond basic payments. This feature helps protect against network-level
                   censorship by allowing payments to be sent directly to a node's IP address,
-                  strengthening Bitcoin's peer-to-peer ethos.
-                </p>
-              </li>
-
-              <li class="grid-cols-[1fr, auto] grid">
-                <AppIcon
-                  name="Incognito"
-                  class="
-                    -ms-6 h-24 w-24 text-vanil
-                    dark:text-brand
-                  "
-                />
-                <h6 class="ms-8 text-2xl font-bold">
-                  Coinswap Implementation
-                </h6>
-                <p class="col-start-2 -mt-8 ms-8 pb-24">
-                  Enhance your privacy on-chain. Coinswap is a trustless protocol for obfuscating
-                  the trail of your coins, making chain analysis more difficult. Knots brings this
-                  powerful feature directly to your node.
-                </p>
-              </li>
-              <li class="grid-cols-[1fr, auto] grid">
-                <AppIcon
-                  name="Sliders"
-                  class="
-                    -ms-6 h-24 w-24 text-vanil
-                    dark:text-brand
-                  "
-                />
-                <h6 class="ms-8 text-2xl font-bold">
-                  RPC & Config Enhancements
-                </h6>
-                <p class="col-start-2 -mt-8 ms-8 pb-24">
-                  Unlock greater control for advanced users and developers. Knots includes
+                  strengthening Bitcoin's peer-to-peer ethos."
+              />
+              <AppFeature
+                icon="Incognito"
+                title="Coinswap Implementation"
+                body="Enhance your privacy on-chain. Coinswap is a trustless protocol for obfuscating
+              the trail of your coins, making chain analysis more difficult. Knots brings this
+              powerful feature directly to your node."
+              />
+              <AppFeature
+                icon="Sliders"
+                title="RPC & Config Enhancements"
+                body="Unlock greater control for advanced users and developers. Knots includes
                   additional Remote Procedure Call (RPC) commands and configuration options, giving
-                  you finer-grained control over your node's behavior.
-                </p>
-              </li>
+                  you finer-grained control over your node's behavior."
+              />
             </ul>
           </div>
 
@@ -190,100 +216,56 @@
             >
               <span
                 class="
-                block text-2xl text-vanil
+                block
+                sm:text-lg md:text-xl lg:text-2xl
+                text-vanil
                 dark:text-brand
               "
               >/ B</span>
-              <h5 class="mb-32 mt-8 text-5xl font-bold tracking-tight">
+              <h5
+                class="
+                  font-bold
+                  tracking-tight
+                  mb-12 lg:mb-16 xl:mb-24
+                  mt-4 lg:mt-8
+                  text-2xl sm:text-3xl md:text-4xl xl:text-5xl
+                "
+              >
                 Core Experience
               </h5>
             </div>
             <ul class="text-xl">
-              <li class="grid-cols-[1fr, auto] grid">
-                <AppIcon
-                  name="Checkmark"
-                  class="
-                    -ms-6 h-24 w-24 text-vanil
-                    dark:text-brand
-                  "
-                />
-                <h6 class="ms-8 text-2xl font-bold">
-                  Bitcoin Core Compatibility
-                </h6>
-                <p class="col-start-2 -mt-8 ms-8 pb-24">
-                  The solid foundation you trust. Bitcoin Knots is a full-node implementation that
+              <AppFeature
+                icon="Checkmark"
+                title="Bitcoin Core Compatibility"
+                body="The solid foundation you trust. Bitcoin Knots is a full-node implementation that
                   validates all consensus rules, ensuring complete compatibility and security of the
-                  Bitcoin network.
-                </p>
-              </li>
-              <li class="grid-cols-[1fr, auto] grid">
-                <AppIcon
-                  name="GUI"
-                  class="
-                    -ms-6 h-24 w-24 text-vanil
-                    dark:text-brand
-                  "
-                />
-                <h6 class="ms-8 text-2xl font-bold">
-                  Graphical User Interface (GUI) Patches
-                </h6>
-                <p class="col-start-2 -mt-8 ms-8 pb-24">
-                  A more informative and usable node experience. The Knots GUI includes various
+                  Bitcoin network."
+              />
+              <AppFeature
+                icon="GUI"
+                title="Graphical User Interface (GUI) Patches"
+                body="A more informative and usable node experience. The Knots GUI includes various
                   community-developed patches that add helpful information and tools not found in
-                  the standard interface.
-                </p>
-              </li>
-              <li class="grid-cols-[1fr, auto] grid">
-                <AppIcon
-                  name="Clock"
-                  class="
-                    -ms-6 h-24 w-24 text-vanil
-                    dark:text-brand
-                  "
-                />
-                <h6 class="ms-8 text-2xl font-bold">
-                  Conservative Release Cycle
-                </h6>
-                <p class="col-start-2 -mt-8 ms-8 pb-24">
-                  Stability for the long haul. Knots often incorporates features from Bitcoin Core
+                  the standard interface."
+              />
+              <AppFeature
+                icon="Clock"
+                title="Conservative Release Cycle"
+                body="Stability for the long haul. Knots often incorporates features from Bitcoin Core
                   after they have undergone extensive testing, offering a robust and reliable node
-                  option for production environments.
-                </p>
-              </li>
+                  option for production environments."
+              />
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <!-- Download & Verify -->
-    <section
-      id="Download"
-      class="--mb-24 mx-4 pt-32"
-    >
+    <!-- ////////////////////////////////////////////////////////////////////////////////// Download & Verify -->
+    <section class="mx-4">
       <AppTitle
+        id="Download"
         title-a="Download"
         title-b="& Verify"
       />
@@ -294,11 +276,9 @@
     </section>
 
     <!-- MARK: Faq -->
-    <section
-      id="Faq"
-      class="--mb-24 mx-4 pt-32"
-    >
+    <section class="--mb-24 mx-4">
       <AppTitle
+        id="Faq"
         title-a="Get"
         title-b="Answers"
       />
@@ -318,11 +298,11 @@
 
     <!-- Mail -->
     <section
-      id="News"
-      class="mx-4 mb-24 pt-32"
+      class="mx-4 mb-24"
     >
       <div class="">
         <AppTitle
+          id="News"
           title-a="Stay In"
           title-b="The Loop"
         />
