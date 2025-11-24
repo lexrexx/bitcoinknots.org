@@ -12,9 +12,9 @@
       />
     </div>
     <div class="md:ms-8 lg:ms-4 md:my-4">
-      <h6 class="text-xl sm:text-2xl lg:text-2xl font-bold md:mb-4">
+      <h5 class="text-xl sm:text-2xl lg:text-2xl font-bold md:mb-4">
         {{ props.title }}
-      </h6>
+      </h5>
       <p class="mb-4 md:mb-2">
         {{ props.body }}
       </p>

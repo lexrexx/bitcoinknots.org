@@ -34,7 +34,10 @@ useSeoMeta({
 })
 
 useHead({
-  title: '',
+  title: 'Bitcoin Knots',
+  htmlAttrs: {
+    lang: 'en',
+  },
   link: [
     { rel: 'apple-touch-icon', sizes: '180x180', href: './apple-touch-icon.png' },
     { rel: 'icon', type: 'image/png', sizes: '96x96', href: './favicon-96x96.png' },
@@ -49,5 +52,17 @@ useHead({
 <style lang="postcss">
 html {
   scroll-behavior: smooth;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 </style>

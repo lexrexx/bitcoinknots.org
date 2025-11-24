@@ -13,8 +13,8 @@
       font-bold
       text-sm md:text-base lg:text-lg
       tracking-tight
-      text-onyx dark:text-brand hover:text-vanil
-      border-onyx dark:border-brand hover:border-vanil
+      text-onyx dark:text-vanil hover:text-brand
+      border-onyx dark:border-vanil hover:border-brand
     "
   >
     v{{ appConfig.vapp }}

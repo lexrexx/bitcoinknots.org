@@ -14,6 +14,7 @@
         <div class="flex gap-1 md:gap-2">
           <NuxtLink
             :to="appConfig.url.x"
+            aria-label="Bitcoin Knots on X"
             target="_blank"
             class="flex justify-center items-center w-12 h-12 md:w-14 md:h-14 px-1.5  focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
@@ -24,6 +25,7 @@
           </NuxtLink>
           <NuxtLink
             :to="appConfig.url.discord"
+            aria-label="Bitcoin Knots on Discord"
             target="_blank"
             class="flex justify-center items-center w-12 h-12 md:w-14 md:h-14 px-1.5  focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
@@ -34,6 +36,7 @@
           </NuxtLink>
           <NuxtLink
             :to="appConfig.url.telegram"
+            aria-label="appConfig.url.telegram"
             target="_blank"
             class="flex justify-center items-center w-12 h-12 md:w-14 md:h-14 px-1.5  focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >
@@ -44,6 +47,7 @@
           </NuxtLink>
           <NuxtLink
             :to="appConfig.url.github"
+            aria-label="Bitcoin Knots on Github"
             target="_blank"
             class="flex justify-center items-center w-12 h-12 md:w-14 md:h-14 px-1.5  focus:outline-none focus:ring-2 rounded focus:ring-onyx/100 dark:focus:ring-brand/100 hover:bg-onyx/10 dark:hover:bg-vanil/10"
           >

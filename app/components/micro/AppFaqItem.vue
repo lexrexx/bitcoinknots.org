@@ -1,5 +1,5 @@
 <template>
-  <div class="group py-4 overflow-hidden border-b border-onyx/20 dark:border-vanil/10 hover:bg-onyx/5 dark:hover:bg-black/15">
+  <li class="group py-4 overflow-hidden border-b border-onyx/20 dark:border-vanil/10 hover:bg-onyx/5 dark:hover:bg-black/15">
     <button
       class="w-full px-6 py-4 text-left flex justify-between items-center group-hover:text-vanil focus:outline-none"
       :aria-expanded="isOpen"
@@ -47,7 +47,7 @@
         </p>
       </div>
     </Transition>
-  </div>
+  </li>
 </template>
 
 <script setup lang="ts">
