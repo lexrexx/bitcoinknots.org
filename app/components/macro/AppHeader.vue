@@ -4,7 +4,7 @@
   >
     <NuxtLink
       to="/"
-      class="flex justify-center items-center bg-[#FD7E14] dark:bg-brand border-onyx/10 dark:border-vanil/10 border-r w-20 md:w-24 h-20 md:h-24"
+      class="flex justify-center items-center bg-vanil dark:bg-brand border-onyx/10 dark:border-vanil/10 border-r w-20 md:w-24 h-20 md:h-24"
       @click="menu = false"
     >
       <AppLogomark class="w-12 md:w-14 h-12 md:h-14 text-onyx" />
