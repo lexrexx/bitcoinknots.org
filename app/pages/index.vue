@@ -138,20 +138,20 @@
               dark:text-vanil
             "
             >
-              <span
+              <!-- <span
                 class="
                   block
                   sm:text-lg md:text-xl lg:text-2xl
                   text-vanil
                   dark:text-brand
               "
-              >/ A</span>
+              >/ A</span> -->
               <h5
                 class="
                   font-bold
                   tracking-tight
                   md:mb-20 xl:mb-24
-                  mt-4 lg:mt-8
+                  mt-4 lg:mt-12
                   text-3xl sm:text-3xl md:text-4xl xl:text-5xl
                 "
               >
@@ -190,20 +190,20 @@
               dark:text-vanil
             "
             >
-              <span
+              <!-- <span
                 class="
                 block
                 sm:text-lg md:text-xl lg:text-2xl
                 text-vanil
                 dark:text-brand
               "
-              >/ B</span>
+              >/ B</span> -->
               <h5
                 class="
                   font-bold
                   tracking-tight
                   mb-12 lg:mb-16 xl:mb-24
-                  mt-4 lg:mt-8
+                  mt-4 lg:mt-12
                   text-2xl sm:text-3xl md:text-4xl xl:text-5xl
                 "
               >
