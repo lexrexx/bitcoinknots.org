@@ -242,7 +242,7 @@
           Linux
         </NuxtLink>
         <NuxtLink
-          to="/pdf/verify/knots-macos.pdf"
+          to="pdf/verify/knots-macos.pdf"
           external
           class="
                 me-4 flex items-center rounded-md border-2 border-onyx px-3 py-2  text-sm md:text-base lg:text-lg font-bold
@@ -254,7 +254,7 @@
           MacOS
         </NuxtLink>
         <NuxtLink
-          to="/pdf/verify/knots-windows.pdf"
+          to="pdf/verify/knots-windows.pdf"
           external
           class="
                 me-4 flex items-center rounded-md border-2 border-onyx px-3 py-2  text-sm md:text-base lg:text-lg font-bold
