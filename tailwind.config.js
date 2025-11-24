@@ -8,7 +8,6 @@ export default {
     colors: {
       white: '#FFFFFF', // pure-white
       black: '#000000', // pure-black
-      // brand: '#FF552C', // tiger-flame (killer-orange)
       brand: '#FF5E2C', // tiger-flame (killer-orange)
       vanil: '#FFDFC4', // papaya-whip (off-white)
       // vanil: '#FFE5C4', // papaya-whip (off-white)

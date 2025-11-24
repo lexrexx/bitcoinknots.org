@@ -1,7 +1,7 @@
 <template>
   <footer class="max-w-screen">
-    <div class="mx-auto --container">
-      <section class="flex justify-between mt-12 p-6 border-onyx/10 dark:border-vanil/10 border-t">
+    <div class="mx-auto">
+      <section class="flex justify-between mt-12 p-4 md:p-6 border-onyx/10 dark:border-vanil/10 border-t">
         <!-- <NuxtLink
           to="#Download"
           class="no-underline"

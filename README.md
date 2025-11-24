@@ -1,4 +1,4 @@
-![Bitcoin Knots v30](/public/social/knots-gh-repo.png)
+![Bitcoin Knots v30](/public/social/knots-gh-cover.png)
 
 # [Bitcoin Knots](https://lexrexx.github.io/bitcoinknots.org/)
 
