@@ -53,6 +53,11 @@ details > summary::-webkit-details-marker {
     hidden
 }
 
+details > summary:details-marker {
+  @apply
+    hidden
+}
+
 /* Rotate arrow when open */
 details[open] .details-arrow {
   @apply

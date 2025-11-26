@@ -34,93 +34,120 @@
     </div>
 
     <!-- Downloads -->
-    <div class="my-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
-      <!-- Linux Downloads -->
-      <AppCollapse
-        :id="0"
-        :collapsed="collapsePanels[0].isVisible"
-        title="Linux"
-        icon="Linux"
-        @toggle="toggleCollapse"
-      >
-        <template #collapseContent>
-          <ul class="collapsed mb-6 mt-4 text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl">
-            <AppCollapsedItem
-              :to="appConfig.files.x86"
-              title="x86-64"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.aarch64"
-              title="aarch64"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.ppc64_be"
-              title="ppc64 BE"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.ppc64_le"
-              title="ppc64 LE"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.riscv64"
-              title="riscv64"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.arm"
-              title="arm"
-            />
-            <AppCollapsedItem
-              :to="appConfig.url.ubuntu"
-              title="Ubuntu PPA"
-              class="border-none pb-4"
-            />
-          </ul>
-        </template>
-      </AppCollapse>
-
-      <!-- MacOS Downloads -->
-      <AppCollapse
-        :id="1"
-        :collapsed="collapsePanels[1].isVisible"
-        title="MacOS"
-        icon="Apple"
-        @toggle="toggleCollapse"
-      >
-        <template #collapseContent>
-          <ul class="collapsed mb-6 mt-4 text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl">
-            <AppCollapsedItem
-              :to="appConfig.files.intel_app"
-              title="Intel Mac"
-              type="App"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.intel"
-              title="Intel Mac"
-              type="Terminal"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.apple_app"
-              title="Apple Silicon"
-              type="App"
-            />
-            <AppCollapsedItem
-              :to="appConfig.files.apple"
-              title="Apple Silicon"
-              type="Terminal"
-              class="border-none pb-4"
-            />
-          </ul>
-        </template>
-      </AppCollapse>
-
-      <!-- Windows Downloads -->
+    <div class="my-6 grid columns-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+      <!-- COL 1 -->
       <div class="">
         <AppCollapse
-          :id="2"
-          :collapsed="collapsePanels[2].isVisible"
+          title="Linux"
+          icon="Linux"
+        >
+          <template #collapseContent>
+            <ul class="collapsed mb-6 mt-4 text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl">
+              <AppCollapsedItem
+                :to="appConfig.files.x86"
+                title="x86-64"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.aarch64"
+                title="aarch64"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.ppc64_be"
+                title="ppc64 BE"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.ppc64_le"
+                title="ppc64 LE"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.riscv64"
+                title="riscv64"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.arm"
+                title="arm"
+              />
+              <AppCollapsedItem
+                :to="appConfig.url.ubuntu"
+                title="Ubuntu PPA"
+                class="border-none pb-2"
+              />
+            </ul>
+          </template>
+        </AppCollapse>
+
+        <AppCollapse
+          title="MacOS"
+          icon="Apple"
+          class="xl:hidden"
+        >
+          <template #collapseContent>
+            <ul class="collapsed mb-6 mt-4 text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl">
+              <AppCollapsedItem
+                :to="appConfig.files.intel_app"
+                title="Intel Mac"
+                type="App"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.intel"
+                title="Intel Mac"
+                type="Terminal"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.apple_app"
+                title="Apple Silicon"
+                type="App"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.apple"
+                title="Apple Silicon"
+                type="Terminal"
+                class="border-none pb-2"
+              />
+            </ul>
+          </template>
+        </AppCollapse>
+      </div>
+
+      <!-- COL 2 -->
+      <div class="hidden xl:block">
+        <AppCollapse
+          title="MacOS"
+          icon="Apple"
+        >
+          <template #collapseContent>
+            <ul class="collapsed mb-6 mt-4 text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl">
+              <AppCollapsedItem
+                :to="appConfig.files.intel_app"
+                title="Intel Mac"
+                type="App"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.intel"
+                title="Intel Mac"
+                type="Terminal"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.apple_app"
+                title="Apple Silicon"
+                type="App"
+              />
+              <AppCollapsedItem
+                :to="appConfig.files.apple"
+                title="Apple Silicon"
+                type="Terminal"
+                class="border-none pb-2"
+              />
+            </ul>
+          </template>
+        </AppCollapse>
+      </div>
+
+      <!-- COL 3 -->
+      <div class="">
+        <AppCollapse
           title="Windows"
           icon="Windows"
-          @toggle="toggleCollapse"
         >
           <template #collapseContent>
             <ul class="collapsed mb-6 mt-4 text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl">
@@ -133,19 +160,16 @@
                 :to="appConfig.files.windows"
                 title="Portable"
                 type="ZIP"
+                class="border-none pb-2"
               />
             </ul>
           </template>
         </AppCollapse>
 
-        <!-- Source Code Downloads -->
         <AppCollapse
-          :id="3"
-          :collapsed="collapsePanels[3].isVisible"
           title="Source Code"
           icon="Github"
-          class="col-start-3 mt-4"
-          @toggle="toggleCollapse"
+          class="mt-4"
         >
           <template #collapseContent>
             <ul class="collapsed mb-6 mt-4 text-left text-xl sm:text-2xl lg:text-xl xl:text-2xl">
@@ -158,6 +182,7 @@
                 :to="appConfig.url.gh_repo"
                 title="Github"
                 type="REPO"
+                class="border-none pb-2"
               />
             </ul>
           </template>
@@ -279,23 +304,4 @@
 
 <script setup>
 const appConfig = useAppConfig()
-
-const collapsePanels = ref([
-  { id: 0, isVisible: false },
-  { id: 1, isVisible: false },
-  { id: 2, isVisible: false },
-  { id: 3, isVisible: false },
-])
-
-const openCollapse = (id) => {
-  collapsePanels.value.forEach((el, index) => {
-    if (id === index) {
-      el.isVisible = !el.isVisible
-    }
-  })
-}
-
-const toggleCollapse = (id) => {
-  openCollapse(id)
-}
 </script>
