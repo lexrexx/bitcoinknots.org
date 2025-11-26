@@ -6,25 +6,25 @@ export default {
       sans: ['Inter', 'Helvetica', 'Ariel', 'sans-serif'],
     },
     colors: {
-      white: '#FFFFFF', // pure-white
-      black: '#000000', // pure-black
+      white:  '#FFFFFF', // pure-white
+      black:  '#000000', // pure-black
+      brand:  '#FF5E2C', // tiger-flame (killer-orange)
+      vanil:  '#FFDFC4', // papaya-whip (off-white)
+      onyx:   '#140F11', // onyx (off-black)
       // brand: '#FF5E2C', // tiger-flame (killer-orange)
       // brand: '#FF5E2C', // tiger-flame (killer-orange)
       // brand: '#FF5E2C', // tiger-flame (killer-orange)
-      brand: '#FF5E2C', // tiger-flame (killer-orange)
       // brand: '#ff8335', // tiger-flame (killer-orange) // FF5E2C but compliant
-      vanil: '#FFDFC4', // papaya-whip (off-white)
       // vanil: '#FFE5C4', // papaya-whip (off-white)
-      onyx: '#140F11', // onyx (off-black)
       // https://coolors.co/ff5e2c-140f11-000000-ffe5c4-ffffff
+      // btc: '#F7931A', // carrot-orange
+      // mstr: '#FA660F'
       // Before
       // brand: '#FF5E2C', // tiger-flame (killer-orange)
       // brand: '#FC6435', // tiger-flame (killer-orange) *
       // vanil: '#FFEFD5', // papaya-whip (off-white) *
       // Other Tryouts
       // brand: '#FD7E14', // omg21
-      btc: '#F7931A', // carrot-orange
-      mstr: '#FA660F'
       // brand: '#f9613e', // tomato (main mockups)
       // brand: '#FF6220', // tiger-flame (killer-orange, lighter)
       // brand: '#FF5F25', // tiger-flame (killer-orange, nautral ***chosen)
