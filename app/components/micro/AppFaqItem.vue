@@ -58,7 +58,7 @@ interface FAQProps {
 }
 
 const props = withDefaults(defineProps<FAQProps>(), {
-  initiallyOpen: false,
+  initiallyOpen: true,
 })
 
 const isOpen = ref(props.initiallyOpen)
