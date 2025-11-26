@@ -4,7 +4,7 @@
   >
     <NuxtLink
       :to="to"
-      :aria-label="label"
+      :aria-label="props.title"
       class="flex justify-between items-center"
     >
       <span class="title">
@@ -34,10 +34,10 @@ const props = defineProps({
     required: false,
     default: 'tar',
   },
-  label: {
-    type: String,
-    required: true,
-  },
+  // label: {
+  //   type: String,
+  //   required: true,
+  // },
 })
 </script>
 
