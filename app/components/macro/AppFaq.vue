@@ -11,10 +11,7 @@
     <!-- QA #2 -->
     <AppFaqItem
       question="Is Bitcoin Knots a hard fork or an altcoin?"
-      answer="Absolutely not. Bitcoin Knots is a software fork, not a consensus fork. It follows all
-        the same rules as Bitcoin Core. You will be running a fully validating Bitcoin node on
-        the exact same Bitcoin network. The differences lie in added features, policy patches,
-        and release timing."
+      answer="Absolutely not. Bitcoin Knots is a software fork of Bitcoin Core, not a consensus-based blockchain fork of Bitcoin. It follows all the same rules as Bitcoin Core. You will be running a fully validating Bitcoin node on the exact same Bitcoin network. The differences lie in added features, policy patches, and release timing."
     />
     <!-- QA #3 -->
     <AppFaqItem
@@ -35,11 +32,7 @@
     <!-- QA #5 -->
     <AppFaqItem
       question="I've heard about a debate regarding OP_RETURN and data. What is Bitcoin Knots' stance?"
-      answer="This is a key differentiator. The Bitcoin Knots client implements a default policy that
-        restricts the size of data carriers like OP_RETURN more than Bitcoin Core's default. The
-        goal is to conserve block space for financial transactions and reduce blockchain bloat.
-        It's important to understand that this is a node policy, not a consensus rule. Other
-        nodes on the network may still relay and mine transactions that exceed this limit."
+      answer="This is a key differentiator. The Bitcoin Knots client implements a default policy that restricts the size of data carriers like OP_RETURN more than Bitcoin Core's default. The goal is to conserve block space for financial transactions and reduce blockchain bloat, not serve as generic file storage. It's important to understand that this is a node policy, not a consensus rule. Other nodes on the network may still relay and mine transactions that exceed this default limit."
     />
     <!-- QA #6 -->
     <AppFaqItem
@@ -53,9 +46,7 @@
     <!-- QA #7 -->
     <AppFaqItem
       question="Can I run both Bitcoin Core and Bitcoin Knots on the same machine?"
-      answer="Yes, but you must configure them to use different data directories and ports to avoid
-        conflicts. This is an advanced setup and requires carefully editing the bitcoin.conf
-        file for one or both instances. We recommend most users run one primary node."
+      answer="Yes, but you must configure them to use different data directories and ports to avoid conflicts. This is an advanced setup and requires carefully editing the bitcoin.conf file for one or both instances. We recommend most users run one node implementation on a device."
     />
     <!-- QA #8 -->
     <AppFaqItem
@@ -63,7 +54,7 @@
       answer="The best place for community support is the Bitcoin Knots mailing list. For bug reports
         and technical discussions, you can open an issue on the official GitHub repository.
         Remember, this is open-source software; patience and detailed problem reports are
-        appreciated."
+        appreciated. For brief or simpler technical support questions, you can also join the official Telegram group & Discord server."
     />
   </ul>
 </template>

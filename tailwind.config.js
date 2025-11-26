@@ -8,7 +8,11 @@ export default {
     colors: {
       white: '#FFFFFF', // pure-white
       black: '#000000', // pure-black
+      // brand: '#FF5E2C', // tiger-flame (killer-orange)
+      // brand: '#FF5E2C', // tiger-flame (killer-orange)
+      // brand: '#FF5E2C', // tiger-flame (killer-orange)
       brand: '#FF5E2C', // tiger-flame (killer-orange)
+      // brand: '#ff8335', // tiger-flame (killer-orange) // FF5E2C but compliant
       vanil: '#FFDFC4', // papaya-whip (off-white)
       // vanil: '#FFE5C4', // papaya-whip (off-white)
       onyx: '#140F11', // onyx (off-black)
@@ -19,7 +23,8 @@ export default {
       // vanil: '#FFEFD5', // papaya-whip (off-white) *
       // Other Tryouts
       // brand: '#FD7E14', // omg21
-      // brand: '#F7931A', // carrot-orange
+      btc: '#F7931A', // carrot-orange
+      mstr: '#FA660F'
       // brand: '#f9613e', // tomato (main mockups)
       // brand: '#FF6220', // tiger-flame (killer-orange, lighter)
       // brand: '#FF5F25', // tiger-flame (killer-orange, nautral ***chosen)
@@ -31,6 +36,7 @@ export default {
       // vanil: '#FFF5E8', // old-lace (lighter vanil)
       // vanil: '#FFE9C6', // papaya-whip (off-white)
       // https://coolors.co/ff6220-ff5c29-140f11-140e0e-100d12-140f13-140e0e-120d0e
+      // https://coolors.co/ff8335-
     },
     extend: {
       padding: {
