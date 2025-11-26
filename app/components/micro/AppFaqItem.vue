@@ -58,4 +58,13 @@ details[open] .details-arrow {
   @apply
     rotate-180
 }
+
+details[open] summary ~ * {
+  animation: sweep .2s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -30px}
+  100%  {opacity: 1; margin-top: 0px}
+}
 </style>
