@@ -23,7 +23,7 @@
     <div class="right-0 absolute flex flex-row items-center gap-1">
       <NuxtLink
         to="#Download"
-        class="hidden sm:flex me-2 md:me-4 p-4 md:p-5 border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:text-brand dark:hover:border-brand rounded-lg focus:outline-none focus:ring-4 focus:ring-onyx dark:focus:ring-brand font-bold text-onyx hover:text-vanil dark:text-vanil text-xs md:text-sm uppercase tracking-wider"
+        class="sm:flex me-2 md:me-4 p-4 md:p-5 border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:text-brand dark:hover:border-brand rounded-lg focus:outline-none focus:ring-4 focus:ring-onyx dark:focus:ring-brand font-bold text-onyx hover:text-vanil dark:text-vanil text-xs md:text-sm uppercase tracking-wider"
       >
         Download
       </NuxtLink>

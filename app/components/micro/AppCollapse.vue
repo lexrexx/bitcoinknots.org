@@ -1,21 +1,3 @@
-<script setup>
-const props = defineProps({
-  id: {
-    type: Number,
-    required: true,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  // (Icon) name
-  icon: {
-    type: String,
-    required: true,
-  },
-})
-</script>
-
 <template>
   <details class="breaK-inside flex flex-col w-full mb-2 group border-2 border-onyx hover:border-vanil dark:border-vanil dark:hover:border-brand rounded-2xl cursor-pointer">
     <summary class="list-none">
@@ -39,6 +21,19 @@ const props = defineProps({
     </div>
   </details>
 </template>
+
+<script setup>
+const props = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  icon: {
+    type: String,
+    required: true,
+  },
+})
+</script>
 
 <style scoped lang="postcss">
 /* Hide default marker */

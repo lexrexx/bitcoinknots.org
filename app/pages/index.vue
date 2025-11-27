@@ -108,54 +108,10 @@
     <AppDownloadVerify />
 
     <!-- ////////////////////////////////////////////////////////////////////////////////// Download & Verify -->
-    <!-- <section class="mx-4">
-      <AppTitle
-        id="Download"
-        title-a="Download"
-        title-b="& Verify"
-      /> -->
+    <!-- FAQs -->
 
-    <!-- <h3
-        class="
-          w-full lg:w-10/12 xl:w-9/12
-          mb-12
-          mt-12 sm:mt-14 md:mt-20 lg:mt-32
-          text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl
-          leading-normal sm:leading-normal md:leading-normal lg:leading-normal xl:leading-normal
-          tracking-[1]
-      "
-      >
-        Open Source + Digitally Signed + Always Verify.
-      </h3> -->
-
-    <!-- <AppDownloadVerify /> -->
-
-    <!-- <AppBrandCollage class="mt-24" /> -->
-    <!-- </section> -->
-
-    <!-- MARK: Faq -->
-    <section class="--mb-24 mx-4">
-      <AppTitle
-        id="Faq"
-        title-a="Get"
-        title-b="Answers"
-      />
-
-      <h3
-        class="
-          col-span-12 mb-4 mt-8 sm:mt-12 md:mt-16 xl:mt-24 flex w-full items-start justify-between text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase
-          tracking-wider
-        "
-      >
-        Common Questions
-        <span class="text-vanil dark:text-brand"> ---> </span>
-        About Knots
-      </h3>
-
-      <!-- QA -->
-      <AppFaq class="mt-24" />
-    </section>
-
+    <!-- QA -->
+    <AppFaq />
     <!-- Mail -->
     <section
       class="mx-4 mb-24"

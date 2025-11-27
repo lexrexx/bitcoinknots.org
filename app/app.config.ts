@@ -22,6 +22,7 @@ export default defineAppConfig({
     github: 'https://github.com/bitcoinknots',
     telegram: 'https://t.me/Bitcoin_Knots',
     x: 'https://x.com/BitcoinKnots',
+    xtag: 'https://x.com/intent/post?text=This%20is&hashtags=AskKnots&via=BitcoinKnots',
   },
   files: {
     x86: 'https://bitcoinknots.org/files/29.x/29.2.knots20251110/bitcoin-29.2.knots20251110-x86_64-linux-gnu.tar.gz',
