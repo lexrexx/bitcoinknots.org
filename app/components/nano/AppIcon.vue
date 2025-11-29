@@ -17,7 +17,7 @@ const props = defineProps({
   },
   url: {
     type: String,
-    default: 'svg/icons.svg', // Path from public directory
+    default: '/svg/icons.svg', // Path from public directory
   },
 })
 </script>
