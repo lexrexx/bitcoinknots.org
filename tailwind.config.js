@@ -3,7 +3,8 @@ export default {
   content: [],
   theme: {
     fontFamily: {
-      sans: ['Inter', 'Helvetica', 'Ariel', 'sans-serif'],
+      sans: ['InterVariable', 'Inter', 'Helvetica', 'Ariel', 'sans-serif'],
+      // mono: ['GoogleSansCode', 'ui-monospace', 'Source Code Pro', 'Menlo', 'DejaVu Sans Mono', 'monospace' ]
     },
     colors: {
       white:  '#FFFFFF', // pure-white

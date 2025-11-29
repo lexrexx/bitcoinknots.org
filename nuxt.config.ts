@@ -36,9 +36,15 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: 'Inter',
-        provider: 'google',
+        name: 'InterVariable',
+        provider: 'local',
+        src: '/fonts/InterVariable.woff2'
       },
+      // {
+      //   name: 'GoogleSansCode',
+      //   provider: 'local',
+      //   src: '/fonts/GoogleSansCode-VariableFont_wght.ttf'
+      // },
     ],
     defaults: {
       weights: [400, 700],
