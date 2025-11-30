@@ -59,7 +59,7 @@
             rounded-lg lg:rounded-xl
             px-4 md:px-5 --2xl:px-7
             py-6 md:py-8 --2xl:py-10
-            text-xl --2xl:text-2xl
+            text-lg
             font-bold
             uppercase
             text-center
@@ -85,7 +85,7 @@
             rounded-lg lg:rounded-xl
             px-4 md:px-5 --2xl:px-6
             py-6 md:py-8 --2xl:py-9
-            text-xl --2xl:text-2xl
+            text-lg --2xl:text-2xl
             font-bold
             uppercase
             text-center

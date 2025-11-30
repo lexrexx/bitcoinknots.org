@@ -21,6 +21,8 @@
         text-base md:text-lg
         text-onyx
         dark:text-vanil
+        hover:text-white
+        dark:hover:text-brand
       "
       >
         Release Notes

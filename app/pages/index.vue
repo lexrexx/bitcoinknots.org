@@ -1,7 +1,10 @@
 <!-- eslint-disable vue/no-multiple-template-root -->
 <template>
   <!-- <AppBreakpoints /> -->
-  <div class="container mx-auto w-full overflow-hidden">
+  <div
+    id="home"
+    class="container mx-auto w-full overflow-hidden"
+  >
     <AppHero />
     <section
       class="mx-4 relative"
@@ -98,7 +101,7 @@
           id="Knots"
           class="pt-16 lg:py-28 col-span-12 lg:col-span-7 lg:col-start-6"
         >
-          <AppLogotype class="w-full" />
+          <AppLogotype class="w-full text-onyx dark:text-vanil" />
         </div>
       </div>
     </section>
