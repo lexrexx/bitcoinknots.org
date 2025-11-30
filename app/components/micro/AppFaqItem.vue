@@ -1,10 +1,26 @@
 <template>
-  <li class="group py-4 overflow-hidden border-b border-onyx/20 dark:border-vanil/10 hover:bg-onyx/5 dark:hover:bg-black/15">
+  <li class="group py-3 overflow-hidden border-b border-onyx/20 dark:border-vanil/10 hover:bg-onyx/5 dark:hover:bg-black/15">
     <details
-      class="w-full"
+      class="w-full mx-auto px-1"
     >
-      <summary class="w-full px-6 py-4 text-left flex justify-between items-center group-hover:text-vanil focus:outline-none cursor-pointer list-none">
-        <span class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-onyx dark:text-vanil group-hover:text-vanil dark:group-hover:text-brand pr-4 flex-1">
+      <summary
+        class="
+          flex
+          justify-between
+          items-center
+          w-full
+          px-6 py-4
+          text-left
+          rounded-xl
+          list-none
+          group-hover:text-vanil
+          cursor-pointer
+          focus:outline-none
+          focus:ring-1
+          focus:ring-onyx dark:focus:ring-brand
+        "
+      >
+        <span class="py-4 text-base sm:text-lg md:text-xl lg:text-xl font-bold text-onyx dark:text-vanil group-hover:text-vanil dark:group-hover:text-brand pr-4 flex-1">
           {{ props.question }}
         </span>
         <span class="flex-shrink-0 w-6 h-6 transition-transform duration-100 details-arrow">
