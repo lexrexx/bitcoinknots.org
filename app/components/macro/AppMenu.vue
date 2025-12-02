@@ -19,7 +19,7 @@
         class="p-0"
         @click="menu = false"
       >
-        <AppLogotype class="ms-6 h-6 md:h-7" />
+        <AppLogotype class="ms-6 h-6 md:h-7 text-onyx dark:text-vanil" />
       </NuxtLink>
 
       <div class="right-0 absolute flex flex-row items-center gap-1">

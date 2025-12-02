@@ -7,11 +7,6 @@
   /* Add Local Fonts */
   /* inter-regular - latin */
 
-  /* Variable fonts usage:
-  :root { font-family: "Inter", sans-serif; }
-  @supports (font-variation-settings: normal) {
-    :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
-  } */
   @font-face {
     font-family: InterVariable;
     font-style: normal;
@@ -20,17 +15,16 @@
     src: url("/fonts/InterVariable.woff2") format("woff2");
   }
 
-  @font-face {
+  /* @font-face {
     font-family: GoogleSansCode;
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
     src: url("/fonts/GoogleSansCode-VariableFont_wght.ttf") format("ttf");
-  }
-
+  } */
 
   /* HTML */
-  html { @apply scroll-smooth}
+  /* html { @apply scroll-smooth} */
   /* b {@apply font-bold} */
 }
 

@@ -2,10 +2,13 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
   devtools: { enabled: false },
-  // ssr: false,
+  ssr: true,
   app: {
     // baseURL: '/',
+    // baseURL: '/knots-gh/',
+    // baseURL: '/knots-web/',
     baseURL: '/bitcoinknots.org/',
+    buildAssetsDir: '/build/'
   },
   components: {
     dirs: [
@@ -63,4 +66,5 @@ export default defineNuxtConfig({
   tailwindcss: {
     // Options
   },
+  // css: ['~/assets/css/tailwindcss.css']
 })
